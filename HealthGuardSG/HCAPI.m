@@ -20,6 +20,8 @@
 static NSString* const HCLocationbyRadius = @"home/nearest_health_services";
 static NSString* const HClocationPlacesALL = @"health_care_places";
 static NSString* const HCregister = @"auth/register";
+static NSString* const HCfilterMap = @"auth/register";
+
 #pragma mark - Other URLs
 static NSString* const eHClocalUrl = @"http://localhost:3000/v1";
 static NSString* const eHCProductionUrl = @"http://healthguardsg.cloudapp.net/v1";
@@ -114,6 +116,25 @@ static AFHTTPRequestOperationManager* requestManager;
             success(responseObject);
             [HCAPI saveEmail:email];
         }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (fail) {
+            
+            NSLog(@"err %@",error);
+        }
+    }];
+    
+}
+
++(void)filterMap:(NSString*)typeids success:(SuccessBlock)success fail:(FailBlock)fail;
+{
+    
+    AFHTTPRequestOperationManager* manager = [HCAPI sharedRequestManager];
+    NSDictionary *parameters = @{@"type_id": typeids};
+    [manager POST:HCfilterMap parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ((success)) {
+            NSLog(@"RESONE %@",responseObject);
+            success(responseObject);
+    }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (fail) {
             

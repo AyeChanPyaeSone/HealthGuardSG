@@ -440,12 +440,15 @@
 				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
 				A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */,
 				A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */,
+<<<<<<< HEAD
 				6DE70E961B641F370019DCE4 /* EventsViewController.h */,
 				6DE70E971B641F370019DCE4 /* EventsViewController.m */,
 				6DE70E9C1B642AFE0019DCE4 /* PromotionViewController.h */,
 				6DE70E9D1B642AFE0019DCE4 /* PromotionViewController.m */,
+=======
 				A3DE31821B64232C0067AA4A /* FilterViewController.m */,
 				A3DE31841B6423380067AA4A /* FilterViewController.h */,
+>>>>>>> 3004bdde1ed77dae2707c0e59026fa0666e4b910
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";

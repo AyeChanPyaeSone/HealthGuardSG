@@ -13,7 +13,6 @@
 //
 
 
-
 #import "HealthCareMapViewController.h"
 
 #import <INTULocationManager/INTULocationManager.h>
@@ -39,6 +38,8 @@
 #import "HCLocationPlace.h"
 
 #import "AboutLocationViewController.h"
+
+#import "FilterViewController.h"
 
 @import CoreLocation;
 
@@ -98,12 +99,11 @@ NSInteger selectedOne;
 - (void)viewDidLoad {
     
     
-    
-    
-    
     [super viewDidLoad];
     
-    //    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(closeTapped:)];
+    UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStyleBordered target:self action:@selector(openFilter)];
+    filterButton.image= [UIImage imageNamed:@"Filter Filled-25.png"];
+    self.navigationItem.rightBarButtonItem = filterButton;
     
     //    self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonItemStylePlain target:self action:@selector(closeTapped:)];
     
@@ -135,6 +135,27 @@ NSInteger selectedOne;
 - (IBAction)sliderTapped:(id)sender {
         [self loadHealthCarePlacesWithRadius:[NSString stringWithFormat:@"%f",_radiusSlider.value]];
     
+}
+
+-(void)openFilter{
+    
+    [[MZFormSheetPresentationController appearance] setShouldApplyBackgroundBlurEffect:YES];
+    
+    FilterViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"FilterViewController"];
+
+    
+    MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:detailView];
+    
+    formSheetController.shouldDismissOnBackgroundViewTap= YES;
+    
+    
+    formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
+    
+    formSheetController.contentViewSize = CGSizeMake(self.view.frame.size.width, 300);
+    
+    formSheetController.view.frame =CGRectMake(0,300, self.view.frame.size.width, 300);
+    
+    [self presentViewController:formSheetController animated:YES completion:nil];
 }
 
 -(void) startHCLocationManager{
@@ -183,12 +204,9 @@ NSInteger selectedOne;
     
     NSMutableArray *coordinates = [[NSMutableArray alloc]init];
     
-    
-    
     _HCcurrentLocation = [locations lastObject];
     
 }
-
 
 
 - (void)mapView:(GMSMapView *)pMapView didChangeCameraPosition:(GMSCameraPosition *)position {
@@ -199,11 +217,7 @@ NSInteger selectedOne;
         
         CLLocationCoordinate2D anchor = [pMapView.selectedMarker position];
         
-        
-        
         CGPoint arrowPt = self.HCScrollupView.backgroundView.arrowPoint;
-        
-        
         
         CGPoint pt = [pMapView.projection pointForCoordinate:anchor];
         
@@ -494,7 +508,6 @@ NSInteger selectedOne;
     MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:detailView];
     
     formSheetController.shouldDismissOnBackgroundViewTap= YES;
-    
     
     
     formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
