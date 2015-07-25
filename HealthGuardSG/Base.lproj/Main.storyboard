@@ -115,30 +115,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO8-r0-Ra2" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="91" width="320" height="477"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rO8-r0-Ra2" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="127" width="320" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-5n-CQT">
-                                <rect key="frame" x="0.0" y="47" width="320" height="38"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-5n-CQT">
+                                <rect key="frame" x="0.0" y="73" width="320" height="38"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Jb-XgJ">
+                                        <rect key="frame" x="6" y="0.0" width="308" height="31"/>
+                                        <color key="minimumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sliderTapped:" destination="13X-iA-fK3" eventType="valueChanged" id="QlN-9L-cup"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
                                 <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="rO8-r0-Ra2" firstAttribute="top" secondItem="g5S-id-pOg" secondAttribute="top" constant="91" id="48i-BT-b3t"/>
-                            <constraint firstItem="rO8-r0-Ra2" firstAttribute="bottom" secondItem="1R8-HO-ycU" secondAttribute="top" id="JZr-JS-kmu"/>
-                            <constraint firstItem="it7-5n-CQT" firstAttribute="trailing" secondItem="rO8-r0-Ra2" secondAttribute="trailing" id="Ksd-aT-fOI"/>
-                            <constraint firstItem="rO8-r0-Ra2" firstAttribute="leading" secondItem="it7-5n-CQT" secondAttribute="leading" id="QRl-NB-2Jt"/>
-                            <constraint firstItem="rO8-r0-Ra2" firstAttribute="top" secondItem="it7-5n-CQT" secondAttribute="bottom" constant="6" id="YYI-ro-N1B"/>
-                            <constraint firstAttribute="trailing" secondItem="it7-5n-CQT" secondAttribute="trailing" id="bl5-MA-JZM"/>
-                            <constraint firstItem="it7-5n-CQT" firstAttribute="leading" secondItem="g5S-id-pOg" secondAttribute="leading" id="hvf-1c-XNB"/>
-                            <constraint firstItem="it7-5n-CQT" firstAttribute="top" secondItem="8ku-pE-e3V" secondAttribute="bottom" constant="48" id="uMy-bw-K5n"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="HCmapView" destination="rO8-r0-Ra2" id="nH9-VM-Aky"/>
+                        <outlet property="radiusSlider" destination="LVF-Jb-XgJ" id="VmN-IA-L1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncr-3L-V1m" userLabel="First Responder" sceneMemberID="firstResponder"/>

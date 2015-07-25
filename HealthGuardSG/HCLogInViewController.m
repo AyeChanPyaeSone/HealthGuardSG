@@ -33,14 +33,14 @@
 
 - (IBAction)pressedLogin:(id)sender {
 
-    [HCAPI Userregister:self.email.text name:self.name.text success:^(id obj) {
-        NSLog(@"Success %@",obj);
+//    [HCAPI Userregister:self.email.text name:self.name.text success:^(id obj) {
+//        NSLog(@"Success %@",obj);
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
         [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
-    } fail:^(NSError *error) {
-        NSLog(@"Error %@",error);
-    }];
+//    } fail:^(NSError *error) {
+//        NSLog(@"Error %@",error);
+//    }];
 
 }
 @end

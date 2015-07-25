@@ -17,12 +17,12 @@
 @implementation HCAPI
 
 #pragma mark - Mrt Lines
-static NSString* const HCLocationbyRadius = @"health_care_places/near_by";
+static NSString* const HCLocationbyRadius = @"home/nearest_health_services";
 static NSString* const HClocationPlacesALL = @"health_care_places";
 static NSString* const HCregister = @"auth/register";
 #pragma mark - Other URLs
-static NSString* const eHClocalUrl = @"http://localhost:3000";
-static NSString* const eHCProductionUrl = @"http://localhost:3000/api/v1";
+static NSString* const eHClocalUrl = @"http://localhost:3000/v1";
+static NSString* const eHCProductionUrl = @"http://healthguardsg.cloudapp.net/v1";
 
 #pragma mark - Setup AFHTTPRequestOperationManager
 static AFHTTPRequestOperationManager* requestManager;
@@ -37,7 +37,7 @@ static AFHTTPRequestOperationManager* requestManager;
 +(AFHTTPRequestOperationManager*)sharedRequestManagerWithFormData:(BOOL)isFormData {
     if (!requestManager) {
         NSURL* url;
-        url = [NSURL URLWithString:eHClocalUrl];
+        url = [NSURL URLWithString:eHCProductionUrl];
         requestManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];
         
         //use different serializer for different format send: JSON or data-form format
@@ -74,7 +74,7 @@ static AFHTTPRequestOperationManager* requestManager;
                              };
     [manager POST:HCLocationbyRadius parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ((success)) {
-            NSArray* arr = [RMMapper arrayOfClass:[HCLocationPlace class] fromArrayOfDictionary:responseObject];
+            NSArray* arr = [RMMapper arrayOfClass:[HCLocationPlace class] fromArrayOfDictionary:responseObject[@"health_care_services"]];
             NSLog(@"RESONE %@",responseObject);
             success(arr);
         }

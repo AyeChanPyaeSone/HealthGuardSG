@@ -6,8 +6,15 @@
 //  Copyright (c) 2015 Tware. All rights reserved.
 //
 
-#ifndef HealthGuardSG_Article_h
-#define HealthGuardSG_Article_h
+#import <Foundation/Foundation.h>
 
+@interface Article : NSObject
 
-#endif
+@property (weak, nonatomic) IBOutlet UILabel *authorName;
+@property (weak, nonatomic) IBOutlet UILabel *postedDate;
+@property (weak, nonatomic) IBOutlet UILabel *articleTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *articleImage;
+@property (weak, nonatomic) IBOutlet UITextView *articleShortDescription;
+
+@end
+
