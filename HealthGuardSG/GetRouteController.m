@@ -49,7 +49,7 @@ static AFHTTPRequestOperationManager* requestManager;
     
 }
 
-+ (void)getPolylineWithLocations:(NSArray *)locations travelMode:(TravelMode)travelMode success:(Success)success fail:(FailBlock)fail{
++ (void)drawPolylineWithcoordinates:(NSArray *)locations travelMode:(TravelMode)travelMode success:(Success)success fail:(FailBlock)fail{
     AFHTTPRequestOperationManager* manager = [GetRouteController sharedRequestManager];
     
     NSUInteger locationsCount = [locations count];

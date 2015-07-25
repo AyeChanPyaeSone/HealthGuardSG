@@ -74,7 +74,7 @@ NSInteger selectedOne;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
-    _HClocationManager  = newLocation;
+    _HCcurrentLocation  = newLocation;
     
 }
 
@@ -82,7 +82,7 @@ NSInteger selectedOne;
 {
     NSMutableArray *coordinates = [[NSMutableArray alloc]init];
     
-    _HClocationManager = [locations lastObject];
+    _HCcurrentLocation = [locations lastObject];
 }
 
 - (void)mapView:(GMSMapView *)pMapView didChangeCameraPosition:(GMSCameraPosition *)position {
@@ -117,7 +117,7 @@ NSInteger selectedOne;
 -(void) scrollUpViewSetup{
     
     _HCScrollupView = [[SMCalloutView alloc] init];
-    UIImageView *HCleftDrivingView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Driving"]];
+    UIImageView *carView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Driving"]];
     
     if ([self.HCScrollupView.backgroundView isKindOfClass:[SMCalloutMaskedBackgroundView class]]) {
         
@@ -126,37 +126,42 @@ NSInteger selectedOne;
         blueView.backgroundColor = [UIColor colorWithRed:0 green:0.5 blue:1 alpha:1];
         [blueView addTarget:self action:@selector(getAboutLocation) forControlEvents:UIControlEventTouchUpInside];
         
-        HCleftDrivingView.frame = CGRectMake(11, 14, HCleftDrivingView.image.size.width, HCleftDrivingView.image.size.height);
-        [blueView addSubview:HCleftDrivingView];
+        carView.frame = CGRectMake(11, 14, carView.image.size.width, carView.image.size.height);
+        [blueView addSubview:carView];
         
         self.HCScrollupView.leftAccessoryView = blueView;
         
+        // create a little disclosure indicator since our callout is tappable
         UIButton *disclosure = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         [disclosure addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(getHCLocationDirection:)]];
-        
         self.HCScrollupView.rightAccessoryView = disclosure;
         
     }else {
-        HCleftDrivingView.layer.shadowOffset = CGSizeMake(0, -1);
-        HCleftDrivingView.layer.shadowColor = [UIColor colorWithWhite:0 alpha:0.5].CGColor;
-        HCleftDrivingView.layer.shadowOpacity = 1;
-        HCleftDrivingView.layer.shadowRadius = 0;
-        HCleftDrivingView.clipsToBounds = NO;
-        self.HCScrollupView.leftAccessoryView = HCleftDrivingView;
+        // "inset" the car graphic to match the callout's title on iOS 6-
+        carView.layer.shadowOffset = CGSizeMake(0, -1);
+        carView.layer.shadowColor = [UIColor colorWithWhite:0 alpha:0.5].CGColor;
+        carView.layer.shadowOpacity = 1;
+        carView.layer.shadowRadius = 0;
+        carView.clipsToBounds = NO;
+        self.HCScrollupView.leftAccessoryView = carView;
     }
     
+    // if we're on iOS 7+, the callout can be clicked - add a disclosure image to indicate this to the user!
     if ([self.HCScrollupView.backgroundView isKindOfClass:[SMCalloutMaskedBackgroundView class]]) {
         //        self.calloutView.rightAccessoryView =
         self.HCScrollupView.rightAccessoryView.alpha = 0.2;
         
-        UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
-        next.frame =CGRectMake(0, 0, 44, 44);
-        [next setImage:[UIImage imageNamed:@"UITableNext@2x"] forState:UIControlStateNormal];
-        [next addTarget:self action:@selector(getHCLocationDirection:)
+        UIButton *disclosure = [UIButton buttonWithType:UIButtonTypeCustom];
+        disclosure.frame =CGRectMake(0, 0, 44, 44);
+        [disclosure setImage:[UIImage imageNamed:@"UITableNext@2x"] forState:UIControlStateNormal];
+        //        disclosure.imageView.image =[UIImage imageNamed:@"UITableNext"];
+        //        disclosure.imageView.tintColor = [UIColor orangeColor];
+        [disclosure addTarget:self action:@selector(getHCLocationDirection:)
              forControlEvents:UIControlEventTouchUpInside];
-        self.HCScrollupView.rightAccessoryView = next;
+        self.HCScrollupView.rightAccessoryView = disclosure;
     }
-    _HCScrollupView = [[UIView alloc] initWithFrame:CGRectZero];
+
+    _emptySCrollupView= [[UIView alloc] initWithFrame:CGRectZero];
     
 }
 
@@ -188,11 +193,13 @@ NSInteger selectedOne;
     NSMutableArray *coordinates = [[NSMutableArray alloc]init];
     NSLog(@"selectedOne %ld",(long)selectedOne);
     NSLog(@"CURRENT LOCATION%@",_HCcurrentLocation);
+    selectedOne =1;
     switch (selectedOne) {
         case 1:
             if(_HCcurrentLocation.coordinate.latitude>0){
                 [coordinates addObject:[[CLLocation alloc] initWithLatitude:_HCcurrentLocation.coordinate.latitude longitude:  _HCcurrentLocation.coordinate.longitude]];
                 [coordinates addObject:[[CLLocation alloc] initWithLatitude:1.308367 longitude:103.782284]];
+                NSLog(@"coordincates %@",coordinates);
                 [self drawPolyLine:coordinates];
                 
             }else{
@@ -217,6 +224,11 @@ NSInteger selectedOne;
         [self getLocationRoute];
     }
     
+}
+
+- (void)calloutViewClicked:(SMCalloutView *)calloutView{
+    [self getAboutLocation];
+    NSLog(@"calloutViewClicked");
 }
 
 - (void)getAboutLocation {
@@ -335,12 +347,35 @@ NSInteger selectedOne;
     hci.lat =@1.308367;//[NSNumber numberWithDouble:_currentLocation.coordinate.latitude ];
     hci.lng = @103.782284;
     //[NSNumber numberWithDouble:_currentLocation.coordinate.longitude ];
-    [HCAPI getNearestHClocation:hci success:^(id obj) {
-        NSLog(@"Success %@",obj);
-        [self loadmarkerstomapView:obj];
-    } fail:^(NSError *error) {
-        NSLog(@"Error %@",error);
-    }];
+    
+    HCLocationPlace *hc = [[HCLocationPlace alloc]init];
+    // 1.391341, 103.895254 Sengkang
+    hc.lat = @"1.391341";
+    hc.lng = @"103.895254";
+    hc.name = @"SengKang";
+    
+    
+    HCLocationPlace *hcp = [[HCLocationPlace alloc]init];
+    // 1.391341, 103.895254 Sengkang
+    
+       //1.312412, 103.837831 Newton
+    hcp.lat = @"1.312412";
+    hcp.lng = @"103.837831";
+    hc.name = @"Newton";
+    
+    NSMutableArray *hlocationplaces = [[NSMutableArray alloc]init];
+    [hlocationplaces addObject:hc];
+    [hlocationplaces addObject:hc];
+    
+    [self loadmarkerstomapView:hlocationplaces];
+    
+    
+//    [HCAPI getNearestHClocation:hci success:^(id obj) {
+//        NSLog(@"Success %@",obj);
+//        [self loadmarkerstomapView:obj];
+//    } fail:^(NSError *error) {
+//        NSLog(@"Error %@",error);
+//    }];
 }
 
 

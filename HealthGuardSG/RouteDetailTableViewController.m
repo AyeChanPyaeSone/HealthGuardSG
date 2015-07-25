@@ -84,7 +84,7 @@ NSMutableArray *steps;
     if([step.travel_mode  isEqual: @"WALKING"]){
         
         
-        static NSString *cellIdentifier = @"WalkRouteDetailCell";
+        static NSString *cellIdentifier = @"HealthCareWalkDetailCell";
         HealthCareWalkDetailCell *walkrouteDetailCell = (HealthCareWalkDetailCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
         
         if(indexPath.row>0){
@@ -110,7 +110,7 @@ NSMutableArray *steps;
         
         if([step.transit_details.line.vehicle.type  isEqual: @"SUBWAY"]){
             
-            static NSString *cellIdentifier = @"MRTRouteDetailCell";
+            static NSString *cellIdentifier = @"HealthCareMRTDetailCell";
             HealthCareMRTDetailCell *mrtrouteDetailCell = (HealthCareMRTDetailCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
             
             if([step.transit_details.line.name isEqual:@"East West Line"]){
@@ -152,14 +152,14 @@ NSMutableArray *steps;
             }
             mrtrouteDetailCell.stops_mins.text = [NSString stringWithFormat:@"%@ %@ (%@)",step.transit_details.num_stops,num_stops,[step.duration objectForKey:@"text"]];
             mrtrouteDetailCell.backgroundColor = [UIColor clearColor];
-            mrtrouteDetailCell.mrtline_image.image = [mrtrouteDetailCell.mrtline_image.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            mrtrouteDetailCell.mrtline_image.tintColor =[UIColor flatSkyBlueColorDark];
+            //mrtrouteDetailCell.mrtline_image.image = [mrtrouteDetailCell.mrtline_image.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            //mrtrouteDetailCell.mrtline_image.tintColor =[UIColor flatSkyBlueColorDark];
             
             return mrtrouteDetailCell;
             
         }
         else{
-            static NSString *cellIdentifier = @"BusRouteDetailCell";
+            static NSString *cellIdentifier = @"HealthCareBusDetailCell";
             HealthCareBusDetailCell *busrouteDetailCell = (HealthCareBusDetailCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
             
             busrouteDetailCell.html_instructions.text = step.html_instructions;
