@@ -17,7 +17,7 @@
                     </imageView>
                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9J5-OL-op2">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
-                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.53333333333333333" green="0.76862745098039209" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-4W-KD1">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>

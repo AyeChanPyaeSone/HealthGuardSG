@@ -59,8 +59,8 @@
     cell.emergencyTitle.lineBreakMode = NSLineBreakByWordWrapping;
     cell.emergencyTitle.numberOfLines = 0;
     
-   // NSString *imageName = [NSString stringWithFormat:@"%ld",[indexPath row] + 1];
-   // cell.emergencyImageView.image = [UIImage imageNamed:imageName];
+    NSString *imageName = [NSString stringWithFormat:@"%ld",[indexPath row] + 1];
+    cell.emergencyImageView.image = [UIImage imageNamed:imageName];
     [cell.emergencyCallButton addTarget:self action:@selector(pressedCallbutton:) forControlEvents:UIControlEventTouchUpInside];
     
     return cell;

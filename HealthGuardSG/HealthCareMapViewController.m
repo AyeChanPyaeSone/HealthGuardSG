@@ -108,6 +108,7 @@ NSInteger selectedOne;
     self.HCScrollupView.hidden = YES;
 }
 
+
 - (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker {
     /* don't move map camera to center marker on tap */
     mapView.selectedMarker = marker;

@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "OnboardingViewController.h"
+#import "HCLogInViewController.h"
+
 @import GoogleMaps;
 @interface AppDelegate ()
 
@@ -19,6 +22,8 @@
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"prefs:root=LOCATION_SERVICES"]];
     [GMSServices provideAPIKey:@"AIzaSyCW4zNkd9j2hysSQOAfU-SElISmBzcJr7E"];
+    
+    self.window.rootViewController = [self generateOnBoardVC];
     return YES;
 }
 
@@ -126,4 +131,30 @@
     }
 }
 
+- (OnboardingViewController *)generateOnBoardVC {
+    
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"" body:@"Health Guard SG" image:nil buttonText:@"" action:nil];
+    
+    
+    OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"" body:@"" image:nil buttonText:@"Let's Get Started" action:^{
+        [self handleOnboardingCompletion];
+    }];
+    
+    
+    OnboardingViewController *onboardingVC = [OnboardingViewController onboardWithBackgroundImage:[UIImage imageNamed:@"splashscreen"] contents:@[firstPage, secondPage]];
+   // onboardingVC.shouldFadeTransitions = YES;
+    //onboardingVC.fadePageControlOnLastPage = YES;
+    
+    return onboardingVC;
+}
+- (void)handleOnboardingCompletion {
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    HCLogInViewController * signUpVC = [storyboard instantiateViewControllerWithIdentifier:@"HCLogInViewController"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: signUpVC];
+    
+    [self.window.rootViewController presentViewController:navController animated:YES completion:nil];
+   
+}
 @end
