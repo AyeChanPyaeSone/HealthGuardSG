@@ -7,9 +7,16 @@
 //
 
 #import "FilterViewController.h"
+#import "HealthCareMapViewController.h"
+#import "HCAPI.h"
 
 @implementation FilterViewController
 NSMutableArray *typeids;
+NSString *filterlat;
+NSString *filterlng;
+NSString *filterrad;
+
+NSString *typestring;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,11 +54,33 @@ NSMutableArray *typeids;
         [typeids addObject:@"3"];
     }
     NSLog(@"types ids %@",typeids);
-    NSString * result = [typeids componentsJoinedByString:@","];
+    typestring = [typeids componentsJoinedByString:@","];
     
-    NSLog(@"Result %@",result);
+    NSLog(@"Result %@",typestring);
     
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    NSLog(@"%@",typestring);
+    NSLog(@"lat %@",filterlat);
+    NSLog(@"lat %@",filterlng);
+    
+    
+    [HCAPI filterMap:typestring lat:filterlat lng:filterlng radius:filterrad success:^(id obj) {
+        NSLog(@"Success %@",obj);
+        
+    } fail:^(NSError *error) {
+        NSLog(@"Error %@",error);
+    }];
+    
+    
+ 
+    
+}
+
 - (IBAction)pressedClinic:(id)sender {
 }
 - (IBAction)presseddrugtStore:(id)sender {
@@ -59,5 +88,10 @@ NSMutableArray *typeids;
 - (IBAction)pressednursingHome:(id)sender {
 }
 - (IBAction)pressed_lab:(id)sender {
+}
++(void)assignValues:(NSString *) lat lng:(NSString *) lng radius:(NSString *) radius{
+    filterlat = lat;
+    filterlng = lng;
+    filterrad = radius;
 }
 @end

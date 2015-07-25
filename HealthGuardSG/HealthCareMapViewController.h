@@ -10,5 +10,7 @@
 
 @interface HealthCareMapViewController : UIViewController
 
++(void) assignValues:(NSString *)swtichvalues;
+
 @end
 
