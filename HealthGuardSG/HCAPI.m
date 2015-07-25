@@ -20,7 +20,7 @@
 static NSString* const HCLocationbyRadius = @"home/nearest_health_services";
 static NSString* const HClocationPlacesALL = @"health_care_places";
 static NSString* const HCregister = @"auth/register";
-static NSString* const HCfilterMap = @"auth/register";
+static NSString* const HCfilterMap = @"home/nearest_health_services_by_type";
 
 #pragma mark - Other URLs
 static NSString* const eHClocalUrl = @"http://localhost:3000/v1";
@@ -125,12 +125,12 @@ static AFHTTPRequestOperationManager* requestManager;
     
 }
 
-+(void)filterMap:(NSString*)typeids success:(SuccessBlock)success fail:(FailBlock)fail;
++(void)filterMap:(NSString*)typeids lat:(NSString *)lat lng:(NSString *)lng radius:(NSString *)radius success:(SuccessBlock)success fail:(FailBlock)fail;
 {
     
     AFHTTPRequestOperationManager* manager = [HCAPI sharedRequestManager];
-    NSDictionary *parameters = @{@"type_id": typeids};
-    [manager POST:HCfilterMap parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSDictionary *parameters = @{@"type_id": typeids,@"lat": lat,@"lng": lng,@"radius": radius};
+    [manager GET:HCfilterMap parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ((success)) {
             NSLog(@"RESONE %@",responseObject);
             success(responseObject);

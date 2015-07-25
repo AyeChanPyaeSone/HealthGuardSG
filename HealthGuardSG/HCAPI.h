@@ -22,7 +22,7 @@ typedef void (^ProgressBlock)(NSUInteger bytesRead, NSInteger totalBytesRead, NS
 +(void)getNearestHClocation:(HCLocationPlaceParams*)HClocationParams success:(SuccessBlock)success fail:(FailBlock)fail;
 +(void)getNearestAllHClocation:(SuccessBlock)success fail:(FailBlock)fail;
 +(void)Userregister:(NSString*)email name:(NSString*)name success:(SuccessBlock)success fail:(FailBlock)fail;
-+(void)filterMap:(NSString*)typeids success:(SuccessBlock)success fail:(FailBlock)fail;
++(void)filterMap:(NSString*)typeids lat:(NSString *)lat lng:(NSString *)lng radius:(NSString *)radius success:(SuccessBlock)success fail:(FailBlock)fail;
 
 @end
 

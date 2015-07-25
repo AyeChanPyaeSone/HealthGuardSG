@@ -21,6 +21,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *pressed_hospital;
 @property (weak, nonatomic) IBOutlet UIButton *close;
 - (IBAction)closepressed:(id)sender;
-
++(void)assignValues:(NSString *) lat lng:(NSString *) lng radius:(NSString *) radius;
 
 @end

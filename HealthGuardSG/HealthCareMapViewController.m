@@ -77,13 +77,11 @@ static const CGFloat DefaultZoom = 11.0f;
 
 @property (strong, nonatomic) SMCalloutView *HCScrollupView;
 
-
 @property (weak, nonatomic) IBOutlet UISlider *radiusSlider;
 
 @property (strong, nonatomic) NSMutableArray *places;
 
 @property (strong, nonatomic) UIView *emptySCrollupView;
-
 
 
 @end
@@ -96,10 +94,15 @@ NSArray *HCSteps;
 
 NSInteger selectedOne;
 
+NSString *switchValues;
+
+bool *didfilter;
+
 - (void)viewDidLoad {
     
     
     [super viewDidLoad];
+    
     
     UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStyleBordered target:self action:@selector(openFilter)];
     filterButton.image= [UIImage imageNamed:@"Filter Filled-25.png"];
@@ -124,6 +127,17 @@ NSInteger selectedOne;
     // Do any additional setup after loading the view from its nib.
     
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"switches %@",switchValues);
+    
+    NSLog(@"Value %@",didfilter);
+    
+}
+
 //
 //- (IBAction)sliderTapped:(id)sender {
 //    
@@ -143,6 +157,10 @@ NSInteger selectedOne;
     
     FilterViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"FilterViewController"];
 
+    NSString *lat = [NSString stringWithFormat:@"%f",_HCcurrentLocation.coordinate.latitude];
+    NSString *lng = [NSString stringWithFormat:@"%f",_HCcurrentLocation.coordinate.longitude];
+    
+    [FilterViewController assignValues:lat lng:lng radius:@"5"];
     
     MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:detailView];
     
@@ -937,4 +955,9 @@ NSInteger selectedOne;
     
 }
 
+
++(void) assignValues:(NSString *)swtichvalues{
+    switchValues = switchValues;
+    didfilter = YES;
+}
 @end

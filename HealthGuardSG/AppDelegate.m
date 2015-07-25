@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "OnboardingViewController.h"
 #import "HCLogInViewController.h"
+#import "Lockbox.h"
+#import "HCAPI.h"
+#import "ViewController.h"
 
 @import GoogleMaps;
 @interface AppDelegate ()
@@ -20,10 +23,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+     NSString* email = [Lockbox stringForKey:HCIEmail];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"prefs:root=LOCATION_SERVICES"]];
     [GMSServices provideAPIKey:@"AIzaSyCW4zNkd9j2hysSQOAfU-SElISmBzcJr7E"];
-    
-    self.window.rootViewController = [self generateOnBoardVC];
+    if(email){
+          self.window.rootViewController = [self generateOnBoardVC];
+    }
+    else{
+        
+        ViewController *viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+        
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: viewController];
+        self.window.rootViewController = navController;
+        [self.window makeKeyAndVisible];
+       
+    }
+   
     return YES;
 }
 

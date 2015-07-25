@@ -38,11 +38,11 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     self.navigationItem.rightBarButtonItem = flipButton;
     [flipButton init];
     
-    
+
     self.menuArray = @[@"Map", @"Emergency Call", @"promotion", @"Events", @"Articles", @"Profile"];
     self.backgroundPhotoNameArray = @[@"mood1.jpg", @"mood2.jpg", @"mood3.jpg", @"mood4.jpg", @"mood5.jpg", @"mood6.jpg", @"mood7.jpg", @"mood8.jpg"];
     self.photoNameArray = @[@"stethoscope_filled-50.png", @"ambulance_filled-50.png",@"pill_filled-50.png", @"Google Blog Search Filled-50.png",@"New Filled-50.png",@"checked_user_filled-50.png"];
-    
+
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     [self.collectionView reloadData];
@@ -70,9 +70,8 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     
     // Configure the cell
     cell.homeMenuTitle.text = self.menuArray[indexPath.row];
-    //cell.homeMenubackgroundImage.image = [UIImage imageNamed: self.backgroundPhotoNameArray[indexPath.row]];
-    
-    cell.homeMenubackgroundImage.image = [UIImage imageNamed:@"hospital.jpg"];
+    NSLog(@"Image Name %@",self.backgroundPhotoNameArray[indexPath.row]);
+    cell.homeMenubackgroundImage.image = [UIImage imageNamed:self.backgroundPhotoNameArray[indexPath.row]];
     cell.homeMenuImageView.image = [UIImage imageNamed: self.photoNameArray[indexPath.row]];
     cell.homeMenuImageView.image = [cell.homeMenuImageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [cell.homeMenuImageView setTintColor:[UIColor whiteColor]];
@@ -85,16 +84,12 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGRect screenSize = self.collectionView.bounds;
+    CGRect screenSize = [UIScreen mainScreen].bounds;
     CGFloat screenWidth = screenSize.size.width;
     CGFloat screenHeight = screenSize.size.height;
     
-    
-    CGFloat width = (screenWidth-10)/2;
+    CGFloat width = (screenWidth - 30 )/2;
     CGFloat height = (screenHeight-100)/3;
-    
-    NSLog(@"Width %f",width);
-    
     
     return CGSizeMake(width, height);
 }
