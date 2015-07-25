@@ -127,6 +127,7 @@
 		A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31531B63E09A0067AA4A /* HCArticleCell.m */; };
 		A3DE31601B63E95C0067AA4A /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE315F1B63E95C0067AA4A /* Article.m */; };
 		A3DE31641B63EEDD0067AA4A /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31631B63EEDD0067AA4A /* ArticleViewController.m */; };
+		A3DE31661B63F0570067AA4A /* Routeshow-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31651B63F0570067AA4A /* Routeshow-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +292,7 @@
 		A3DE31611B63E9670067AA4A /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		A3DE31621B63EECB0067AA4A /* ArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
 		A3DE31631B63EEDD0067AA4A /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		A3DE31651B63F0570067AA4A /* Routeshow-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Routeshow-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +458,7 @@
 		A3DE2F7C1B6351B70067AA4A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A3DE31651B63F0570067AA4A /* Routeshow-50.png */,
 				A3DE31461B63BC680067AA4A /* splashscreen2.png */,
 				A3DE31441B63BC3F0067AA4A /* splashscreen.png */,
 				A3DE31401B63B9210067AA4A /* wallpaper.png */,
@@ -696,6 +699,7 @@
 				A3DE2FA91B6352280067AA4A /* Ambulance Filled-25.png in Resources */,
 				A3DE2FC51B6352280067AA4A /* mood7.jpg in Resources */,
 				A3DE31301B63B3110067AA4A /* 16.png in Resources */,
+				A3DE31661B63F0570067AA4A /* Routeshow-50.png in Resources */,
 				A3DE2FBB1B6352280067AA4A /* Home Filled-25.png in Resources */,
 				A3DE2FB81B6352280067AA4A /* Filter Filled-32.png in Resources */,
 				A3DE31391B63B3110067AA4A /* 25.png in Resources */,

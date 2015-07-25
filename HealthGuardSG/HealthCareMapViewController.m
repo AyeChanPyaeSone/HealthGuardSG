@@ -257,7 +257,7 @@ NSInteger selectedOne;
     
     _HCScrollupView = [[SMCalloutView alloc] init];
     
-    UIImageView *carView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Clinic-50"]];
+    UIImageView *carView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Routeshow-50"]];
     
     
     
@@ -271,7 +271,7 @@ NSInteger selectedOne;
         
         blueView.backgroundColor = [UIColor colorWithRed:0 green:0.5 blue:1 alpha:1];
         
-        [blueView addTarget:self action:@selector(getAboutLocation) forControlEvents:UIControlEventTouchUpInside];
+        [blueView addTarget:self action:@selector(getHCLocationDirection:) forControlEvents:UIControlEventTouchUpInside];
         
         
         
@@ -339,7 +339,7 @@ NSInteger selectedOne;
         
         //        disclosure.imageView.tintColor = [UIColor orangeColor];
         
-        [disclosure addTarget:self action:@selector(getHCLocationDirection:)
+        [disclosure addTarget:self action:@selector(getLocationRoute)
          
              forControlEvents:UIControlEventTouchUpInside];
         
@@ -505,6 +505,58 @@ NSInteger selectedOne;
 
 - (void)getLocationRoute {
     
+    NSMutableArray *coordinates = [[NSMutableArray alloc]init];
+    
+    if(_HCcurrentLocation.coordinate.latitude>0.0){
+        
+        HCLocationPlace *selectedPlace;
+        
+        for (HCLocationPlace *place in _places) {
+            
+            if (place.id == selectedOne) {
+                
+                selectedPlace = place;
+                
+                //                        return;
+                
+            }
+            
+        }
+        
+        NSLog(@"selectedPlace%@",selectedPlace);
+        
+        
+        
+        if (selectedPlace) {
+            
+            [coordinates addObject:[[CLLocation alloc] initWithLatitude:_HCcurrentLocation.coordinate.latitude longitude:_HCcurrentLocation.coordinate.longitude]];
+            
+            [coordinates addObject:[[CLLocation alloc] initWithLatitude:[selectedPlace.lat doubleValue] longitude:[selectedPlace.lng doubleValue]]];
+            
+            [self drawPolyLine:coordinates];
+            
+            NSLog(@"DRAW");
+            
+        }
+        
+        
+        
+    }else{
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Route"
+                              
+                                                        message:@"Cannot get the route detail. Please get the direction frist."
+                              
+                                                       delegate:self
+                              
+                                              cancelButtonTitle:@"OK"
+                              
+                                              otherButtonTitles:nil];
+        
+        [alert show];
+        
+    }
+    
     [[MZFormSheetPresentationController appearance] setShouldApplyBackgroundBlurEffect:YES];
     
     
@@ -512,21 +564,36 @@ NSInteger selectedOne;
     RouteDetailTableViewController *pinVC = [self.storyboard instantiateViewControllerWithIdentifier:@"RouteDetailTableViewController"];
     
     pinVC.steps =  HCSteps;
-    
-    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:pinVC];    MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:navVC];
-    
-    formSheetController.shouldDismissOnBackgroundViewTap= YES;
-    
-    
-    
-    formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
-    
-    formSheetController.contentViewSize = CGSizeMake(self.view.frame.size.width, 450);
-    
-    formSheetController.view.frame =CGRectMake(0,300, self.view.frame.size.width, 450);
-    
-    [self presentViewController:formSheetController animated:YES completion:nil];
-    
+
+    if(HCSteps.count){
+        UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:pinVC];    MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:navVC];
+        
+        formSheetController.shouldDismissOnBackgroundViewTap= YES;
+        
+        
+        
+        formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
+        
+        formSheetController.contentViewSize = CGSizeMake(self.view.frame.size.width, 450);
+        
+        formSheetController.view.frame =CGRectMake(0,300, self.view.frame.size.width, 450);
+        
+        [self presentViewController:formSheetController animated:YES completion:nil];
+        
+
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Route"
+                              
+                                                        message:@"Cannot get the route detail. Please get the direction frist."
+                              
+                                                       delegate:self
+                              
+                                              cancelButtonTitle:@"OK"
+                              
+                                              otherButtonTitles:nil];
+        
+        [alert show];
+    }
 }
 
 
