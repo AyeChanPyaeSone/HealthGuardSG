@@ -8,7 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
-
+#import "HCLocationPlace.h"
 @interface AboutLocationViewController : UIViewController
-
+@property (strong,nonatomic) HCLocationPlace *place;
 @end

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5A857DA55CB69E4E83CF61FC /* libPods-HealthGuardSG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79586198F996B98915FB0950 /* libPods-HealthGuardSG.a */; };
+		6DE70E8A1B6415280019DCE4 /* nursing_home_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E891B6415280019DCE4 /* nursing_home_icon.png */; };
+		6DE70E8C1B6415380019DCE4 /* hospital-building.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8B1B6415380019DCE4 /* hospital-building.png */; };
+		6DE70E8E1B64154A0019DCE4 /* drugstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8D1B64154A0019DCE4 /* drugstore.png */; };
+		6DE70E901B64163F0019DCE4 /* medicine.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8F1B64163F0019DCE4 /* medicine.png */; };
 		A3DE2F4E1B6348D10067AA4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F4D1B6348D10067AA4A /* main.m */; };
 		A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F501B6348D10067AA4A /* AppDelegate.m */; };
 		A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F521B6348D10067AA4A /* HealthGuardSG.xcdatamodeld */; };
@@ -147,6 +151,10 @@
 /* Begin PBXFileReference section */
 		1E86ADD53C19164C29FB3DA5 /* Pods-HealthGuardSG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuardSG.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthGuardSG/Pods-HealthGuardSG.release.xcconfig"; sourceTree = "<group>"; };
 		30CECD98282AD2C3142F67DD /* Pods-HealthGuardSG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthGuardSG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthGuardSG/Pods-HealthGuardSG.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE70E891B6415280019DCE4 /* nursing_home_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nursing_home_icon.png; sourceTree = "<group>"; };
+		6DE70E8B1B6415380019DCE4 /* hospital-building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hospital-building.png"; sourceTree = "<group>"; };
+		6DE70E8D1B64154A0019DCE4 /* drugstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drugstore.png; sourceTree = "<group>"; };
+		6DE70E8F1B64163F0019DCE4 /* medicine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine.png; sourceTree = "<group>"; };
 		79586198F996B98915FB0950 /* libPods-HealthGuardSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DE2F481B6348D10067AA4A /* HealthGuardSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthGuardSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DE2F4C1B6348D10067AA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -465,6 +473,10 @@
 		A3DE2F7C1B6351B70067AA4A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6DE70E8F1B64163F0019DCE4 /* medicine.png */,
+				6DE70E891B6415280019DCE4 /* nursing_home_icon.png */,
+				6DE70E8D1B64154A0019DCE4 /* drugstore.png */,
+				6DE70E8B1B6415380019DCE4 /* hospital-building.png */,
 				A3DE31731B6400860067AA4A /* eatwell.png */,
 				A3DE31741B6400860067AA4A /* gettingfats.png */,
 				A3DE31751B6400860067AA4A /* impactHaze.png */,
@@ -668,6 +680,7 @@
 				A3DE31311B63B3110067AA4A /* 17.png in Resources */,
 				A3DE313F1B63B7C80067AA4A /* street.png in Resources */,
 				A3DE312F1B63B3110067AA4A /* 15.png in Resources */,
+				6DE70E901B64163F0019DCE4 /* medicine.png in Resources */,
 				A3DE312C1B63B3110067AA4A /* 12.png in Resources */,
 				A3DE2FD01B6352280067AA4A /* stethoscope-50.png in Resources */,
 				A3DE2FC81B6352280067AA4A /* New Filled-50.png in Resources */,
@@ -676,10 +689,12 @@
 				A3DE317A1B6400860067AA4A /* impactHaze.png in Resources */,
 				A3DE31231B63B3110067AA4A /* 3.png in Resources */,
 				A3DE2FCA1B6352280067AA4A /* PE.png in Resources */,
+				6DE70E8E1B64154A0019DCE4 /* drugstore.png in Resources */,
 				A3DE2FBC1B6352280067AA4A /* Jingle Bell Filled-25.png in Resources */,
 				A3DE2FC01B6352280067AA4A /* mood2.jpg in Resources */,
 				A3DE2F5A1B6348D10067AA4A /* Main.storyboard in Resources */,
 				A3DE2FBF1B6352280067AA4A /* mood1.jpg in Resources */,
+				6DE70E8C1B6415380019DCE4 /* hospital-building.png in Resources */,
 				A3DE31321B63B3110067AA4A /* 18.png in Resources */,
 				A3DE31451B63BC3F0067AA4A /* splashscreen.png in Resources */,
 				A3DE31351B63B3110067AA4A /* 21.jpg in Resources */,
@@ -729,6 +744,7 @@
 				A3DE2FC91B6352280067AA4A /* NS.png in Resources */,
 				A3DE2FC61B6352280067AA4A /* mood8.jpg in Resources */,
 				A3DE2FAF1B6352280067AA4A /* bus.png in Resources */,
+				6DE70E8A1B6415280019DCE4 /* nursing_home_icon.png in Resources */,
 				A3DE2FAB1B6352280067AA4A /* ambulance-50.png in Resources */,
 				A3DE2FAC1B6352280067AA4A /* artic2.jpg in Resources */,
 				A3DE2FBD1B6352280067AA4A /* List Filled-25.png in Resources */,

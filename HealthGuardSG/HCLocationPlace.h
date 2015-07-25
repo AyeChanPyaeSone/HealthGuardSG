@@ -13,7 +13,7 @@
 @property long id;
 @property (strong,nonatomic) NSString *name;
 @property (strong,nonatomic) NSString *address;
-@property (strong,nonatomic) NSString *phone_number;
+@property (strong,nonatomic) NSString *phone;
 @property (strong,nonatomic) NSString *fax;
 @property (strong,nonatomic) NSString *postal_code;
 @property (strong,nonatomic) NSString  *lat;

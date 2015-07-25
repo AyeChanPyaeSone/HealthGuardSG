@@ -482,7 +482,13 @@ NSInteger selectedOne;
     [[MZFormSheetPresentationController appearance] setShouldApplyBackgroundBlurEffect:YES];
     
     AboutLocationViewController *detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"AboutLocationViewController"];
-    
+ 
+    for (HCLocationPlace *place in _places) {
+        
+        if (place.id == selectedOne) {
+               detailView.place = place;
+        }
+    }
     //    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:detailView];
     
     MZFormSheetPresentationController *formSheetController = [[MZFormSheetPresentationController alloc] initWithContentViewController:detailView];
@@ -493,9 +499,9 @@ NSInteger selectedOne;
     
     formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyleSlideFromBottom;
     
-    formSheetController.contentViewSize = CGSizeMake(self.view.frame.size.width, 450);
+    formSheetController.contentViewSize = CGSizeMake(self.view.frame.size.width, 300);
     
-    formSheetController.view.frame =CGRectMake(0,180, self.view.frame.size.width, 450);
+    formSheetController.view.frame =CGRectMake(0,300, self.view.frame.size.width, 300);
     
     [self presentViewController:formSheetController animated:YES completion:nil];
     
@@ -853,17 +859,29 @@ NSInteger selectedOne;
         marker.position = CLLocationCoordinate2DMake([hcPlace.lat doubleValue], [hcPlace.lng doubleValue]);
         
         marker.title = hcPlace.name;
-        
-        if (hcPlace.type_id == 1) {
-            
-            marker.icon = [UIImage imageNamed:@"Clinic-50"];
-            
-        }else{
-            
-            marker.icon = pinImage;
-            
+        switch (hcPlace.type_id) {
+            case 1:
+                marker.icon = [UIImage imageNamed:@"nursing_home_icon.png"];
+                break;
+            case 2:
+                marker.icon = [UIImage imageNamed:@"hospital-building.png"];
+                break;
+            case 3:
+                marker.icon = [UIImage imageNamed:@"nursing_home_icon.png"];
+                break;
+            case 4:
+                marker.icon = [UIImage imageNamed:@"medicine.png"];
+                break;
+            case 5:
+                marker.icon = [UIImage imageNamed:@"drugstore.png"];
+                break;
+
+                
+            default:
+                marker.icon = pinImage;
+                break;
         }
-        
+
         
         
         marker.tappable = YES;
