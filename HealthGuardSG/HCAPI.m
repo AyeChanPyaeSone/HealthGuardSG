@@ -108,7 +108,7 @@ static AFHTTPRequestOperationManager* requestManager;
     
     AFHTTPRequestOperationManager* manager = [HCAPI sharedRequestManager];
     NSDictionary *parameters = @{@"email": email , @"name":name};
-    [manager GET:HCregister parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager POST:HCregister parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ((success)) {
             NSLog(@"RESONE %@",responseObject);
             success(responseObject);

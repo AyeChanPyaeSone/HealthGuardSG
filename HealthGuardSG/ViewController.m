@@ -69,7 +69,9 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     
     // Configure the cell
     cell.homeMenuTitle.text = self.menuArray[indexPath.row];
-    cell.homeMenubackgroundImage.image = [UIImage imageNamed: self.backgroundPhotoNameArray[indexPath.row]];
+    //cell.homeMenubackgroundImage.image = [UIImage imageNamed: self.backgroundPhotoNameArray[indexPath.row]];
+    
+    cell.homeMenubackgroundImage.image = [UIImage imageNamed:@"hospital.jpg"];
     cell.homeMenuImageView.image = [UIImage imageNamed: self.photoNameArray[indexPath.row]];
     cell.homeMenuImageView.image = [cell.homeMenuImageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [cell.homeMenuImageView setTintColor:[UIColor whiteColor]];

@@ -126,8 +126,12 @@
 		A3DE31501B63DFE00067AA4A /* HCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */; };
 		A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31531B63E09A0067AA4A /* HCArticleCell.m */; };
 		A3DE31601B63E95C0067AA4A /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE315F1B63E95C0067AA4A /* Article.m */; };
-		A3DE31641B63EEDD0067AA4A /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31631B63EEDD0067AA4A /* ArticleViewController.m */; };
 		A3DE31661B63F0570067AA4A /* Routeshow-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31651B63F0570067AA4A /* Routeshow-50.png */; };
+		A3DE31781B6400860067AA4A /* eatwell.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31731B6400860067AA4A /* eatwell.png */; };
+		A3DE31791B6400860067AA4A /* gettingfats.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31741B6400860067AA4A /* gettingfats.png */; };
+		A3DE317A1B6400860067AA4A /* impactHaze.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31751B6400860067AA4A /* impactHaze.png */; };
+		A3DE317B1B6400860067AA4A /* reduce.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31761B6400860067AA4A /* reduce.png */; };
+		A3DE317C1B6400860067AA4A /* understanding.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31771B6400860067AA4A /* understanding.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,8 +295,12 @@
 		A3DE315F1B63E95C0067AA4A /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		A3DE31611B63E9670067AA4A /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		A3DE31621B63EECB0067AA4A /* ArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
-		A3DE31631B63EEDD0067AA4A /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 		A3DE31651B63F0570067AA4A /* Routeshow-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Routeshow-50.png"; sourceTree = "<group>"; };
+		A3DE31731B6400860067AA4A /* eatwell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eatwell.png; sourceTree = "<group>"; };
+		A3DE31741B6400860067AA4A /* gettingfats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gettingfats.png; sourceTree = "<group>"; };
+		A3DE31751B6400860067AA4A /* impactHaze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = impactHaze.png; sourceTree = "<group>"; };
+		A3DE31761B6400860067AA4A /* reduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reduce.png; sourceTree = "<group>"; };
+		A3DE31771B6400860067AA4A /* understanding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = understanding.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -404,7 +412,6 @@
 				A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */,
 				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
 				A3DE31621B63EECB0067AA4A /* ArticleDetailViewController.h */,
-				A3DE31631B63EEDD0067AA4A /* ArticleViewController.m */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -458,6 +465,11 @@
 		A3DE2F7C1B6351B70067AA4A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A3DE31731B6400860067AA4A /* eatwell.png */,
+				A3DE31741B6400860067AA4A /* gettingfats.png */,
+				A3DE31751B6400860067AA4A /* impactHaze.png */,
+				A3DE31761B6400860067AA4A /* reduce.png */,
+				A3DE31771B6400860067AA4A /* understanding.png */,
 				A3DE31651B63F0570067AA4A /* Routeshow-50.png */,
 				A3DE31461B63BC680067AA4A /* splashscreen2.png */,
 				A3DE31441B63BC3F0067AA4A /* splashscreen.png */,
@@ -659,7 +671,9 @@
 				A3DE312C1B63B3110067AA4A /* 12.png in Resources */,
 				A3DE2FD01B6352280067AA4A /* stethoscope-50.png in Resources */,
 				A3DE2FC81B6352280067AA4A /* New Filled-50.png in Resources */,
+				A3DE317C1B6400860067AA4A /* understanding.png in Resources */,
 				A3DE2FC71B6352280067AA4A /* NE.png in Resources */,
+				A3DE317A1B6400860067AA4A /* impactHaze.png in Resources */,
 				A3DE31231B63B3110067AA4A /* 3.png in Resources */,
 				A3DE2FCA1B6352280067AA4A /* PE.png in Resources */,
 				A3DE2FBC1B6352280067AA4A /* Jingle Bell Filled-25.png in Resources */,
@@ -685,7 +699,9 @@
 				A3DE31251B63B3110067AA4A /* 5.png in Resources */,
 				A3DE31241B63B3110067AA4A /* 4.png in Resources */,
 				A3DE312E1B63B3110067AA4A /* 14.png in Resources */,
+				A3DE31791B6400860067AA4A /* gettingfats.png in Resources */,
 				A3DE2FD21B6352280067AA4A /* SW.png in Resources */,
+				A3DE317B1B6400860067AA4A /* reduce.png in Resources */,
 				A3DE2FB31B6352280067AA4A /* checked_user_filled-50.png in Resources */,
 				A3DE31331B63B3110067AA4A /* 19.png in Resources */,
 				A3DE31341B63B3110067AA4A /* 20.png in Resources */,
@@ -705,6 +721,7 @@
 				A3DE31391B63B3110067AA4A /* 25.png in Resources */,
 				A3DE2FD41B6352280067AA4A /* walk.png in Resources */,
 				A3DE31261B63B3110067AA4A /* 6.png in Resources */,
+				A3DE31781B6400860067AA4A /* eatwell.png in Resources */,
 				A3DE2FAE1B6352280067AA4A /* BP.png in Resources */,
 				A3DE312D1B63B3110067AA4A /* 13.png in Resources */,
 				A3DE31071B63B2AE0067AA4A /* 1.png in Resources */,
@@ -804,7 +821,6 @@
 				A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */,
 				A3DE31601B63E95C0067AA4A /* Article.m in Sources */,
 				A3DE30411B6375200067AA4A /* HCLocationPlace.m in Sources */,
-				A3DE31641B63EEDD0067AA4A /* ArticleViewController.m in Sources */,
 				A3DE30511B63857C0067AA4A /* HealthCareBusDetailCell.m in Sources */,
 				A3DE2F751B634B6F0067AA4A /* HomeMenuCell.m in Sources */,
 				A3DE30341B6372780067AA4A /* HealthCareStepVehicle.m in Sources */,

@@ -15,9 +15,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-EO-y2I">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
                     </imageView>
-                    <view alpha="0.50000001192092902" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9J5-OL-op2">
+                    <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9J5-OL-op2">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
-                        <color key="backgroundColor" red="0.53333333333333333" green="0.76862745098039209" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-4W-KD1">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
