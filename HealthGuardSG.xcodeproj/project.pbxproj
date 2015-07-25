@@ -132,6 +132,7 @@
 		A3DE317A1B6400860067AA4A /* impactHaze.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31751B6400860067AA4A /* impactHaze.png */; };
 		A3DE317B1B6400860067AA4A /* reduce.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31761B6400860067AA4A /* reduce.png */; };
 		A3DE317C1B6400860067AA4A /* understanding.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31771B6400860067AA4A /* understanding.png */; };
+		A3DE31801B640A550067AA4A /* HCAArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,13 +295,14 @@
 		A3DE31531B63E09A0067AA4A /* HCArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCArticleCell.m; sourceTree = "<group>"; };
 		A3DE315F1B63E95C0067AA4A /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		A3DE31611B63E9670067AA4A /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
-		A3DE31621B63EECB0067AA4A /* ArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
 		A3DE31651B63F0570067AA4A /* Routeshow-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Routeshow-50.png"; sourceTree = "<group>"; };
 		A3DE31731B6400860067AA4A /* eatwell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eatwell.png; sourceTree = "<group>"; };
 		A3DE31741B6400860067AA4A /* gettingfats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gettingfats.png; sourceTree = "<group>"; };
 		A3DE31751B6400860067AA4A /* impactHaze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = impactHaze.png; sourceTree = "<group>"; };
 		A3DE31761B6400860067AA4A /* reduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reduce.png; sourceTree = "<group>"; };
 		A3DE31771B6400860067AA4A /* understanding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = understanding.png; sourceTree = "<group>"; };
+		A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAArticleDetailViewController.m; sourceTree = "<group>"; };
+		A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAArticleDetailViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,7 +413,8 @@
 				A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */,
 				A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */,
 				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
-				A3DE31621B63EECB0067AA4A /* ArticleDetailViewController.h */,
+				A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */,
+				A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -801,6 +804,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DE31801B640A550067AA4A /* HCAArticleDetailViewController.m in Sources */,
 				A3DE304D1B6385070067AA4A /* HealthCareWalkDetailCell.m in Sources */,
 				A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */,
 				A3DE2FDA1B6354F40067AA4A /* EmergencyTableCell.m in Sources */,
