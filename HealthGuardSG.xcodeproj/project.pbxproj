@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3DE2F4E1B6348D10067AA4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F4D1B6348D10067AA4A /* main.m */; };
+		A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F501B6348D10067AA4A /* AppDelegate.m */; };
+		A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F521B6348D10067AA4A /* HealthGuardSG.xcdatamodeld */; };
+		A3DE2F571B6348D10067AA4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F561B6348D10067AA4A /* ViewController.m */; };
+		A3DE2F5A1B6348D10067AA4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DE2F581B6348D10067AA4A /* Main.storyboard */; };
+		A3DE2F5C1B6348D10067AA4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DE2F5B1B6348D10067AA4A /* Images.xcassets */; };
+		A3DE2F5F1B6348D10067AA4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DE2F5D1B6348D10067AA4A /* LaunchScreen.xib */; };
+		A3DE2F6B1B6348D10067AA4A /* HealthGuardSGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F6A1B6348D10067AA4A /* HealthGuardSGTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3DE2F651B6348D10067AA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3DE2F401B6348D00067AA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3DE2F471B6348D10067AA4A;
+			remoteInfo = HealthGuardSG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3DE2F481B6348D10067AA4A /* HealthGuardSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthGuardSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DE2F4C1B6348D10067AA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DE2F4D1B6348D10067AA4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3DE2F4F1B6348D10067AA4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3DE2F501B6348D10067AA4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3DE2F531B6348D10067AA4A /* HealthGuardSG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthGuardSG.xcdatamodel; sourceTree = "<group>"; };
+		A3DE2F551B6348D10067AA4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3DE2F561B6348D10067AA4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3DE2F591B6348D10067AA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3DE2F5B1B6348D10067AA4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3DE2F5E1B6348D10067AA4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A3DE2F641B6348D10067AA4A /* HealthGuardSGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthGuardSGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DE2F691B6348D10067AA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DE2F6A1B6348D10067AA4A /* HealthGuardSGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthGuardSGTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3DE2F451B6348D10067AA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3DE2F611B6348D10067AA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3DE2F3F1B6348D00067AA4A = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F4A1B6348D10067AA4A /* HealthGuardSG */,
+				A3DE2F671B6348D10067AA4A /* HealthGuardSGTests */,
+				A3DE2F491B6348D10067AA4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3DE2F491B6348D10067AA4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F481B6348D10067AA4A /* HealthGuardSG.app */,
+				A3DE2F641B6348D10067AA4A /* HealthGuardSGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3DE2F4A1B6348D10067AA4A /* HealthGuardSG */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F4F1B6348D10067AA4A /* AppDelegate.h */,
+				A3DE2F501B6348D10067AA4A /* AppDelegate.m */,
+				A3DE2F551B6348D10067AA4A /* ViewController.h */,
+				A3DE2F561B6348D10067AA4A /* ViewController.m */,
+				A3DE2F581B6348D10067AA4A /* Main.storyboard */,
+				A3DE2F5B1B6348D10067AA4A /* Images.xcassets */,
+				A3DE2F5D1B6348D10067AA4A /* LaunchScreen.xib */,
+				A3DE2F521B6348D10067AA4A /* HealthGuardSG.xcdatamodeld */,
+				A3DE2F4B1B6348D10067AA4A /* Supporting Files */,
+			);
+			path = HealthGuardSG;
+			sourceTree = "<group>";
+		};
+		A3DE2F4B1B6348D10067AA4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F4C1B6348D10067AA4A /* Info.plist */,
+				A3DE2F4D1B6348D10067AA4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3DE2F671B6348D10067AA4A /* HealthGuardSGTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F6A1B6348D10067AA4A /* HealthGuardSGTests.m */,
+				A3DE2F681B6348D10067AA4A /* Supporting Files */,
+			);
+			path = HealthGuardSGTests;
+			sourceTree = "<group>";
+		};
+		A3DE2F681B6348D10067AA4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3DE2F691B6348D10067AA4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3DE2F471B6348D10067AA4A /* HealthGuardSG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3DE2F6E1B6348D10067AA4A /* Build configuration list for PBXNativeTarget "HealthGuardSG" */;
+			buildPhases = (
+				A3DE2F441B6348D10067AA4A /* Sources */,
+				A3DE2F451B6348D10067AA4A /* Frameworks */,
+				A3DE2F461B6348D10067AA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthGuardSG;
+			productName = HealthGuardSG;
+			productReference = A3DE2F481B6348D10067AA4A /* HealthGuardSG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3DE2F631B6348D10067AA4A /* HealthGuardSGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3DE2F711B6348D10067AA4A /* Build configuration list for PBXNativeTarget "HealthGuardSGTests" */;
+			buildPhases = (
+				A3DE2F601B6348D10067AA4A /* Sources */,
+				A3DE2F611B6348D10067AA4A /* Frameworks */,
+				A3DE2F621B6348D10067AA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3DE2F661B6348D10067AA4A /* PBXTargetDependency */,
+			);
+			name = HealthGuardSGTests;
+			productName = HealthGuardSGTests;
+			productReference = A3DE2F641B6348D10067AA4A /* HealthGuardSGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3DE2F401B6348D00067AA4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Tware;
+				TargetAttributes = {
+					A3DE2F471B6348D10067AA4A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A3DE2F631B6348D10067AA4A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A3DE2F471B6348D10067AA4A;
+					};
+				};
+			};
+			buildConfigurationList = A3DE2F431B6348D00067AA4A /* Build configuration list for PBXProject "HealthGuardSG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3DE2F3F1B6348D00067AA4A;
+			productRefGroup = A3DE2F491B6348D10067AA4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3DE2F471B6348D10067AA4A /* HealthGuardSG */,
+				A3DE2F631B6348D10067AA4A /* HealthGuardSGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3DE2F461B6348D10067AA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DE2F5A1B6348D10067AA4A /* Main.storyboard in Resources */,
+				A3DE2F5F1B6348D10067AA4A /* LaunchScreen.xib in Resources */,
+				A3DE2F5C1B6348D10067AA4A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3DE2F621B6348D10067AA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3DE2F441B6348D10067AA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */,
+				A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */,
+				A3DE2F571B6348D10067AA4A /* ViewController.m in Sources */,
+				A3DE2F4E1B6348D10067AA4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3DE2F601B6348D10067AA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DE2F6B1B6348D10067AA4A /* HealthGuardSGTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3DE2F661B6348D10067AA4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3DE2F471B6348D10067AA4A /* HealthGuardSG */;
+			targetProxy = A3DE2F651B6348D10067AA4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3DE2F581B6348D10067AA4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3DE2F591B6348D10067AA4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3DE2F5D1B6348D10067AA4A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3DE2F5E1B6348D10067AA4A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3DE2F6C1B6348D10067AA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3DE2F6D1B6348D10067AA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3DE2F6F1B6348D10067AA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthGuardSG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3DE2F701B6348D10067AA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthGuardSG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3DE2F721B6348D10067AA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HealthGuardSGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthGuardSG.app/HealthGuardSG";
+			};
+			name = Debug;
+		};
+		A3DE2F731B6348D10067AA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HealthGuardSGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthGuardSG.app/HealthGuardSG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3DE2F431B6348D00067AA4A /* Build configuration list for PBXProject "HealthGuardSG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3DE2F6C1B6348D10067AA4A /* Debug */,
+				A3DE2F6D1B6348D10067AA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3DE2F6E1B6348D10067AA4A /* Build configuration list for PBXNativeTarget "HealthGuardSG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3DE2F6F1B6348D10067AA4A /* Debug */,
+				A3DE2F701B6348D10067AA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3DE2F711B6348D10067AA4A /* Build configuration list for PBXNativeTarget "HealthGuardSGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3DE2F721B6348D10067AA4A /* Debug */,
+				A3DE2F731B6348D10067AA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3DE2F521B6348D10067AA4A /* HealthGuardSG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3DE2F531B6348D10067AA4A /* HealthGuardSG.xcdatamodel */,
+			);
+			currentVersion = A3DE2F531B6348D10067AA4A /* HealthGuardSG.xcdatamodel */;
+			path = HealthGuardSG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3DE2F401B6348D00067AA4A /* Project object */;
+}
