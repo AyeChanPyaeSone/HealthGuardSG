@@ -12,7 +12,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-EO-y2I">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menucell1.png" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-EO-y2I">
                         <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
                     </imageView>
                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9J5-OL-op2">
@@ -86,4 +86,7 @@
             <point key="canvasLocation" x="184.5" y="298.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="menucell1.png" width="800" height="533"/>
+    </resources>
 </document>
