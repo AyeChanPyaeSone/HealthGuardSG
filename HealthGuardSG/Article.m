@@ -6,4 +6,7 @@
 //  Copyright (c) 2015 Tware. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Article.h"
+@implementation Article
+
+@end

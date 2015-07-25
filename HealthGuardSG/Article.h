@@ -10,11 +10,11 @@
 
 @interface Article : NSObject
 
-@property (weak, nonatomic) IBOutlet UILabel *authorName;
-@property (weak, nonatomic) IBOutlet UILabel *postedDate;
-@property (weak, nonatomic) IBOutlet UILabel *articleTitle;
-@property (weak, nonatomic) IBOutlet UIImageView *articleImage;
-@property (weak, nonatomic) IBOutlet UITextView *articleShortDescription;
+@property (weak, nonatomic) IBOutlet NSString *authorName;
+@property (weak, nonatomic) IBOutlet NSString *postedDate;
+@property (weak, nonatomic) IBOutlet NSString *articleTitle;
+@property (weak, nonatomic) IBOutlet NSString *articleImage;
+@property (weak, nonatomic) IBOutlet NSString *articleShortDescription;
 
 @end
 
