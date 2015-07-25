@@ -10,7 +10,8 @@
 #import "HealthCareEmergencyViewController.h"
 #import "HealthCareMapViewController.h"
 #import "HCArticleViewController.h"
-
+#import "EventsViewController.h"
+#import "PromotionViewController.h"
 @interface ViewController ()
 
 @property (nonatomic) NSArray *menuArray;
@@ -112,6 +113,16 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         HealthCareMapViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HealthCareMapViewController"];
         [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
+    }
+    else if(indexPath.row == 4){
+        UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        EventsViewController *eventVC = [mainSb instantiateViewControllerWithIdentifier:@"EventsViewController"];
+        [self.navigationController pushViewController:eventVC animated:YES];
+    }
+    else if(indexPath.row == 3){
+        UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        PromotionViewController *eventVC = [mainSb instantiateViewControllerWithIdentifier:@"PromotionViewController"];
+        [self.navigationController pushViewController:eventVC animated:YES];
     }
     else if(indexPath.row ==5){
         

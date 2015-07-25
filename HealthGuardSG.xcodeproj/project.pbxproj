@@ -12,6 +12,11 @@
 		6DE70E8C1B6415380019DCE4 /* hospital-building.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8B1B6415380019DCE4 /* hospital-building.png */; };
 		6DE70E8E1B64154A0019DCE4 /* drugstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8D1B64154A0019DCE4 /* drugstore.png */; };
 		6DE70E901B64163F0019DCE4 /* medicine.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E8F1B64163F0019DCE4 /* medicine.png */; };
+		6DE70E951B641EF50019DCE4 /* laboratory.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE70E941B641EF50019DCE4 /* laboratory.png */; };
+		6DE70E981B641F370019DCE4 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE70E971B641F370019DCE4 /* EventsViewController.m */; };
+		6DE70E9B1B64282D0019DCE4 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE70E9A1B64282D0019DCE4 /* EventTableViewCell.m */; };
+		6DE70E9E1B642AFE0019DCE4 /* PromotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE70E9D1B642AFE0019DCE4 /* PromotionViewController.m */; };
+		6DE70EA11B642BA20019DCE4 /* PromoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE70EA01B642BA20019DCE4 /* PromoTableViewCell.m */; };
 		A3DE2F4E1B6348D10067AA4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F4D1B6348D10067AA4A /* main.m */; };
 		A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F501B6348D10067AA4A /* AppDelegate.m */; };
 		A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3DE2F521B6348D10067AA4A /* HealthGuardSG.xcdatamodeld */; };
@@ -156,6 +161,15 @@
 		6DE70E8B1B6415380019DCE4 /* hospital-building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hospital-building.png"; sourceTree = "<group>"; };
 		6DE70E8D1B64154A0019DCE4 /* drugstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drugstore.png; sourceTree = "<group>"; };
 		6DE70E8F1B64163F0019DCE4 /* medicine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine.png; sourceTree = "<group>"; };
+		6DE70E941B641EF50019DCE4 /* laboratory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laboratory.png; sourceTree = "<group>"; };
+		6DE70E961B641F370019DCE4 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		6DE70E971B641F370019DCE4 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		6DE70E991B64282D0019DCE4 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		6DE70E9A1B64282D0019DCE4 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		6DE70E9C1B642AFE0019DCE4 /* PromotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionViewController.h; sourceTree = "<group>"; };
+		6DE70E9D1B642AFE0019DCE4 /* PromotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionViewController.m; sourceTree = "<group>"; };
+		6DE70E9F1B642BA20019DCE4 /* PromoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromoTableViewCell.h; sourceTree = "<group>"; };
+		6DE70EA01B642BA20019DCE4 /* PromoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromoTableViewCell.m; sourceTree = "<group>"; };
 		79586198F996B98915FB0950 /* libPods-HealthGuardSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DE2F481B6348D10067AA4A /* HealthGuardSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthGuardSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DE2F4C1B6348D10067AA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -423,6 +437,10 @@
 				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
 				A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */,
 				A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */,
+				6DE70E961B641F370019DCE4 /* EventsViewController.h */,
+				6DE70E971B641F370019DCE4 /* EventsViewController.m */,
+				6DE70E9C1B642AFE0019DCE4 /* PromotionViewController.h */,
+				6DE70E9D1B642AFE0019DCE4 /* PromotionViewController.m */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -469,6 +487,10 @@
 				A3DE30541B6385B10067AA4A /* HealthCareMRTDetailCell.h */,
 				A3DE31521B63E08E0067AA4A /* HCArticleCell.h */,
 				A3DE31531B63E09A0067AA4A /* HCArticleCell.m */,
+				6DE70E991B64282D0019DCE4 /* EventTableViewCell.h */,
+				6DE70E9A1B64282D0019DCE4 /* EventTableViewCell.m */,
+				6DE70E9F1B642BA20019DCE4 /* PromoTableViewCell.h */,
+				6DE70EA01B642BA20019DCE4 /* PromoTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -476,6 +498,7 @@
 		A3DE2F7C1B6351B70067AA4A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6DE70E941B641EF50019DCE4 /* laboratory.png */,
 				6DE70E8F1B64163F0019DCE4 /* medicine.png */,
 				6DE70E891B6415280019DCE4 /* nursing_home_icon.png */,
 				6DE70E8D1B64154A0019DCE4 /* drugstore.png */,
@@ -718,6 +741,7 @@
 				A3DE31241B63B3110067AA4A /* 4.png in Resources */,
 				A3DE312E1B63B3110067AA4A /* 14.png in Resources */,
 				A3DE31791B6400860067AA4A /* gettingfats.png in Resources */,
+				6DE70E951B641EF50019DCE4 /* laboratory.png in Resources */,
 				A3DE2FD21B6352280067AA4A /* SW.png in Resources */,
 				A3DE317B1B6400860067AA4A /* reduce.png in Resources */,
 				A3DE2FB31B6352280067AA4A /* checked_user_filled-50.png in Resources */,
@@ -825,9 +849,12 @@
 				A3DE2F511B6348D10067AA4A /* AppDelegate.m in Sources */,
 				A3DE2FDA1B6354F40067AA4A /* EmergencyTableCell.m in Sources */,
 				A3DE30491B6378480067AA4A /* HCAPI.m in Sources */,
+				6DE70E9B1B64282D0019DCE4 /* EventTableViewCell.m in Sources */,
+				6DE70E9E1B642AFE0019DCE4 /* PromotionViewController.m in Sources */,
 				A3DE302D1B6371470067AA4A /* HealthCareSteps.m in Sources */,
 				A3DE2FD61B6354AF0067AA4A /* HealthCareEmergencyViewController.m in Sources */,
 				A3DE30371B6372E80067AA4A /* HealthCareStepLine.m in Sources */,
+				6DE70EA11B642BA20019DCE4 /* PromoTableViewCell.m in Sources */,
 				A3DE30321B6372400067AA4A /* HealthCareTDetail.m in Sources */,
 				A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */,
 				A3DE2F571B6348D10067AA4A /* ViewController.m in Sources */,
@@ -837,6 +864,7 @@
 				A3DE30591B63895F0067AA4A /* RouteDetailTableViewController.m in Sources */,
 				A3DE30571B6388050067AA4A /* AboutLocationViewController.m in Sources */,
 				A3DE30431B63755A0067AA4A /* GetRouteController.m in Sources */,
+				6DE70E981B641F370019DCE4 /* EventsViewController.m in Sources */,
 				A3DE303B1B6373900067AA4A /* HealthCareDSteps.m in Sources */,
 				A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */,
 				A3DE31601B63E95C0067AA4A /* Article.m in Sources */,

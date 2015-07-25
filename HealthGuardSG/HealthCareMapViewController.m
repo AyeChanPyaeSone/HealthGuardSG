@@ -867,7 +867,7 @@ NSInteger selectedOne;
                 marker.icon = [UIImage imageNamed:@"hospital-building.png"];
                 break;
             case 3:
-                marker.icon = [UIImage imageNamed:@"nursing_home_icon.png"];
+                marker.icon = [UIImage imageNamed:@"laboratory.png"];
                 break;
             case 4:
                 marker.icon = [UIImage imageNamed:@"medicine.png"];
