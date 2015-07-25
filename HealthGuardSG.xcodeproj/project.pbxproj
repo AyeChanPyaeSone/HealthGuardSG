@@ -137,6 +137,7 @@
 		A3DE317B1B6400860067AA4A /* reduce.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31761B6400860067AA4A /* reduce.png */; };
 		A3DE317C1B6400860067AA4A /* understanding.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31771B6400860067AA4A /* understanding.png */; };
 		A3DE31801B640A550067AA4A /* HCAArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */; };
+		A3DE31831B64232C0067AA4A /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31821B64232C0067AA4A /* FilterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +312,8 @@
 		A3DE31771B6400860067AA4A /* understanding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = understanding.png; sourceTree = "<group>"; };
 		A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAArticleDetailViewController.m; sourceTree = "<group>"; };
 		A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAArticleDetailViewController.h; sourceTree = "<group>"; };
+		A3DE31821B64232C0067AA4A /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		A3DE31841B6423380067AA4A /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +426,8 @@
 				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
 				A3DE317F1B640A550067AA4A /* HCAArticleDetailViewController.m */,
 				A3DE31811B640A620067AA4A /* HCAArticleDetailViewController.h */,
+				A3DE31821B64232C0067AA4A /* FilterViewController.m */,
+				A3DE31841B6423380067AA4A /* FilterViewController.h */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -838,6 +843,7 @@
 				A3DE30571B6388050067AA4A /* AboutLocationViewController.m in Sources */,
 				A3DE30431B63755A0067AA4A /* GetRouteController.m in Sources */,
 				A3DE303B1B6373900067AA4A /* HealthCareDSteps.m in Sources */,
+				A3DE31831B64232C0067AA4A /* FilterViewController.m in Sources */,
 				A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */,
 				A3DE31601B63E95C0067AA4A /* Article.m in Sources */,
 				A3DE30411B6375200067AA4A /* HCLocationPlace.m in Sources */,
