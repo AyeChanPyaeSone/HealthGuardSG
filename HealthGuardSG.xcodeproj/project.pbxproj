@@ -123,6 +123,7 @@
 		A3DE31451B63BC3F0067AA4A /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31441B63BC3F0067AA4A /* splashscreen.png */; };
 		A3DE31471B63BC680067AA4A /* splashscreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31461B63BC680067AA4A /* splashscreen2.png */; };
 		A3DE314E1B63C85A0067AA4A /* HCLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */; };
+		A3DE31501B63DFE00067AA4A /* HCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +280,8 @@
 		A3DE31461B63BC680067AA4A /* splashscreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen2.png; sourceTree = "<group>"; };
 		A3DE314C1B63C4570067AA4A /* HCLogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCLogInViewController.h; sourceTree = "<group>"; };
 		A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLogInViewController.m; sourceTree = "<group>"; };
+		A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCArticleViewController.m; sourceTree = "<group>"; };
+		A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCArticleViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +390,8 @@
 				A3DE305A1B63896B0067AA4A /* RouteDetailTableViewController.h */,
 				A3DE314C1B63C4570067AA4A /* HCLogInViewController.h */,
 				A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */,
+				A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */,
+				A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -770,6 +775,7 @@
 				A3DE30321B6372400067AA4A /* HealthCareTDetail.m in Sources */,
 				A3DE2F541B6348D10067AA4A /* HealthGuardSG.xcdatamodeld in Sources */,
 				A3DE2F571B6348D10067AA4A /* ViewController.m in Sources */,
+				A3DE31501B63DFE00067AA4A /* HCArticleViewController.m in Sources */,
 				A3DE2F4E1B6348D10067AA4A /* main.m in Sources */,
 				A3DE30141B636FB40067AA4A /* HealthCareMapViewController.m in Sources */,
 				A3DE30591B63895F0067AA4A /* RouteDetailTableViewController.m in Sources */,

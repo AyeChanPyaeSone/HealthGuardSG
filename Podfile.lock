@@ -29,6 +29,7 @@ PODS:
   - HMSegmentedControl (1.5.2)
   - INTULocationManager (3.0.3)
   - JGMethodSwizzler (2.0.1)
+  - Lockbox (2.1.0)
   - MGSwipeTabBarController (2.0)
   - MZAppearance (1.1.5)
   - MZFormSheetPresentationController (1.1.2):
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - GoogleMaps
   - HMSegmentedControl
   - INTULocationManager
+  - Lockbox
   - MGSwipeTabBarController
   - MZFormSheetPresentationController
   - Onboard
@@ -63,6 +65,7 @@ SPEC CHECKSUMS:
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
   INTULocationManager: e79327803a163f5fec28eb042bb124ed0c6e4876
   JGMethodSwizzler: e0ea5c1c6c55304ec4ef3f54e441400c6735c899
+  Lockbox: 16442da35d9d4286966936763be728a931d589c3
   MGSwipeTabBarController: 09874b2b2cba48eac4785ea74071b4013cc6db4e
   MZAppearance: 6e9dc64e42074c0a19812a327f590746c3283bab
   MZFormSheetPresentationController: 2e848d89c0741aef554d0ae6b138be5dc25a479f

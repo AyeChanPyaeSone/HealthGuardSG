@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A6789714482F3694E4D58A5"
+               BlueprintIdentifier = "C985C542550989C008420427"
                BuildableName = "libPods-HealthGuardSG-GGTabBar.a"
                BlueprintName = "Pods-HealthGuardSG-GGTabBar"
                ReferencedContainer = "container:Pods.xcodeproj">

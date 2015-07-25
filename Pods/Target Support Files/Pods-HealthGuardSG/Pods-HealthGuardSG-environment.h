@@ -96,6 +96,12 @@
 #define COCOAPODS_VERSION_MINOR_JGMethodSwizzler 0
 #define COCOAPODS_VERSION_PATCH_JGMethodSwizzler 1
 
+// Lockbox
+#define COCOAPODS_POD_AVAILABLE_Lockbox
+#define COCOAPODS_VERSION_MAJOR_Lockbox 2
+#define COCOAPODS_VERSION_MINOR_Lockbox 1
+#define COCOAPODS_VERSION_PATCH_Lockbox 0
+
 // MGSwipeTabBarController
 #define COCOAPODS_POD_AVAILABLE_MGSwipeTabBarController
 #define COCOAPODS_VERSION_MAJOR_MGSwipeTabBarController 2

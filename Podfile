@@ -14,4 +14,5 @@ pod 'ChameleonFramework'
 pod 'MZFormSheetPresentationController'
 pod 'HMSegmentedControl'
 pod 'Onboard'
+pod 'Lockbox'
 end

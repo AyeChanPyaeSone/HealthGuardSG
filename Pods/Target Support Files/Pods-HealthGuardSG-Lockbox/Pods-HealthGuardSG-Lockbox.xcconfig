@@ -1,0 +1,1 @@
+PODS_HEALTHGUARDSG_LOCKBOX_OTHER_LDFLAGS = -framework "Security"

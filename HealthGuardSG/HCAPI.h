@@ -10,6 +10,9 @@
 #import <AFNetworking.h>
 #import "HCLocationPlaceParams.h"
 
+
+#define HCIEmail @"HCIEmail"
+
 typedef void (^SuccessBlock)(id obj);
 typedef void (^FailBlock)(NSError *error);
 typedef void (^ProgressBlock)(NSUInteger bytesRead, NSInteger totalBytesRead, NSInteger totalBytesExpectedToRead);
@@ -18,6 +21,7 @@ typedef void (^ProgressBlock)(NSUInteger bytesRead, NSInteger totalBytesRead, NS
 
 +(void)getNearestHClocation:(HCLocationPlaceParams*)HClocationParams success:(SuccessBlock)success fail:(FailBlock)fail;
 +(void)getNearestAllHClocation:(SuccessBlock)success fail:(FailBlock)fail;
++(void)Userregister:(NSString*)email name:(NSString*)name success:(SuccessBlock)success fail:(FailBlock)fail;
 
 @end
 

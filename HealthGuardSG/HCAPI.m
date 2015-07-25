@@ -12,12 +12,14 @@
 #import "HCLocationPlace.h"
 #import "HCLocationPlaceParams.h"
 #import "RMMapper.h"
+#import "LockBox.h"
 
 @implementation HCAPI
 
 #pragma mark - Mrt Lines
 static NSString* const HCLocationbyRadius = @"health_care_places/near_by";
 static NSString* const HClocationPlacesALL = @"health_care_places";
+static NSString* const HCregister = @"auth/register";
 #pragma mark - Other URLs
 static NSString* const eHClocalUrl = @"http://localhost:3000";
 static NSString* const eHCProductionUrl = @"http://localhost:3000/api/v1";
@@ -46,8 +48,17 @@ static AFHTTPRequestOperationManager* requestManager;
         }
         [requestManager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
         requestManager.securityPolicy.allowInvalidCertificates = NO;
-        
     }
+    
+    // Refresh requestManager everytime it is accessed
+    NSString* email = [Lockbox stringForKey:HCIEmail];
+    if (email) {
+        [requestManager.requestSerializer setValue:email forHTTPHeaderField:@"email"];
+    } else {
+        [requestManager.requestSerializer setValue:nil forHTTPHeaderField:@"email"];
+    }
+    
+    NSLog(@"Access Token: %@", email);
 
     return requestManager;
 }
@@ -90,6 +101,37 @@ static AFHTTPRequestOperationManager* requestManager;
             NSLog(@"err %@",error);
         }
     }];
+}
+
++(void)Userregister:(NSString*)email name:(NSString*)name success:(SuccessBlock)success fail:(FailBlock)fail;
+{
+    
+    AFHTTPRequestOperationManager* manager = [HCAPI sharedRequestManager];
+    NSDictionary *parameters = @{@"email": email , @"name":name};
+    [manager GET:HCregister parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ((success)) {
+            NSLog(@"RESONE %@",responseObject);
+            success(responseObject);
+            [HCAPI saveEmail:email];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (fail) {
+            
+            NSLog(@"err %@",error);
+        }
+    }];
+    
+}
+
+
++(void)saveEmail:(NSString *)email{
+    
+    if (email) {
+        [Lockbox setString:email forKey:HCIEmail];
+    }
+    else{
+          [Lockbox setString:nil forKey:HCIEmail];
+    }
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "HCLogInViewController.h"
 #import "ViewController.h"
+#import "HCAPI.h"
 
 @interface HCLogInViewController ()
 
@@ -31,11 +32,16 @@
 
 
 - (IBAction)pressedLogin:(id)sender {
-    
-    UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
-    [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
-    
+
+    [HCAPI Userregister:self.email.text name:self.name.text success:^(id obj) {
+        NSLog(@"Success %@",obj);
+        UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
+        [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
+    } fail:^(NSError *error) {
+        NSLog(@"Error %@",error);
+    }];
+
 }
 @end
 
