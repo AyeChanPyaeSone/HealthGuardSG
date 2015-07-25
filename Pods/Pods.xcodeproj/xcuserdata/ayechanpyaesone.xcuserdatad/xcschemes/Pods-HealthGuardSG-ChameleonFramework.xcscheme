@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9EC2F42CC6A84EA32EAB41FF"
+               BlueprintIdentifier = "E3DF45E6D6E8A767E71269F1"
                BuildableName = "libPods-HealthGuardSG-ChameleonFramework.a"
                BlueprintName = "Pods-HealthGuardSG-ChameleonFramework"
                ReferencedContainer = "container:Pods.xcodeproj">

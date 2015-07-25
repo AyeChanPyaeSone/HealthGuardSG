@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A53A83B75BC21F82502AB9CB"
+               BlueprintIdentifier = "1C182BA4F7A4F8A746D09A2E"
                BuildableName = "libPods-HealthGuardSG-MZFormSheetPresentationController.a"
                BlueprintName = "Pods-HealthGuardSG-MZFormSheetPresentationController"
                ReferencedContainer = "container:Pods.xcodeproj">

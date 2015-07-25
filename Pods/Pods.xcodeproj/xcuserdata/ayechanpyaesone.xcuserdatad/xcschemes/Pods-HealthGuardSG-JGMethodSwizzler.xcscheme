@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B419D6C3BB8B3C4A12832B2D"
+               BlueprintIdentifier = "1803481D767E27EA8ED95112"
                BuildableName = "libPods-HealthGuardSG-JGMethodSwizzler.a"
                BlueprintName = "Pods-HealthGuardSG-JGMethodSwizzler"
                ReferencedContainer = "container:Pods.xcodeproj">

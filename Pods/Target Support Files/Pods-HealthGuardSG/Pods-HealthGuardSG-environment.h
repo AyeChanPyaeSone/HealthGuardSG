@@ -114,6 +114,12 @@
 #define COCOAPODS_VERSION_MINOR_MZFormSheetPresentationController 1
 #define COCOAPODS_VERSION_PATCH_MZFormSheetPresentationController 2
 
+// Onboard
+#define COCOAPODS_POD_AVAILABLE_Onboard
+#define COCOAPODS_VERSION_MAJOR_Onboard 2
+#define COCOAPODS_VERSION_MINOR_Onboard 1
+#define COCOAPODS_VERSION_PATCH_Onboard 5
+
 // RMMapper
 #define COCOAPODS_POD_AVAILABLE_RMMapper
 #define COCOAPODS_VERSION_MAJOR_RMMapper 1

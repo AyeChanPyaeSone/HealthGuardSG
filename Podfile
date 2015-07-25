@@ -13,4 +13,5 @@ pod 'MGSwipeTabBarController'
 pod 'ChameleonFramework'
 pod 'MZFormSheetPresentationController'
 pod 'HMSegmentedControl'
+pod 'Onboard'
 end

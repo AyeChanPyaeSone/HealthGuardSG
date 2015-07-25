@@ -34,6 +34,7 @@ PODS:
   - MZFormSheetPresentationController (1.1.2):
     - JGMethodSwizzler
     - MZAppearance
+  - Onboard (2.1.5)
   - RMMapper (1.1.5)
   - SMCalloutView (2.1.2)
   - XLForm (3.0.0)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - INTULocationManager
   - MGSwipeTabBarController
   - MZFormSheetPresentationController
+  - Onboard
   - RMMapper
   - SMCalloutView
   - XLForm
@@ -64,6 +66,7 @@ SPEC CHECKSUMS:
   MGSwipeTabBarController: 09874b2b2cba48eac4785ea74071b4013cc6db4e
   MZAppearance: 6e9dc64e42074c0a19812a327f590746c3283bab
   MZFormSheetPresentationController: 2e848d89c0741aef554d0ae6b138be5dc25a479f
+  Onboard: c58adaef5a377b0c45b4754c5cbe17d4627898c7
   RMMapper: 21122d753c736d975f6c61e674afce8db73579af
   SMCalloutView: 4078d89b847731e514b1a919fed33b383a24a106
   XLForm: 10fc7eb9e2d5df21a515fa3a794f4e26319abd0e

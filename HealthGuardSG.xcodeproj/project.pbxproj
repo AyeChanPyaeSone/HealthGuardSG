@@ -90,6 +90,7 @@
 		A3DE30531B6385A90067AA4A /* HealthCareMRTDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE30521B6385A90067AA4A /* HealthCareMRTDetailCell.m */; };
 		A3DE30571B6388050067AA4A /* AboutLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE30561B6388050067AA4A /* AboutLocationViewController.m */; };
 		A3DE30591B63895F0067AA4A /* RouteDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE30581B63895F0067AA4A /* RouteDetailTableViewController.m */; };
+		A3DE31051B63B09B0067AA4A /* WalkThroughOnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31041B63B09B0067AA4A /* WalkThroughOnBoardingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,8 @@
 		A3DE30561B6388050067AA4A /* AboutLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLocationViewController.m; sourceTree = "<group>"; };
 		A3DE30581B63895F0067AA4A /* RouteDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDetailTableViewController.m; sourceTree = "<group>"; };
 		A3DE305A1B63896B0067AA4A /* RouteDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteDetailTableViewController.h; sourceTree = "<group>"; };
+		A3DE31031B63B08B0067AA4A /* WalkThroughOnBoardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalkThroughOnBoardingViewController.h; sourceTree = "<group>"; };
+		A3DE31041B63B09B0067AA4A /* WalkThroughOnBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WalkThroughOnBoardingViewController.m; path = ../WalkThroughOnBoardingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +321,8 @@
 				A3DE30561B6388050067AA4A /* AboutLocationViewController.m */,
 				A3DE30581B63895F0067AA4A /* RouteDetailTableViewController.m */,
 				A3DE305A1B63896B0067AA4A /* RouteDetailTableViewController.h */,
+				A3DE31031B63B08B0067AA4A /* WalkThroughOnBoardingViewController.h */,
+				A3DE31041B63B09B0067AA4A /* WalkThroughOnBoardingViewController.m */,
 			);
 			path = HealthGuardSG;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				A3DE30511B63857C0067AA4A /* HealthCareBusDetailCell.m in Sources */,
 				A3DE2F751B634B6F0067AA4A /* HomeMenuCell.m in Sources */,
 				A3DE30341B6372780067AA4A /* HealthCareStepVehicle.m in Sources */,
+				A3DE31051B63B09B0067AA4A /* WalkThroughOnBoardingViewController.m in Sources */,
 				A3DE30471B6377F10067AA4A /* HCLocationPlaceParams.m in Sources */,
 				A3DE30531B6385A90067AA4A /* HealthCareMRTDetailCell.m in Sources */,
 			);
