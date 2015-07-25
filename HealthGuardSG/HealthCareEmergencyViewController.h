@@ -12,4 +12,5 @@
 @interface HealthCareEmergencyViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *emergencyhealthcarevtableView;
+
 @end

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HealthCareEmergencyViewController.h"
 #import "HealthCareMapViewController.h"
+#import "HCArticleViewController.h"
 
 @interface ViewController ()
 
@@ -108,6 +109,12 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     else if(indexPath.row == 0){
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         HealthCareMapViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HealthCareMapViewController"];
+        [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
+    }
+    else if(indexPath.row ==5){
+        
+        UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        HCArticleViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HCArticleViewController"];
         [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
     }
 }

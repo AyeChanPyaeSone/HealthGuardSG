@@ -124,6 +124,13 @@
 		A3DE31471B63BC680067AA4A /* splashscreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31461B63BC680067AA4A /* splashscreen2.png */; };
 		A3DE314E1B63C85A0067AA4A /* HCLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */; };
 		A3DE31501B63DFE00067AA4A /* HCArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */; };
+		A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE31531B63E09A0067AA4A /* HCArticleCell.m */; };
+		A3DE31561B63E4B70067AA4A /* A Way to Reduce Outpatient Cost for Chronic Disease.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31551B63E4B70067AA4A /* A Way to Reduce Outpatient Cost for Chronic Disease.png */; };
+		A3DE315B1B63E5020067AA4A /* Eat Well Live Well.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31571B63E5020067AA4A /* Eat Well Live Well.png */; };
+		A3DE315C1B63E5020067AA4A /* Getting the Fats Right.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31581B63E5020067AA4A /* Getting the Fats Right.png */; };
+		A3DE315D1B63E5020067AA4A /* Impact of Haze on Health.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE31591B63E5020067AA4A /* Impact of Haze on Health.png */; };
+		A3DE315E1B63E5020067AA4A /* Understanding people living with HIV can help save lives.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DE315A1B63E5020067AA4A /* Understanding people living with HIV can help save lives.png */; };
+		A3DE31601B63E95C0067AA4A /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DE315F1B63E95C0067AA4A /* Article.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -282,6 +289,15 @@
 		A3DE314D1B63C85A0067AA4A /* HCLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLogInViewController.m; sourceTree = "<group>"; };
 		A3DE314F1B63DFE00067AA4A /* HCArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCArticleViewController.m; sourceTree = "<group>"; };
 		A3DE31511B63DFF20067AA4A /* HCArticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCArticleViewController.h; sourceTree = "<group>"; };
+		A3DE31521B63E08E0067AA4A /* HCArticleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCArticleCell.h; sourceTree = "<group>"; };
+		A3DE31531B63E09A0067AA4A /* HCArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCArticleCell.m; sourceTree = "<group>"; };
+		A3DE31551B63E4B70067AA4A /* A Way to Reduce Outpatient Cost for Chronic Disease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A Way to Reduce Outpatient Cost for Chronic Disease.png"; sourceTree = "<group>"; };
+		A3DE31571B63E5020067AA4A /* Eat Well Live Well.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eat Well Live Well.png"; sourceTree = "<group>"; };
+		A3DE31581B63E5020067AA4A /* Getting the Fats Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Getting the Fats Right.png"; sourceTree = "<group>"; };
+		A3DE31591B63E5020067AA4A /* Impact of Haze on Health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Impact of Haze on Health.png"; sourceTree = "<group>"; };
+		A3DE315A1B63E5020067AA4A /* Understanding people living with HIV can help save lives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Understanding people living with HIV can help save lives.png"; sourceTree = "<group>"; };
+		A3DE315F1B63E95C0067AA4A /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		A3DE31611B63E9670067AA4A /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +452,8 @@
 				A3DE30501B63857C0067AA4A /* HealthCareBusDetailCell.m */,
 				A3DE30521B6385A90067AA4A /* HealthCareMRTDetailCell.m */,
 				A3DE30541B6385B10067AA4A /* HealthCareMRTDetailCell.h */,
+				A3DE31521B63E08E0067AA4A /* HCArticleCell.h */,
+				A3DE31531B63E09A0067AA4A /* HCArticleCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -443,6 +461,11 @@
 		A3DE2F7C1B6351B70067AA4A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A3DE31571B63E5020067AA4A /* Eat Well Live Well.png */,
+				A3DE31581B63E5020067AA4A /* Getting the Fats Right.png */,
+				A3DE31591B63E5020067AA4A /* Impact of Haze on Health.png */,
+				A3DE315A1B63E5020067AA4A /* Understanding people living with HIV can help save lives.png */,
+				A3DE31551B63E4B70067AA4A /* A Way to Reduce Outpatient Cost for Chronic Disease.png */,
 				A3DE31461B63BC680067AA4A /* splashscreen2.png */,
 				A3DE31441B63BC3F0067AA4A /* splashscreen.png */,
 				A3DE31401B63B9210067AA4A /* wallpaper.png */,
@@ -540,6 +563,8 @@
 				A3DE30401B6375200067AA4A /* HCLocationPlace.m */,
 				A3DE30451B6377E70067AA4A /* HCLocationPlaceParams.h */,
 				A3DE30461B6377F10067AA4A /* HCLocationPlaceParams.m */,
+				A3DE315F1B63E95C0067AA4A /* Article.m */,
+				A3DE31611B63E9670067AA4A /* Article.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -650,7 +675,9 @@
 				A3DE2FBF1B6352280067AA4A /* mood1.jpg in Resources */,
 				A3DE31321B63B3110067AA4A /* 18.png in Resources */,
 				A3DE31451B63BC3F0067AA4A /* splashscreen.png in Resources */,
+				A3DE315B1B63E5020067AA4A /* Eat Well Live Well.png in Resources */,
 				A3DE31351B63B3110067AA4A /* 21.jpg in Resources */,
+				A3DE315D1B63E5020067AA4A /* Impact of Haze on Health.png in Resources */,
 				A3DE31371B63B3110067AA4A /* 23.png in Resources */,
 				A3DE31471B63BC680067AA4A /* splashscreen2.png in Resources */,
 				A3DE313B1B63B3110067AA4A /* 29.png in Resources */,
@@ -673,11 +700,14 @@
 				A3DE31341B63B3110067AA4A /* 20.png in Resources */,
 				A3DE2FB21B6352280067AA4A /* CC.png in Resources */,
 				A3DE2FB51B6352280067AA4A /* DT.png in Resources */,
+				A3DE315E1B63E5020067AA4A /* Understanding people living with HIV can help save lives.png in Resources */,
 				A3DE31411B63B9210067AA4A /* wallpaper.png in Resources */,
 				A3DE31271B63B3110067AA4A /* 7.png in Resources */,
 				A3DE2FB01B6352280067AA4A /* Cancel Filled-50.png in Resources */,
 				A3DE2FCF1B6352280067AA4A /* stethoscope_filled-50.png in Resources */,
+				A3DE315C1B63E5020067AA4A /* Getting the Fats Right.png in Resources */,
 				A3DE2FCC1B6352280067AA4A /* pill_filled-50.png in Resources */,
+				A3DE31561B63E4B70067AA4A /* A Way to Reduce Outpatient Cost for Chronic Disease.png in Resources */,
 				A3DE2FA91B6352280067AA4A /* Ambulance Filled-25.png in Resources */,
 				A3DE2FC51B6352280067AA4A /* mood7.jpg in Resources */,
 				A3DE31301B63B3110067AA4A /* 16.png in Resources */,
@@ -782,6 +812,8 @@
 				A3DE30571B6388050067AA4A /* AboutLocationViewController.m in Sources */,
 				A3DE30431B63755A0067AA4A /* GetRouteController.m in Sources */,
 				A3DE303B1B6373900067AA4A /* HealthCareDSteps.m in Sources */,
+				A3DE31541B63E09A0067AA4A /* HCArticleCell.m in Sources */,
+				A3DE31601B63E95C0067AA4A /* Article.m in Sources */,
 				A3DE30411B6375200067AA4A /* HCLocationPlace.m in Sources */,
 				A3DE30511B63857C0067AA4A /* HealthCareBusDetailCell.m in Sources */,
 				A3DE2F751B634B6F0067AA4A /* HomeMenuCell.m in Sources */,

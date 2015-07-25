@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 Tware. All rights reserved.
 //
 
-#ifndef HealthGuardSG_HCArticleViewController_h
-#define HealthGuardSG_HCArticleViewController_h
+#import <UIKit/UIKit.h>
 
+@interface HCArticleViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *articleTableView;
 
-#endif
+@end
