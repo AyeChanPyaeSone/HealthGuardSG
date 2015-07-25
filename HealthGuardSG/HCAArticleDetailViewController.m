@@ -19,6 +19,13 @@ NSMutableArray *articlesarray;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Close"
+                                   style:UIBarButtonItemStyleBordered
+                                   target:self
+                                   action:@selector(closeTapped:)];
+    self.navigationItem.rightBarButtonItem = closeButton;
+
     
     self.articlenamesArray = @[@"A Way to Reduce Outpatient Cost for Chronic Disease", @"Understanding people living with HIV can help save lives", @"Eat Well, Live Well", @"Impact of Haze on Health", @"Getting the Fats Right!"];
     
@@ -39,5 +46,9 @@ NSMutableArray *articlesarray;
     //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelPressed:)];
     
     // Do any additional setup after loading the view.
+}
+
+-(void)closeTapped:(UIBarButtonItem *)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

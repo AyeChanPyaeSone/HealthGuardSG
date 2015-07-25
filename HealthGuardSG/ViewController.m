@@ -39,9 +39,9 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     [flipButton init];
     
     
-    self.menuArray = @[@"Map", @"Find Drug", @"Emegency Call", @"Events & promotion", @"Signup", @"Articles"];
+    self.menuArray = @[@"Map", @"Emergency Call", @"promotion", @"Events", @"Articles", @"Profile"];
     self.backgroundPhotoNameArray = @[@"mood1.jpg", @"mood2.jpg", @"mood3.jpg", @"mood4.jpg", @"mood5.jpg", @"mood6.jpg", @"mood7.jpg", @"mood8.jpg"];
-    self.photoNameArray = @[@"stethoscope_filled-50.png", @"pill_filled-50.png", @"ambulance_filled-50.png", @"Google Blog Search Filled-50.png",@"checked_user_filled-50.png",@"New Filled-50.png"];
+    self.photoNameArray = @[@"stethoscope_filled-50.png", @"ambulance_filled-50.png",@"pill_filled-50.png", @"Google Blog Search Filled-50.png",@"New Filled-50.png",@"checked_user_filled-50.png"];
     
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
@@ -104,7 +104,7 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"IndexPath %ld",(long)indexPath.row);
-    if(indexPath.row == 2){
+    if(indexPath.row == 1){
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         HealthCareEmergencyViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HealthCareEmergencyViewController"];
         [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
@@ -114,17 +114,17 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
         HealthCareMapViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HealthCareMapViewController"];
         [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
     }
-    else if(indexPath.row == 4){
+    else if(indexPath.row == 3){
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         EventsViewController *eventVC = [mainSb instantiateViewControllerWithIdentifier:@"EventsViewController"];
         [self.navigationController pushViewController:eventVC animated:YES];
     }
-    else if(indexPath.row == 3){
+    else if(indexPath.row == 2){
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         PromotionViewController *eventVC = [mainSb instantiateViewControllerWithIdentifier:@"PromotionViewController"];
         [self.navigationController pushViewController:eventVC animated:YES];
     }
-    else if(indexPath.row ==5){
+    else if(indexPath.row ==4){
         
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         HCArticleViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"HCArticleViewController"];
