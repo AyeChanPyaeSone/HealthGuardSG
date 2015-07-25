@@ -9,6 +9,7 @@
 #import "HCArticleViewController.h"
 #import "HCArticleCell.h"
 #import "HMSegmentedControl.h"
+#import "HCAArticleDetailViewController.h"
 
 @interface HCArticleViewController ()
 @property (nonatomic) NSArray *namesArray;
@@ -97,14 +98,18 @@ HMSegmentedControl *segmentedControl;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    //    UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //    ActivityDetailViewController *activityVC = [mainSb instantiateViewControllerWithIdentifier:@"ActivityDetailView"];
-    //    if (indexPath.row <= self.localActivities.count) {
-    //        activityVC.selectedActivity = self.localActivities[indexPath.row];
-    //
-    //        [self.navigationController pushViewController:activityVC animated:YES];
-    //        [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    //    }
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    HCAArticleDetailViewController * signUpVC = [storyboard instantiateViewControllerWithIdentifier:@"HCAArticleDetailViewController"];
+    signUpVC.selectedindex = [indexPath row];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: signUpVC];
+    
+    [self presentViewController:navController animated:YES completion:nil];
+//    
+//    UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    HCAArticleDetailViewController *activityVC = [mainSb instantiateViewControllerWithIdentifier:@"ArticleDetailViewController"];
+//    activityVC.selectedindex = [indexPath row];
+//
+//    [self presentedViewController:activityVC animated:YES];
 }
 - (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
     NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
