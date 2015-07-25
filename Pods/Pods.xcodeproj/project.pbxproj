@@ -1,0 +1,2781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0045BB89B9E0FE11D3313385 /* Pods-HealthGuardSG-Colours-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 203FF0C44AB9A4A149F50FCD /* Pods-HealthGuardSG-Colours-dummy.m */; };
+		007C1AB4DDA123B1FBEBBD20 /* XLFormTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B571A9AEC049F7E21207887 /* XLFormTextFieldCell.h */; };
+		017686814D11A321C7B9BCDE /* XLFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049ED70C6FBE901D1C0C01F /* XLFormSectionDescriptor.m */; };
+		02670E8777BA41970B8A0DA6 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CB3C59C272CC336AA1B0DE /* AFURLRequestSerialization.h */; };
+		038FF29EB19CA4D45812F8A2 /* XLFormSectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = F37C907B5DE1FE355C3325FB /* XLFormSectionDescriptor.h */; };
+		049AE6574F7A620DB3AC2ACF /* INTULocationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C5E1D632831F4049F79130 /* INTULocationManager+Internal.h */; };
+		04BEFC8B52152C3B7D3C4CC2 /* XLFormDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 753D54B8A03EA3C617F6F598 /* XLFormDescriptorCell.h */; };
+		0567428D08A07A2E9375C858 /* Colours.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD5C992437AB758A4F82253 /* Colours.h */; };
+		0711A349E798D96A69A92AF5 /* XLFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35C2489953EDE555E791594 /* XLFormViewController.m */; };
+		0734A23C0A9BF715F95CEF21 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DDDF4E228C3E1769B7DCD /* NSArray+Chameleon.m */; };
+		08E8A1166DD5BD3E30E94316 /* XLFormTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DACEA49A08D4EE93228857BC /* XLFormTextViewCell.h */; };
+		0ADD6599E42C263650B2EB5C /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68BB3DB3AD4B8BBC500997 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B025386476DBDEAFEB9504B /* NSArray+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15168A6F88777BDFA998A07A /* NSArray+XLFormAdditions.m */; };
+		0CBB71AF807DF85A2156755E /* XLFormBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BAA6F738E233B31DBEFEF1 /* XLFormBaseCell.h */; };
+		0DCB7D4D4A7CEFCED3674512 /* NSPredicate+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3303E98785D94F2DE57A83 /* NSPredicate+XLFormAdditions.m */; };
+		0EADD19055535F8C1D966AA6 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A1944F3714E9C2AA84A26 /* ChameleonStatusBar.m */; };
+		0F30344B1B82BE73AA334C1B /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AB11686482A349EF6B670E3E /* UIImageView+AFNetworking.h */; };
+		0FD00F791589CC73E2601C82 /* NSUserDefaults+RMSaveCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 661058CA2BD424F891ADCF1D /* NSUserDefaults+RMSaveCustomObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11021D20E9A677DFAC38A13F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F055CA9D81D7CF971467B26 /* AFURLSessionManager.m */; };
+		1610C60D1F2857D434837375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		17BA9B6EE394C4A49163581B /* Pods-HealthGuardSG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E01D423B3FEA20172EE4ADA /* Pods-HealthGuardSG-dummy.m */; };
+		18994516288E81BA64E24241 /* MZFormSheetPresentationControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D292C91DEEBCA75F3FDF34A /* MZFormSheetPresentationControllerAnimator.h */; };
+		1A0EE77581022FE6286C431E /* MZBlurEffectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 209A49E64CE97727BF64B029 /* MZBlurEffectAdapter.h */; };
+		1A7EB936AAD268F13131DCDA /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7635FB942825DCFCDF3B838A /* UIButton+AFNetworking.h */; };
+		1AA8C09815C506BEE8E5DA81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4244D4502456F311FB467D43 /* Security.framework */; };
+		1D78DFE67BE007B3013F4B94 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 08330E1994CA6948DE69DABB /* AFNetworking.h */; };
+		1E49E13C1FED5F156E8F5A25 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 64485379702E6E3A09E93D37 /* AFURLResponseSerialization.m */; };
+		1ECC6BBB5ADBDD0FD8FC0102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2F3D97B70FD16EEC2C0011 /* CoreGraphics.framework */; };
+		1F3B4CE86B0358E0D0F24E12 /* XLFormRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3D207B7F7CCFC301311A4 /* XLFormRegexValidator.m */; };
+		1FA1A2267B1AD93527790DD3 /* XLFormPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 080C379686A8502BB0A231E2 /* XLFormPickerCell.m */; };
+		249535498EFB43083E861D0D /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAA67B639F588AE612DD0E5 /* UIViewController+TargetViewController.h */; };
+		27BD867F03E25D1A7BBC81DB /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 088E546EC98239EFB2E7ECAF /* AFURLResponseSerialization.h */; };
+		2824E7BC710D3557B2C63322 /* Pods-HealthGuardSG-SMCalloutView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B84A115738C88D1A5E546B74 /* Pods-HealthGuardSG-SMCalloutView-dummy.m */; };
+		2AFA5692856BBABD74A8BAE9 /* SMClassicCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BA679B053ED5F901EFA62 /* SMClassicCalloutView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D4AE2CEDF5F1B027C114FFD /* XLFormValidatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E9822B92523780DB9DB9B1 /* XLFormValidatorProtocol.h */; };
+		2EBBDF79375FCAA58BDF0660 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF9ADFCCD27AB09C97DCB6 /* UIViewController+Chameleon.m */; };
+		31C08ADE71A6FD6861651797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764C9D5B484B9972EE7514E /* QuartzCore.framework */; };
+		32E6C605DB1DF660AB4D8439 /* XLFormSegmentedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4923B61883A88106DC013A /* XLFormSegmentedCell.h */; };
+		33DB3C4077B06B773F8246F5 /* NSObject+RMArchivable.m in Sources */ = {isa = PBXBuildFile; fileRef = 541DEAE76C0F7FBED672CD7E /* NSObject+RMArchivable.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		33FAE2A996B35CEAE22940CC /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99773BB028763DED2BE79437 /* AFHTTPRequestOperation.m */; };
+		349C22271D861C3A45E28470 /* XLFormRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2497D7BB8736B2421FB86907 /* XLFormRowDescriptor.m */; };
+		354FA81B49A85108E6DE75FF /* Pods-HealthGuardSG-ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EECB62CF2161346AF111C2 /* Pods-HealthGuardSG-ChameleonFramework-dummy.m */; };
+		35CCDDABD6583EB186A8F74E /* RMMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CED20B2D9E3B29BEF37F85B1 /* RMMapper.h */; };
+		38FD4DA0E4E983C168D5FC01 /* SMCalloutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C172CD286CFA17EA91B9AC /* SMCalloutView.h */; };
+		39EA8B1B6D0B779BADB97B88 /* XLFormInlineSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DA658BC16264D584B11115 /* XLFormInlineSelectorCell.m */; };
+		3ABF3BA1BB7D21D83C955331 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB86ECFB30388EEC0AA0A8B /* MZTransition.m */; };
+		3DA53E6796F44BA83EB99FA3 /* NSObject+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C54C2F4CB703A818044153A /* NSObject+XLFormAdditions.h */; };
+		3EB57FCCDA975BD42F2B0876 /* XLFormRowNavigationAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46ACAE621B6B1EC1937A4F67 /* XLFormRowNavigationAccessoryView.m */; };
+		40E64DA88B7DB2A0757A0203 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C769997F8CFF8612C47F8E /* AFURLConnectionOperation.m */; };
+		42D8A1CA8B1A107EC12A32E3 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B75D070B433DDAA3FA8291E3 /* UIAlertView+AFNetworking.h */; };
+		4615CEF10B17D11831C03048 /* XLFormButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FA89935FA196C06D123048B8 /* XLFormButtonCell.h */; };
+		464271544B195823C189DADC /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9929BA023058888CB98AEF72 /* UIKit+AFNetworking.h */; };
+		47DF561230FB02615D3473C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764C9D5B484B9972EE7514E /* QuartzCore.framework */; };
+		4885FF7530B1EC4E50314212 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B4B11212D9B0E92C5CADC9 /* UIColor+Chameleon.h */; };
+		48ED52F4B38E24FA34526881 /* GGTabBarAppearanceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = C71EA50EDDDE09C6777469A6 /* GGTabBarAppearanceKeys.m */; };
+		4A0064F52A23DEF91A3D0D32 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D847CA17FB9268A333D5A55 /* UIActivityIndicatorView+AFNetworking.m */; };
+		4B39D1A419B3728C3C29D73B /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C02C4CCFFE2B736B3E7517 /* INTULocationRequest.m */; };
+		4E426591041F8C6219E76A9C /* Pods-HealthGuardSG-MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9026D74E947C438136A9E91 /* Pods-HealthGuardSG-MZAppearance-dummy.m */; };
+		509A25ECC35EBDC8C8B19E58 /* XLFormRowDescriptorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F473D0DBB1B34F2B4C6EA2D /* XLFormRowDescriptorViewController.h */; };
+		51C995F3E4E1E35403387DD0 /* NSArray+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 993E6864EB336502A4C6DCA3 /* NSArray+XLFormAdditions.h */; };
+		52D703BE2AE1951E450FCF3D /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 953659998558C4DBD660387F /* AFNetworkReachabilityManager.h */; };
+		54DF1E03B677D75F526DA96B /* MZTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 6378EA9E6E6C8E00D2AFED5D /* MZTransition.h */; };
+		56EE04A5EB1615384E2DDFFD /* XLFormInlineRowDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 242106CAE6EFFAB48E4D11D1 /* XLFormInlineRowDescriptorCell.h */; };
+		57D6FFDCB42D81203125CB7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD33204652A7646BD41B727F /* UIKit.framework */; };
+		57FFCC128E9AEE979214650A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764C9D5B484B9972EE7514E /* QuartzCore.framework */; };
+		5AC0623B18C29EB5953EF641 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F975F207B0526ADE1EC746 /* UIColor+CIELAB.m */; };
+		5BA181DB616EBC928FF1CC25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		5BCC8D013E824B45FD0F8BAB /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 42147FE50C5058DFDED4F39B /* AFHTTPSessionManager.h */; };
+		5C4E43A73ED4C96A78B7DBBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		5CAAC0A14A357FA3345B69D2 /* UIViewController+MGSwipeTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E913F8DE2B7E75FD8DED9A2 /* UIViewController+MGSwipeTabBarController.h */; };
+		5D2E2C88811437D239159D4A /* SMClassicCalloutView.h in Headers */ = {isa = PBXBuildFile; fileRef = E672A596908253976F7BDEA1 /* SMClassicCalloutView.h */; };
+		5EC737ADF19FE677626485EC /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E43AE96E9C595ADB042CED14 /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5FDCA2B58BF7379647601878 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBD3684D6B3BE2A49CE3B0D /* UIActivityIndicatorView+AFNetworking.h */; };
+		60830FF98A8EAD6F8F2DF575 /* MGSwipeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D4E5DBB81CD5A086016839 /* MGSwipeTabBarController.m */; };
+		61157D2A15F9D921E3AEE7D5 /* XLForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DDE336CF26D349D8B1711 /* XLForm.m */; };
+		612C3E690317E3CED1F9CD5A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 504AEF3DC862E15411535E23 /* UIImageView+AFNetworking.m */; };
+		61504AD308BC03F94CC23576 /* HMSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B718E93A53882C63092D7F0C /* HMSegmentedControl.h */; };
+		63EDEEF8F4724895842FDCEF /* XLFormOptionsObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC1722B21E4AAADA4CAA675 /* XLFormOptionsObject.h */; };
+		6460D4BEE6132196E2EF66C6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCEC87574CECC733A529838 /* AFNetworkReachabilityManager.m */; };
+		64F05677A7996D4B1250D175 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 483772EF27C8B79DFA17409A /* INTULocationManager.m */; };
+		6539458079A49F4FC9D5BF6D /* XLFormSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E1FF976CB5239E7F4FB713 /* XLFormSliderCell.h */; };
+		672081275BE64306577FCB1A /* UIView+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E348093549028BCC75CD07AF /* UIView+XLFormAdditions.m */; };
+		6870CB6F5BA5C55B268FD7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		6893DF05B74EC5C4E216A3B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		6C81D1B6F97E6954A860C682 /* GGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766FDAF5D00D4579CF37925B /* GGTabBarController.m */; };
+		6EBD84AF88BAC265A25533F1 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2FC781BDD5DAC52ABC5222 /* UIViewController+Chameleon.h */; };
+		6EDA51BE3DF480B2A406D219 /* Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0862016F8B9672ECB21FEA92 /* Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m */; };
+		6F709D35AA63E17947F2E559 /* RMMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D99C409736A06BC4CBD5A655 /* RMMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		719E2D2BA5B9B23A7E0EB9E4 /* XLFormCheckCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A136EB55D3BA9AF0F6F787AB /* XLFormCheckCell.h */; };
+		71A68E55A2723EE21BE0732D /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C2FF35067EE61A95AF1CA /* UIButton+AFNetworking.m */; };
+		7437EA540EBD4467C019B23F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD33204652A7646BD41B727F /* UIKit.framework */; };
+		7447990C30F00E1382575954 /* XLFormOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CC93598D195F09A058C4C6 /* XLFormOptionsViewController.m */; };
+		75527054410BF4808CCAE7E8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 42771DE7BF449C35666024B6 /* UIProgressView+AFNetworking.m */; };
+		779FA5475A4ECE7FD2739614 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = BF85C8FD67246188A11DBBBE /* Chameleon.h */; };
+		79F573DE942787B2748A8089 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A08D6F06E48D521D8CA1766 /* AFURLSessionManager.h */; };
+		7AF8AA8C955D49741921EAEE /* JGMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D7F8D232A57A6241BB431E /* JGMethodSwizzler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D54AE2615C253F435F562A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0030AA1F31A59C1D0EC418 /* SystemConfiguration.framework */; };
+		7E62B40AF4177212DEB86CB5 /* XLFormOptionsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECDFD164505C889A5DEDC4 /* XLFormOptionsObject.m */; };
+		7E895B0B1B8954A800E630D7 /* XLFormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37837D8ACEC08CB318315654 /* XLFormValidator.m */; };
+		801B5C0147F753C4E242F5DE /* XLFormRightDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AF62323D960D3FAFF66CAD63 /* XLFormRightDetailCell.h */; };
+		80D120A91AB53490BFFD683E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		8387B640D437B6649BCE7DBE /* XLFormDatePickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 59051CB0466E1A22278226D1 /* XLFormDatePickerCell.h */; };
+		83886666378054F6F6E007E7 /* GGTabBarAppearanceKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EBB8CDB6858EEE7348F27D /* GGTabBarAppearanceKeys.h */; };
+		855BDEACF6176C4D164D3082 /* XLFormDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E2077D64A0295B7F1C4B79 /* XLFormDescriptor.m */; };
+		861D50A55CE76DD47FEAA606 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764C9D5B484B9972EE7514E /* QuartzCore.framework */; };
+		868F2A1614A3EBDC3FB2B696 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAD152234D51A646AC0AC30 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */; };
+		877FECAE2422A8AA792BA4C4 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25237BA91FE1D1CCA6428D3D /* UIViewController+TargetViewController.m */; };
+		879AD0803C0AC7BFD2BF7EBA /* XLFormRightDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0A8F2D5950D9CF5E7871D /* XLFormRightDetailCell.m */; };
+		87C0A7FF030611472124FE33 /* MGSwipeTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CF9A18424E58CBDF199598 /* MGSwipeTabBarController.h */; };
+		89AB85921F9270668AF1B6E1 /* INTULocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7AF9F9F39463DC1D4040402 /* INTULocationManager.h */; };
+		89DE944EB75852BDCA838BF0 /* XLFormRightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A374390F9CE37E52501A6 /* XLFormRightImageButton.m */; };
+		8A057C79C14A93FB4181A75A /* XLFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7DC9A71DF122ABC3F3081 /* XLFormTextFieldCell.m */; };
+		8A0D692B0B74DEE5533BE326 /* XLFormRowDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 036A430D772A86C763F3C16B /* XLFormRowDescriptor.h */; };
+		8DD4AB6E77BE569ED5265706 /* GGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFAB1D5636BFBD11BD30E69 /* GGTabBar.m */; };
+		8F758E949F80FB42F8D5A8C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2F3D97B70FD16EEC2C0011 /* CoreGraphics.framework */; };
+		90DE913BEA95E5CE2A62AD7C /* NSObject+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD1025DDD9AA39429C77F9 /* NSObject+XLFormAdditions.m */; };
+		90EB67C43344F989D7AD6F81 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 353DC1206D7DB220FFC5A59B /* HMSegmentedControl.m */; };
+		9284E0A239D2DA4FD89B91F4 /* ChameleonStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D71603713FC0DFC4BE230B50 /* ChameleonStatusBar.h */; };
+		93D3345D2419386782275FB9 /* XLFormCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69C754DE54C3AF7C616505 /* XLFormCheckCell.m */; };
+		94383AD1BD6462FDEA9BC182 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EEFE91C4E190EC0AB8D3A5 /* AFNetworkActivityIndicatorManager.m */; };
+		958F238D78D548B61B05FB9C /* Pods-HealthGuardSG-INTULocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C959AEAC0572406D4917D0 /* Pods-HealthGuardSG-INTULocationManager-dummy.m */; };
+		96012F9C95F15CF4E686BA0C /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = E83C4E956544B4705C141C20 /* UIColor+Chameleon.m */; };
+		97B7A1CD970CF4C8CE57738B /* NSObject+RMCopyable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9625BDDCCA8F9B4A81A2D1 /* NSObject+RMCopyable.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		984739242B6C4FB644E26C12 /* XLFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 194ED03D8D7788FC4A20D551 /* XLFormDateCell.m */; };
+		99B958912080540DFE32F579 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FF0E5CE454AA7784E4A904 /* AFSecurityPolicy.h */; };
+		9A49BB2AAA26210AA40CA332 /* XLFormSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6469351F7DA6578EE6B3C8A /* XLFormSliderCell.m */; };
+		9AEEF7E7B8E8E955A14C4552 /* XLFormTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4309E07C8881CBA954C7DE6 /* XLFormTextView.h */; };
+		9B804393F97D01A8DEEDD108 /* Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64526FE7D15296B43C61877A /* Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m */; };
+		9CEE278BE885AAD8AAFA3D6F /* UIColor+CIELAB.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6A0C9C4FB7A9F7F28C105C /* UIColor+CIELAB.h */; };
+		9F1B03997923FC6AFECEC785 /* GGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B8F9E3C1A8F12757E13759 /* GGTabBar.h */; };
+		A0E1A469CE9945B607A5EEDE /* XLFormRowNavigationAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F5090BDA68AF558A161BD3 /* XLFormRowNavigationAccessoryView.h */; };
+		A0E976A704C20ABE29C76AF2 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB72297D7137B314E93FC0 /* UIRefreshControl+AFNetworking.m */; };
+		A14839D41C0E3742AD9CD813 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B2A9A3074F54C9E2912597 /* UIWebView+AFNetworking.h */; };
+		A1E82C2179DA8BF9CEF660DE /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = C4336707C3A1A3459CF869B4 /* NSInvocation+Copy.h */; };
+		A4023CAC75599E5AEBED7479 /* XLFormOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F3230AD7746783C32AB9A4 /* XLFormOptionsViewController.h */; };
+		A6DE6FB711F83B45B49BBF76 /* XLFormLeftRightSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7A1B2EF31F43DA2B83FE5 /* XLFormLeftRightSelectorCell.m */; };
+		A6E4EA22D3840D52130D4417 /* NSExpression+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDF3E4223D384F9185491F9 /* NSExpression+XLFormAdditions.m */; };
+		A6E8FCD47B237E12B947C10F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		A7321E4DFC1D9E8068925DE5 /* XLFormStepCounterCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D57A3F696AACDDA491A19B /* XLFormStepCounterCell.h */; };
+		A8C36B2CCC826FBB70E439CB /* INTULocationRequestDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 161AA23551B76F0B30C4CF98 /* INTULocationRequestDefines.h */; };
+		AA47ECE2E442A2B346841FE3 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD2FC9840DF56A12375A8E /* UIAlertView+AFNetworking.m */; };
+		AA9727DEA167BA9A1EB7B874 /* XLFormDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1F3AAEAA16EC09C83EF6B4 /* XLFormDatePickerCell.m */; };
+		AAAD14DAD4F2D674B55FAB6F /* MZFormSheetPresentationControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE963A8D055FEAADC8EBFF /* MZFormSheetPresentationControllerSegue.m */; };
+		AE9DBE342335F59DB812285A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		B0566CF30C2E0F3C2D2873D2 /* XLFormSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CDE1BD3880B6A734D4E56 /* XLFormSelectorCell.m */; };
+		B20380F002DC0F94C9240090 /* XLFormSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B40D47BEB1C57B64C519FA /* XLFormSwitchCell.h */; };
+		B20FA0219B9CCAFBD08FA21A /* XLFormLeftRightSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EBACA774C1333AB387E4FF /* XLFormLeftRightSelectorCell.h */; };
+		B2F21F6D4BCA3C898911C45B /* XLFormDescriptorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC31814A52B80AA5E516BCB /* XLFormDescriptorDelegate.h */; };
+		B33F29B2DDB2998760D32C05 /* XLFormSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FE80C45AE30C321D4EBEB /* XLFormSelectorCell.h */; };
+		B40DF799BABBF55D9FB6511C /* XLFormValidationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABACE24BAF3EFFA62081E8 /* XLFormValidationStatus.m */; };
+		B729E6D5016DEAF425BF18B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		B92C850C156C3EB068700880 /* NSUserDefaults+RMSaveCustomObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FF580A0ABE19988FAB08341C /* NSUserDefaults+RMSaveCustomObject.h */; };
+		BACC3BEC48B426E8D0F57931 /* NSObject+RMArchivable.h in Headers */ = {isa = PBXBuildFile; fileRef = F54FC20813A1ABD2971D1BB1 /* NSObject+RMArchivable.h */; };
+		BBA61A8141FEA873CED9E7FB /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA07BEA446C1683F12DD34C8 /* MZFormSheetPresentationController.m */; };
+		BCB0B120B0780DD888607351 /* XLFormSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B2475E9FC5EFAC29724838 /* XLFormSegmentedCell.m */; };
+		BF81F2486C7947DFF14519D9 /* XLFormStepCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C825486F5B35A624CCC41543 /* XLFormStepCounterCell.m */; };
+		C05A5D4B822934134207B899 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF900DB262D4077627C88784 /* AFNetworkActivityIndicatorManager.h */; };
+		C0645BBDE9E038CB46AF855B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		C1D06C54FE77F2C0C66DE2C3 /* XLFormRegexValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A0F31B5CD2EB0A0ED30B23 /* XLFormRegexValidator.h */; };
+		C1EDFCB9D42BA6E2F6109DD4 /* XLFormValidationStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BC3B0748A2B64BB6958A9E /* XLFormValidationStatus.h */; };
+		C2C6E562767683DA1830E268 /* XLFormButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E031394902B9F08C26AA51EE /* XLFormButtonCell.m */; };
+		C5BF510ED959E85CD911AB60 /* Pods-HealthGuardSG-XLForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB6841A8958058ED9882D /* Pods-HealthGuardSG-XLForm-dummy.m */; };
+		C5D60CFA1359702AA0F5186E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F12BB9BFA346B793792952 /* AFURLRequestSerialization.m */; };
+		C6816D60749698F519DE76A9 /* NSPredicate+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5899F1E048CB19F90746E50C /* NSPredicate+XLFormAdditions.h */; };
+		C8CDAA3AA51BF4927AAF7D26 /* GGTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB5E4B5854E8E71F655B264 /* GGTabBarController.h */; };
+		C9A53933CA55CE202A60E52C /* MZFormSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 43ECE00E4476B2D42D55C516 /* MZFormSheetPresentationController.h */; };
+		C9DDCCC0D11AA247170FEF3F /* Pods-HealthGuardSG-HMSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B04CB114FAF6A9F0C73132 /* Pods-HealthGuardSG-HMSegmentedControl-dummy.m */; };
+		C9E09A49907FE70C73F60F66 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64994128103CE6A9FA42136F /* MobileCoreServices.framework */; };
+		CB4A0F04866F09F0DDB43F51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		CB677094D118BCCCBF93FB04 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0784CB820E231AB8240202ED /* AFURLConnectionOperation.h */; };
+		D2C5C2397DA363A50E4E5E65 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2933B04B6099A416C760FCB0 /* UIRefreshControl+AFNetworking.h */; };
+		D312DD73CED1A0DC657DD4AB /* NSObject+RMCopyable.h in Headers */ = {isa = PBXBuildFile; fileRef = B85F2903D40015F39594A791 /* NSObject+RMCopyable.h */; };
+		D49D8475A900FBD7CA69931B /* XLFormRightImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 82698600E476EE762F729816 /* XLFormRightImageButton.h */; };
+		D754E40A1587F7F964930B19 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AE03C6BAF4F74B18DBB8BE /* AFHTTPRequestOperationManager.m */; };
+		D890840F91A76C9FD4FC0EA5 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8887BDB2CBBEB957AB017697 /* UIWebView+AFNetworking.m */; };
+		D93FA90481364A4BDF919949 /* MZFormSheetPresentationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E8DC96119B8D4F6DD07E1 /* MZFormSheetPresentationControllerAnimator.m */; };
+		D9FD2467E21F10ADC345D3DD /* XLFormTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D929DD15395148232653684B /* XLFormTextView.m */; };
+		DA073EB9CD5721590F68F6B2 /* XLFormValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F99C2DC8217309505E936E /* XLFormValidator.h */; };
+		DA6D996E9EE8BBF4C5CBCBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		DB8ED60C0584AE664DEC559E /* Pods-HealthGuardSG-JGMethodSwizzler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F4A9DF0D1DDB1E67F1E239 /* Pods-HealthGuardSG-JGMethodSwizzler-dummy.m */; };
+		DBA75459FC79950786FDD22E /* UIView+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BA904FAC1BC43CA1FB377A /* UIView+XLFormAdditions.h */; };
+		DBADEE48071DAA90F2252F0B /* XLFormDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8573BB2C7422509F8F4D519F /* XLFormDescriptor.h */; };
+		DCFFE1495B3A4EBA29A96D71 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 7912BC3E14EF9FF5266E2F16 /* MZAppearance.h */; };
+		DDC9AAD52036C99E57DB6BF0 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E47551C5C901CE08122EA300 /* AFHTTPRequestOperation.h */; };
+		DE27A894F0918993890E6B45 /* Pods-HealthGuardSG-RMMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F642998C383FA93D178C8D35 /* Pods-HealthGuardSG-RMMapper-dummy.m */; };
+		DF5082F048E79BEF43D82FF8 /* XLFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8256EF2CE4841990B9DB7C66 /* XLFormBaseCell.m */; };
+		DFF8BF820F4BCB42F726C89A /* NSString+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A151909333FCAC7A672EE80 /* NSString+XLFormAdditions.h */; };
+		E0ADB8B154F696B2C2A8DD58 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC250A67E3254BE7A18BC37 /* ChameleonMacros.h */; };
+		E0E6C8960F6D1DD9A5D1BA08 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 423EB6DF75168D546A2F22DD /* AFSecurityPolicy.m */; };
+		E10C3BA6469701E24CDDB177 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FB22511996DF548EE8BAE922 /* AFHTTPRequestOperationManager.h */; };
+		E1D7C62E5EB364528D0898C2 /* XLFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5DAD470F78CD2A6B9FC541 /* XLFormViewController.h */; };
+		E3AB45D773FA2C76EEEDADF4 /* MZFormSheetPresentationControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1A009C5E5F3CEE08EF1A5C /* MZFormSheetPresentationControllerSegue.h */; };
+		E4A887A9CB0288415047DD01 /* Pods-HealthGuardSG-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8D8F32DE8A5431FFF1AC86 /* Pods-HealthGuardSG-AFNetworking-dummy.m */; };
+		E4E346764F68609849EBD609 /* UIViewController+MGSwipeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB26B17B7184D2D03BBDB14 /* UIViewController+MGSwipeTabBarController.m */; };
+		E543A2284D16007EB13112B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2F3D97B70FD16EEC2C0011 /* CoreGraphics.framework */; };
+		E5DA8B70690CA85147CA5768 /* XLFormPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F1934753A6DE1A454EEDCF51 /* XLFormPickerCell.h */; };
+		E70C9621123686436C4CFF28 /* NSString+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63901E45C93F9DB7D2F3EBFF /* NSString+XLFormAdditions.m */; };
+		E7168CA8A11581E7C241F7D6 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C47C573B24033F28D5AFA9 /* NSArray+Chameleon.h */; };
+		E7C0FD8329AC3C23C1CDCEA3 /* XLFormInlineSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 537ACABA56FC1DCF2709F5BB /* XLFormInlineSelectorCell.h */; };
+		E91C610A1367EBDC765C399B /* XLFormDateCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8B39FA38BD0E81C82A6750 /* XLFormDateCell.h */; };
+		EA1D4A517FA3CC321AF96F5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+		EBB85062223819D3D4FB09FB /* NSExpression+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A62366C02017250D4CBB8CF3 /* NSExpression+XLFormAdditions.h */; };
+		ED25A36ED71CCB787C17BDA7 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 49330A7E47904F5C68654ADA /* UIProgressView+AFNetworking.h */; };
+		EFC4F97B81620B31706D594C /* XLFormTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B12C035CB50491AF53AF8334 /* XLFormTextViewCell.m */; };
+		F31FAFC7F89F0018E5B45BBD /* JGMethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = ACAE5B4E61F26607E1A249FE /* JGMethodSwizzler.h */; };
+		F34720E154E418BA802FD1FC /* GGTabBar-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 756887E2BEC11BE84A91885B /* GGTabBar-Private.h */; };
+		F4864DBEF94F47DA0D53FF6F /* XLFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3FE3C3BD542DE1CAEF65C1 /* XLFormSwitchCell.m */; };
+		F4D8A1C2A5D477DCE9DFCF71 /* XLForm.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFEE33C43F36BBFA0AEA2FB /* XLForm.h */; };
+		F4F3C2E8F3B75CD7E29D6713 /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD22DF9E5878B9959E130A8C /* MZBlurEffectAdapter.m */; };
+		F7BF21E082B34940B17501DC /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B8F7182414C2B225C55B69 /* Colours.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F8789C5DEA1CDEA69F91CA98 /* INTULocationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D2BB5070D6DAF30813F666 /* INTULocationRequest.h */; };
+		F8B8F8AC1D51C73B3E514050 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4412D91AE416D2281A06C248 /* AFHTTPSessionManager.m */; };
+		FA75B87ABB47B2E0548B1FC7 /* Pods-HealthGuardSG-GGTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BEB6D1A233801BCB827517 /* Pods-HealthGuardSG-GGTabBar-dummy.m */; };
+		FB94AF76F142C07E1B987037 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F4609372181C3E83E63026 /* SMCalloutView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FEC4AE9B62F52BA571EAD11F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E0EC14DCADE16C0094D706F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCE4ACB9992D7FC0E0BBE42;
+			remoteInfo = "Pods-HealthGuardSG-INTULocationManager";
+		};
+		28D2C54611D8D8E595CCFA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F859808AB494B434EB6F8EA4;
+			remoteInfo = "Pods-HealthGuardSG-SMCalloutView";
+		};
+		3050D349C9B7A6ACC92DB464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9E69EED71D8A550376BD95;
+			remoteInfo = "Pods-HealthGuardSG-MGSwipeTabBarController";
+		};
+		40C8A2495780CB102A9CDBF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE9314CC57034090457DFF88;
+			remoteInfo = "Pods-HealthGuardSG-GGTabBar";
+		};
+		4B09338314438E0B3D84373E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD0DE3A56EBBF811E326017E;
+			remoteInfo = "Pods-HealthGuardSG-MZAppearance";
+		};
+		70B6E6396A2E317DB00F6353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B419D6C3BB8B3C4A12832B2D;
+			remoteInfo = "Pods-HealthGuardSG-JGMethodSwizzler";
+		};
+		803ECCA87C4209FC28B9BF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B9CF606745E7E0746638403;
+			remoteInfo = "Pods-HealthGuardSG-Colours";
+		};
+		997C7F9CB91B8E10F00F5839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ACC23B4A346AFF64BC964A4;
+			remoteInfo = "Pods-HealthGuardSG-XLForm";
+		};
+		9EC996B9A1EA6EF9C27455CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E93CD7408F4A27DEBEE97D;
+			remoteInfo = "Pods-HealthGuardSG-RMMapper";
+		};
+		AFD8BF431399DF407BA156BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EC2F42CC6A84EA32EAB41FF;
+			remoteInfo = "Pods-HealthGuardSG-ChameleonFramework";
+		};
+		B0F609C824FC786181C6ACE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A53A83B75BC21F82502AB9CB;
+			remoteInfo = "Pods-HealthGuardSG-MZFormSheetPresentationController";
+		};
+		D2B83B62F6996DF8C0178A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24A05063AB10AEAA31F525E9;
+			remoteInfo = "Pods-HealthGuardSG-HMSegmentedControl";
+		};
+		D62146D3CC5FAB12C713BD75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B419D6C3BB8B3C4A12832B2D;
+			remoteInfo = "Pods-HealthGuardSG-JGMethodSwizzler";
+		};
+		DC9FA20F0110E7E717C930BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD0DE3A56EBBF811E326017E;
+			remoteInfo = "Pods-HealthGuardSG-MZAppearance";
+		};
+		E5937F83E9A1DC140DCB9E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C9A8538244D4427C6945A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1981306D698C92162018D36;
+			remoteInfo = "Pods-HealthGuardSG-AFNetworking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028A7E52C84B4AB509470941 /* libPods-HealthGuardSG-MZAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-MZAppearance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		036A430D772A86C763F3C16B /* XLFormRowDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptor.h; path = XLForm/XL/Descriptors/XLFormRowDescriptor.h; sourceTree = "<group>"; };
+		053369F25FDCEC16292E0D33 /* Pods-HealthGuardSG-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		0555CBA1CCD451458EA5B632 /* libPods-HealthGuardSG-HMSegmentedControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-HMSegmentedControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0784CB820E231AB8240202ED /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		080C379686A8502BB0A231E2 /* XLFormPickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormPickerCell.m; path = XLForm/XL/Cell/XLFormPickerCell.m; sourceTree = "<group>"; };
+		081BA679B053ED5F901EFA62 /* SMClassicCalloutView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SMClassicCalloutView.m; sourceTree = "<group>"; };
+		08330E1994CA6948DE69DABB /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		0862016F8B9672ECB21FEA92 /* Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m"; sourceTree = "<group>"; };
+		088E546EC98239EFB2E7ECAF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		08C959AEAC0572406D4917D0 /* Pods-HealthGuardSG-INTULocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-INTULocationManager-dummy.m"; sourceTree = "<group>"; };
+		08F12BB9BFA346B793792952 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		09FBE4F57FC4693EA3847FAB /* Pods-HealthGuardSG-GGTabBar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-GGTabBar-Private.xcconfig"; sourceTree = "<group>"; };
+		0AD3062295377DC5D3C155BC /* Pods-HealthGuardSG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthGuardSG-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0CD66EB81F328C09696BD389 /* Pods-HealthGuardSG-INTULocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-INTULocationManager-prefix.pch"; sourceTree = "<group>"; };
+		0D8E8DC96119B8D4F6DD07E1 /* MZFormSheetPresentationControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerAnimator.m; sourceTree = "<group>"; };
+		0E0DDDF4E228C3E1769B7DCD /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		0ED202DCDF1F70920B353CD3 /* Pods-HealthGuardSG-JGMethodSwizzler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-JGMethodSwizzler-prefix.pch"; sourceTree = "<group>"; };
+		10DA658BC16264D584B11115 /* XLFormInlineSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormInlineSelectorCell.m; path = XLForm/XL/Cell/XLFormInlineSelectorCell.m; sourceTree = "<group>"; };
+		11C769997F8CFF8612C47F8E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		12C8A0C26CEA81319C8C4423 /* Pods-HealthGuardSG-XLForm-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-XLForm-Private.xcconfig"; sourceTree = "<group>"; };
+		14C172CD286CFA17EA91B9AC /* SMCalloutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SMCalloutView.h; sourceTree = "<group>"; };
+		15168A6F88777BDFA998A07A /* NSArray+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.m"; sourceTree = "<group>"; };
+		1553EF34695C5F59A9C4F99E /* Pods-HealthGuardSG-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		161AA23551B76F0B30C4CF98 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationRequestDefines.h; path = LocationManager/INTULocationManager/INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		16BCDD67FC6227DE536E8EDA /* libPods-HealthGuardSG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		194ED03D8D7788FC4A20D551 /* XLFormDateCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDateCell.m; path = XLForm/XL/Cell/XLFormDateCell.m; sourceTree = "<group>"; };
+		1A2FC781BDD5DAC52ABC5222 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		1AAE963A8D055FEAADC8EBFF /* MZFormSheetPresentationControllerSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationControllerSegue.m; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerSegue.m; sourceTree = "<group>"; };
+		1B571A9AEC049F7E21207887 /* XLFormTextFieldCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextFieldCell.h; path = XLForm/XL/Cell/XLFormTextFieldCell.h; sourceTree = "<group>"; };
+		1B6A0C9C4FB7A9F7F28C105C /* UIColor+CIELAB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CIELAB.h"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		1D4923B61883A88106DC013A /* XLFormSegmentedCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSegmentedCell.h; path = XLForm/XL/Cell/XLFormSegmentedCell.h; sourceTree = "<group>"; };
+		1DAD1025DDD9AA39429C77F9 /* NSObject+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.m"; sourceTree = "<group>"; };
+		1DD81ACFF48B18D9D228DDCE /* Pods-HealthGuardSG-INTULocationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-INTULocationManager.xcconfig"; sourceTree = "<group>"; };
+		203FF0C44AB9A4A149F50FCD /* Pods-HealthGuardSG-Colours-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-Colours-dummy.m"; sourceTree = "<group>"; };
+		2065B3907A38411E23FE480B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		209A49E64CE97727BF64B029 /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZBlurEffectAdapter.h; path = MZFormSheetPresentationController/MZBlurEffectAdapter.h; sourceTree = "<group>"; };
+		20D4E5DBB81CD5A086016839 /* MGSwipeTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGSwipeTabBarController.m; path = MGSwipeTabBarController/MGSwipeTabBarController.m; sourceTree = "<group>"; };
+		2140C9B9BBEAF40D1CE9027C /* Pods-HealthGuardSG-JGMethodSwizzler-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-JGMethodSwizzler-Private.xcconfig"; sourceTree = "<group>"; };
+		225C0B9379B5F1204F337F78 /* libPods-HealthGuardSG-GGTabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-GGTabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		242106CAE6EFFAB48E4D11D1 /* XLFormInlineRowDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineRowDescriptorCell.h; path = XLForm/XL/Cell/XLFormInlineRowDescriptorCell.h; sourceTree = "<group>"; };
+		2497D7BB8736B2421FB86907 /* XLFormRowDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowDescriptor.m; path = XLForm/XL/Descriptors/XLFormRowDescriptor.m; sourceTree = "<group>"; };
+		25237BA91FE1D1CCA6428D3D /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		27A0F31B5CD2EB0A0ED30B23 /* XLFormRegexValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRegexValidator.h; path = XLForm/XL/Validation/XLFormRegexValidator.h; sourceTree = "<group>"; };
+		27CB3C59C272CC336AA1B0DE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		27D7F8D232A57A6241BB431E /* JGMethodSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGMethodSwizzler.m; path = JGMethodSwizzler/JGMethodSwizzler.m; sourceTree = "<group>"; };
+		28BA904FAC1BC43CA1FB377A /* UIView+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XLFormAdditions.h"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.h"; sourceTree = "<group>"; };
+		2933B04B6099A416C760FCB0 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2DCEC87574CECC733A529838 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		2F055CA9D81D7CF971467B26 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		2F67E6BE95E74F8F7DC32F90 /* Pods-HealthGuardSG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG.debug.xcconfig"; sourceTree = "<group>"; };
+		2FCEC703ACBC82F0419F40E9 /* Pods-HealthGuardSG-ChameleonFramework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-ChameleonFramework-Private.xcconfig"; sourceTree = "<group>"; };
+		30271268A9FC6502D17FC64A /* libPods-HealthGuardSG-ChameleonFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-ChameleonFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3049ED70C6FBE901D1C0C01F /* XLFormSectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSectionDescriptor.m; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.m; sourceTree = "<group>"; };
+		3127CD230602C6B0FA026CD2 /* XLForm.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = XLForm.bundle; path = XLForm/XLForm.bundle; sourceTree = "<group>"; };
+		330519BC3232039022165AFC /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		34ABACE24BAF3EFFA62081E8 /* XLFormValidationStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidationStatus.m; path = XLForm/XL/Validation/XLFormValidationStatus.m; sourceTree = "<group>"; };
+		34E3D207B7F7CCFC301311A4 /* XLFormRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRegexValidator.m; path = XLForm/XL/Validation/XLFormRegexValidator.m; sourceTree = "<group>"; };
+		351A374390F9CE37E52501A6 /* XLFormRightImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightImageButton.m; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.m; sourceTree = "<group>"; };
+		353DC1206D7DB220FFC5A59B /* HMSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
+		37837D8ACEC08CB318315654 /* XLFormValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidator.m; path = XLForm/XL/Validation/XLFormValidator.m; sourceTree = "<group>"; };
+		37D57A3F696AACDDA491A19B /* XLFormStepCounterCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormStepCounterCell.h; path = XLForm/XL/Cell/XLFormStepCounterCell.h; sourceTree = "<group>"; };
+		3A151909333FCAC7A672EE80 /* NSString+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.h"; sourceTree = "<group>"; };
+		3A8D8F32DE8A5431FFF1AC86 /* Pods-HealthGuardSG-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		3C54C2F4CB703A818044153A /* NSObject+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.h"; sourceTree = "<group>"; };
+		3E913F8DE2B7E75FD8DED9A2 /* UIViewController+MGSwipeTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MGSwipeTabBarController.h"; path = "MGSwipeTabBarController/UIViewController+MGSwipeTabBarController.h"; sourceTree = "<group>"; };
+		3FB7DC9A71DF122ABC3F3081 /* XLFormTextFieldCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextFieldCell.m; path = XLForm/XL/Cell/XLFormTextFieldCell.m; sourceTree = "<group>"; };
+		3FBE9C186EECE652AA8BB250 /* libPods-HealthGuardSG-MZFormSheetPresentationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-MZFormSheetPresentationController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41938D0733CD9217FC38E2EF /* Pods-HealthGuardSG-ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-ChameleonFramework.xcconfig"; sourceTree = "<group>"; };
+		41EB619ACD5323908429F5E4 /* Pods-HealthGuardSG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG.release.xcconfig"; sourceTree = "<group>"; };
+		42147FE50C5058DFDED4F39B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		423EB6DF75168D546A2F22DD /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		4244D4502456F311FB467D43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		42771DE7BF449C35666024B6 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		43ECE00E4476B2D42D55C516 /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationController.h; sourceTree = "<group>"; };
+		4412D91AE416D2281A06C248 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		445081A3B1AC18BABF63C985 /* Pods-HealthGuardSG-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HealthGuardSG-resources.sh"; sourceTree = "<group>"; };
+		4511D2DDB2D23F2E15A6812C /* Pods-HealthGuardSG-MZAppearance-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MZAppearance-Private.xcconfig"; sourceTree = "<group>"; };
+		46ACAE621B6B1EC1937A4F67 /* XLFormRowNavigationAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowNavigationAccessoryView.m; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.m; sourceTree = "<group>"; };
+		483772EF27C8B79DFA17409A /* INTULocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTULocationManager.m; path = LocationManager/INTULocationManager/INTULocationManager.m; sourceTree = "<group>"; };
+		48BAA6F738E233B31DBEFEF1 /* XLFormBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormBaseCell.h; path = XLForm/XL/Cell/XLFormBaseCell.h; sourceTree = "<group>"; };
+		49330A7E47904F5C68654ADA /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		4A08D6F06E48D521D8CA1766 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		4AAD152234D51A646AC0AC30 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MZFormSheetPresentationController Swift Example-Bridging-Header.h"; path = "MZFormSheetPresentationController/MZFormSheetPresentationController Swift Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B5B21778D6B08984A0B8D20 /* Pods-HealthGuardSG-MGSwipeTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-MGSwipeTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		4CE7A1B2EF31F43DA2B83FE5 /* XLFormLeftRightSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormLeftRightSelectorCell.m; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.m; sourceTree = "<group>"; };
+		4DC2465DB14C566F240195D7 /* Pods-HealthGuardSG-Colours.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-Colours.xcconfig"; sourceTree = "<group>"; };
+		4F430F54530DC5763987FE4C /* Pods-HealthGuardSG-INTULocationManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-INTULocationManager-Private.xcconfig"; sourceTree = "<group>"; };
+		504AEF3DC862E15411535E23 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		50BEB6D1A233801BCB827517 /* Pods-HealthGuardSG-GGTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-GGTabBar-dummy.m"; sourceTree = "<group>"; };
+		537ACABA56FC1DCF2709F5BB /* XLFormInlineSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineSelectorCell.h; path = XLForm/XL/Cell/XLFormInlineSelectorCell.h; sourceTree = "<group>"; };
+		541DEAE76C0F7FBED672CD7E /* NSObject+RMArchivable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RMArchivable.m"; path = "RMMapper/NSObject+RMArchivable.m"; sourceTree = "<group>"; };
+		56D2BB5070D6DAF30813F666 /* INTULocationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationRequest.h; path = LocationManager/INTULocationManager/INTULocationRequest.h; sourceTree = "<group>"; };
+		5899F1E048CB19F90746E50C /* NSPredicate+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPredicate+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.h"; sourceTree = "<group>"; };
+		59051CB0466E1A22278226D1 /* XLFormDatePickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDatePickerCell.h; path = XLForm/XL/Cell/XLFormDatePickerCell.h; sourceTree = "<group>"; };
+		5C3FE3C3BD542DE1CAEF65C1 /* XLFormSwitchCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSwitchCell.m; path = XLForm/XL/Cell/XLFormSwitchCell.m; sourceTree = "<group>"; };
+		5D0030AA1F31A59C1D0EC418 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5DB5E4B5854E8E71F655B264 /* GGTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGTabBarController.h; path = GGTabBar/GGTabBarController.h; sourceTree = "<group>"; };
+		61F4609372181C3E83E63026 /* SMCalloutView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SMCalloutView.m; sourceTree = "<group>"; };
+		625DF53B71C0CDB51CCC2A62 /* Pods-HealthGuardSG-RMMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-RMMapper-prefix.pch"; sourceTree = "<group>"; };
+		6378EA9E6E6C8E00D2AFED5D /* MZTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTransition.h; path = MZFormSheetPresentationController/MZTransition.h; sourceTree = "<group>"; };
+		63901E45C93F9DB7D2F3EBFF /* NSString+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.m"; sourceTree = "<group>"; };
+		63A731F12979BD458705775F /* Pods-HealthGuardSG-MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MZAppearance.xcconfig"; sourceTree = "<group>"; };
+		64485379702E6E3A09E93D37 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		64526FE7D15296B43C61877A /* Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m"; sourceTree = "<group>"; };
+		64994128103CE6A9FA42136F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		64CED594009A307B9D2479BD /* Pods-HealthGuardSG-GGTabBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-GGTabBar.xcconfig"; sourceTree = "<group>"; };
+		661058CA2BD424F891ADCF1D /* NSUserDefaults+RMSaveCustomObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+RMSaveCustomObject.m"; path = "RMMapper/NSUserDefaults+RMSaveCustomObject.m"; sourceTree = "<group>"; };
+		67EEFE91C4E190EC0AB8D3A5 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		6AC1722B21E4AAADA4CAA675 /* XLFormOptionsObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsObject.h; path = XLForm/XL/Controllers/XLFormOptionsObject.h; sourceTree = "<group>"; };
+		6B9625BDDCCA8F9B4A81A2D1 /* NSObject+RMCopyable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RMCopyable.m"; path = "RMMapper/NSObject+RMCopyable.m"; sourceTree = "<group>"; };
+		6D1A009C5E5F3CEE08EF1A5C /* MZFormSheetPresentationControllerSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationControllerSegue.h; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerSegue.h; sourceTree = "<group>"; };
+		6DC31814A52B80AA5E516BCB /* XLFormDescriptorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorDelegate.h; path = XLForm/XL/Descriptors/XLFormDescriptorDelegate.h; sourceTree = "<group>"; };
+		6F473D0DBB1B34F2B4C6EA2D /* XLFormRowDescriptorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptorViewController.h; path = XLForm/XL/Controllers/XLFormRowDescriptorViewController.h; sourceTree = "<group>"; };
+		71B04CB114FAF6A9F0C73132 /* Pods-HealthGuardSG-HMSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-HMSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		753D54B8A03EA3C617F6F598 /* XLFormDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorCell.h; path = XLForm/XL/Cell/XLFormDescriptorCell.h; sourceTree = "<group>"; };
+		756887E2BEC11BE84A91885B /* GGTabBar-Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGTabBar-Private.h"; path = "GGTabBar/GGTabBar-Private.h"; sourceTree = "<group>"; };
+		7635FB942825DCFCDF3B838A /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		766FDAF5D00D4579CF37925B /* GGTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGTabBarController.m; path = GGTabBar/GGTabBarController.m; sourceTree = "<group>"; };
+		76F975F207B0526ADE1EC746 /* UIColor+CIELAB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CIELAB.m"; path = "Pod/Classes/Objective-C/UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		77401CB957FDCB8DD0C9599F /* libPods-HealthGuardSG-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CC93598D195F09A058C4C6 /* XLFormOptionsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsViewController.m; path = XLForm/XL/Controllers/XLFormOptionsViewController.m; sourceTree = "<group>"; };
+		7912BC3E14EF9FF5266E2F16 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
+		794F8F7269D46582E98BF9E5 /* Pods-HealthGuardSG-MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MZFormSheetPresentationController.xcconfig"; sourceTree = "<group>"; };
+		79B2475E9FC5EFAC29724838 /* XLFormSegmentedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSegmentedCell.m; path = XLForm/XL/Cell/XLFormSegmentedCell.m; sourceTree = "<group>"; };
+		7D847CA17FB9268A333D5A55 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		7E19D4DAB8781190D2185FD1 /* Pods-HealthGuardSG-SMCalloutView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-SMCalloutView.xcconfig"; sourceTree = "<group>"; };
+		7E5AC46D98FE4F02DEC06725 /* Pods-HealthGuardSG-HMSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-HMSegmentedControl.xcconfig"; sourceTree = "<group>"; };
+		8256EF2CE4841990B9DB7C66 /* XLFormBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormBaseCell.m; path = XLForm/XL/Cell/XLFormBaseCell.m; sourceTree = "<group>"; };
+		82698600E476EE762F729816 /* XLFormRightImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightImageButton.h; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.h; sourceTree = "<group>"; };
+		82F99C2DC8217309505E936E /* XLFormValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidator.h; path = XLForm/XL/Validation/XLFormValidator.h; sourceTree = "<group>"; };
+		8461E9ECAA14F6E3A87D23A5 /* Pods-HealthGuardSG-XLForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-XLForm.xcconfig"; sourceTree = "<group>"; };
+		853113CB42FAF206D6A93D6E /* Pods-HealthGuardSG-MZFormSheetPresentationController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MZFormSheetPresentationController-Private.xcconfig"; sourceTree = "<group>"; };
+		8573BB2C7422509F8F4D519F /* XLFormDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptor.h; path = XLForm/XL/Descriptors/XLFormDescriptor.h; sourceTree = "<group>"; };
+		87C5E1D632831F4049F79130 /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "INTULocationManager+Internal.h"; path = "LocationManager/INTULocationManager/INTULocationManager+Internal.h"; sourceTree = "<group>"; };
+		885FFE871891839DFF4B6F27 /* Pods-HealthGuardSG-HMSegmentedControl-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-HMSegmentedControl-Private.xcconfig"; sourceTree = "<group>"; };
+		8887BDB2CBBEB957AB017697 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		88B40D47BEB1C57B64C519FA /* XLFormSwitchCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSwitchCell.h; path = XLForm/XL/Cell/XLFormSwitchCell.h; sourceTree = "<group>"; };
+		88CF9A18424E58CBDF199598 /* MGSwipeTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGSwipeTabBarController.h; path = MGSwipeTabBarController/MGSwipeTabBarController.h; sourceTree = "<group>"; };
+		8A0DDE336CF26D349D8B1711 /* XLForm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLForm.m; path = XLForm/XL/XLForm.m; sourceTree = "<group>"; };
+		8DF854ECF867978717297EF5 /* Pods-HealthGuardSG-JGMethodSwizzler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-JGMethodSwizzler.xcconfig"; sourceTree = "<group>"; };
+		8E68BB3DB3AD4B8BBC500997 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		8FD5C992437AB758A4F82253 /* Colours.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		903905317C2E34850EE23464 /* Pods-HealthGuardSG-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-environment.h"; sourceTree = "<group>"; };
+		90ECDFD164505C889A5DEDC4 /* XLFormOptionsObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsObject.m; path = XLForm/XL/Controllers/XLFormOptionsObject.m; sourceTree = "<group>"; };
+		90EF9ADFCCD27AB09C97DCB6 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		92B4B11212D9B0E92C5CADC9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		92EBACA774C1333AB387E4FF /* XLFormLeftRightSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormLeftRightSelectorCell.h; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.h; sourceTree = "<group>"; };
+		953659998558C4DBD660387F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		95B5AF3CF8098A50C3951C57 /* Pods-HealthGuardSG-MGSwipeTabBarController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MGSwipeTabBarController-Private.xcconfig"; sourceTree = "<group>"; };
+		9700EE1BC4EAD9E4D403F093 /* Pods-HealthGuardSG-SMCalloutView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-SMCalloutView-Private.xcconfig"; sourceTree = "<group>"; };
+		980701ED9209652D0427AC28 /* Pods-HealthGuardSG-GGTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-GGTabBar-prefix.pch"; sourceTree = "<group>"; };
+		9929BA023058888CB98AEF72 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		993E6864EB336502A4C6DCA3 /* NSArray+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.h"; sourceTree = "<group>"; };
+		99773BB028763DED2BE79437 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		9D292C91DEEBCA75F3FDF34A /* MZFormSheetPresentationControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerAnimator.h; sourceTree = "<group>"; };
+		9E01D423B3FEA20172EE4ADA /* Pods-HealthGuardSG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-dummy.m"; sourceTree = "<group>"; };
+		9E8B39FA38BD0E81C82A6750 /* XLFormDateCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDateCell.h; path = XLForm/XL/Cell/XLFormDateCell.h; sourceTree = "<group>"; };
+		A06FE80C45AE30C321D4EBEB /* XLFormSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSelectorCell.h; path = XLForm/XL/Cell/XLFormSelectorCell.h; sourceTree = "<group>"; };
+		A136EB55D3BA9AF0F6F787AB /* XLFormCheckCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormCheckCell.h; path = XLForm/XL/Cell/XLFormCheckCell.h; sourceTree = "<group>"; };
+		A31A1944F3714E9C2AA84A26 /* ChameleonStatusBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonStatusBar.m; path = "Pod/Classes/Objective-C/ChameleonStatusBar.m"; sourceTree = "<group>"; };
+		A62366C02017250D4CBB8CF3 /* NSExpression+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSExpression+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.h"; sourceTree = "<group>"; };
+		A6469351F7DA6578EE6B3C8A /* XLFormSliderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSliderCell.m; path = XLForm/XL/Cell/XLFormSliderCell.m; sourceTree = "<group>"; };
+		A9F4A9DF0D1DDB1E67F1E239 /* Pods-HealthGuardSG-JGMethodSwizzler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-JGMethodSwizzler-dummy.m"; sourceTree = "<group>"; };
+		AA07BEA446C1683F12DD34C8 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationController.m; sourceTree = "<group>"; };
+		AB11686482A349EF6B670E3E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		AB3303E98785D94F2DE57A83 /* NSPredicate+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPredicate+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.m"; sourceTree = "<group>"; };
+		ACAE5B4E61F26607E1A249FE /* JGMethodSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGMethodSwizzler.h; path = JGMethodSwizzler/JGMethodSwizzler.h; sourceTree = "<group>"; };
+		ACFAB1D5636BFBD11BD30E69 /* GGTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGTabBar.m; path = GGTabBar/GGTabBar.m; sourceTree = "<group>"; };
+		AE7F66067942EE705B0B54FE /* Pods-HealthGuardSG-MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-MZAppearance-prefix.pch"; sourceTree = "<group>"; };
+		AF62323D960D3FAFF66CAD63 /* XLFormRightDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightDetailCell.h; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.h; sourceTree = "<group>"; };
+		AFDF3E4223D384F9185491F9 /* NSExpression+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSExpression+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.m"; sourceTree = "<group>"; };
+		B12C035CB50491AF53AF8334 /* XLFormTextViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextViewCell.m; path = XLForm/XL/Cell/XLFormTextViewCell.m; sourceTree = "<group>"; };
+		B28A6C9A19BA487E4DBBDA5B /* Pods-HealthGuardSG-XLForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-XLForm-prefix.pch"; sourceTree = "<group>"; };
+		B35C2489953EDE555E791594 /* XLFormViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormViewController.m; path = XLForm/XL/Controllers/XLFormViewController.m; sourceTree = "<group>"; };
+		B413A008C72CCE3CF9BB51CF /* libPods-HealthGuardSG-MGSwipeTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-MGSwipeTabBarController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FD2FC9840DF56A12375A8E /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		B6AB72297D7137B314E93FC0 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		B718E93A53882C63092D7F0C /* HMSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
+		B75D070B433DDAA3FA8291E3 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		B84A115738C88D1A5E546B74 /* Pods-HealthGuardSG-SMCalloutView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-SMCalloutView-dummy.m"; sourceTree = "<group>"; };
+		B85F2903D40015F39594A791 /* NSObject+RMCopyable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RMCopyable.h"; path = "RMMapper/NSObject+RMCopyable.h"; sourceTree = "<group>"; };
+		B8AE03C6BAF4F74B18DBB8BE /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		B9C47C573B24033F28D5AFA9 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		BA44654C87190760C301D88D /* Pods-HealthGuardSG-HMSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-HMSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		BD7D0FEC115B0B54E4EB7D45 /* Pods-HealthGuardSG-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthGuardSG-acknowledgements.plist"; sourceTree = "<group>"; };
+		BEBD3684D6B3BE2A49CE3B0D /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		BF85C8FD67246188A11DBBBE /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		C0FF0E5CE454AA7784E4A904 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C2EBB8CDB6858EEE7348F27D /* GGTabBarAppearanceKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGTabBarAppearanceKeys.h; path = GGTabBar/GGTabBarAppearanceKeys.h; sourceTree = "<group>"; };
+		C3B2A9A3074F54C9E2912597 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		C4336707C3A1A3459CF869B4 /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		C71EA50EDDDE09C6777469A6 /* GGTabBarAppearanceKeys.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GGTabBarAppearanceKeys.m; path = GGTabBar/GGTabBarAppearanceKeys.m; sourceTree = "<group>"; };
+		C7AFD56F284A1ECBA274A4A5 /* Pods-HealthGuardSG-SMCalloutView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-SMCalloutView-prefix.pch"; sourceTree = "<group>"; };
+		C825486F5B35A624CCC41543 /* XLFormStepCounterCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormStepCounterCell.m; path = XLForm/XL/Cell/XLFormStepCounterCell.m; sourceTree = "<group>"; };
+		C9026D74E947C438136A9E91 /* Pods-HealthGuardSG-MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		CA2F3D97B70FD16EEC2C0011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		CAB26B17B7184D2D03BBDB14 /* UIViewController+MGSwipeTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MGSwipeTabBarController.m"; path = "MGSwipeTabBarController/UIViewController+MGSwipeTabBarController.m"; sourceTree = "<group>"; };
+		CAD7E4E55BDEB7A9AC470472 /* Pods-HealthGuardSG-ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		CB1F3AAEAA16EC09C83EF6B4 /* XLFormDatePickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDatePickerCell.m; path = XLForm/XL/Cell/XLFormDatePickerCell.m; sourceTree = "<group>"; };
+		CCFEE33C43F36BBFA0AEA2FB /* XLForm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLForm.h; path = XLForm/XL/XLForm.h; sourceTree = "<group>"; };
+		CED20B2D9E3B29BEF37F85B1 /* RMMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RMMapper.h; path = RMMapper/RMMapper.h; sourceTree = "<group>"; };
+		CFB86ECFB30388EEC0AA0A8B /* MZTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTransition.m; path = MZFormSheetPresentationController/MZTransition.m; sourceTree = "<group>"; };
+		D224CA56FD7B396AFFDB3D84 /* Pods-HealthGuardSG-MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
+		D39E410678E1303840FD0601 /* libPods-HealthGuardSG-RMMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-RMMapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E9822B92523780DB9DB9B1 /* XLFormValidatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidatorProtocol.h; path = XLForm/XL/Validation/XLFormValidatorProtocol.h; sourceTree = "<group>"; };
+		D5F3230AD7746783C32AB9A4 /* XLFormOptionsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsViewController.h; path = XLForm/XL/Controllers/XLFormOptionsViewController.h; sourceTree = "<group>"; };
+		D71603713FC0DFC4BE230B50 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonStatusBar.h; path = "Pod/Classes/Objective-C/ChameleonStatusBar.h"; sourceTree = "<group>"; };
+		D9052A2E8095F6D23D93C634 /* Pods-HealthGuardSG-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		D929DD15395148232653684B /* XLFormTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextView.m; path = XLForm/XL/Helpers/Views/XLFormTextView.m; sourceTree = "<group>"; };
+		D96B6BA681316A2D853A076D /* Pods-HealthGuardSG-Colours-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthGuardSG-Colours-prefix.pch"; sourceTree = "<group>"; };
+		D99C409736A06BC4CBD5A655 /* RMMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RMMapper.m; path = RMMapper/RMMapper.m; sourceTree = "<group>"; };
+		DACEA49A08D4EE93228857BC /* XLFormTextViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextViewCell.h; path = XLForm/XL/Cell/XLFormTextViewCell.h; sourceTree = "<group>"; };
+		DB7CDE1BD3880B6A734D4E56 /* XLFormSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSelectorCell.m; path = XLForm/XL/Cell/XLFormSelectorCell.m; sourceTree = "<group>"; };
+		DC5DAD470F78CD2A6B9FC541 /* XLFormViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormViewController.h; path = XLForm/XL/Controllers/XLFormViewController.h; sourceTree = "<group>"; };
+		DD33204652A7646BD41B727F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DE2B8DA3E11EF776E6E2C98A /* libPods-HealthGuardSG-Colours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-Colours.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF900DB262D4077627C88784 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		E031394902B9F08C26AA51EE /* XLFormButtonCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormButtonCell.m; path = XLForm/XL/Cell/XLFormButtonCell.m; sourceTree = "<group>"; };
+		E2C02C4CCFFE2B736B3E7517 /* INTULocationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTULocationRequest.m; path = LocationManager/INTULocationManager/INTULocationRequest.m; sourceTree = "<group>"; };
+		E2FA5251C1DA55858D751710 /* Pods-HealthGuardSG-RMMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-RMMapper-Private.xcconfig"; sourceTree = "<group>"; };
+		E348093549028BCC75CD07AF /* UIView+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XLFormAdditions.m"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.m"; sourceTree = "<group>"; };
+		E4309E07C8881CBA954C7DE6 /* XLFormTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextView.h; path = XLForm/XL/Helpers/Views/XLFormTextView.h; sourceTree = "<group>"; };
+		E43AE96E9C595ADB042CED14 /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
+		E47551C5C901CE08122EA300 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		E672A596908253976F7BDEA1 /* SMClassicCalloutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SMClassicCalloutView.h; sourceTree = "<group>"; };
+		E764C9D5B484B9972EE7514E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E7AF9F9F39463DC1D4040402 /* INTULocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationManager.h; path = LocationManager/INTULocationManager/INTULocationManager.h; sourceTree = "<group>"; };
+		E7E1FF976CB5239E7F4FB713 /* XLFormSliderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSliderCell.h; path = XLForm/XL/Cell/XLFormSliderCell.h; sourceTree = "<group>"; };
+		E83C4E956544B4705C141C20 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		E8B8F7182414C2B225C55B69 /* Colours.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		E9EECB62CF2161346AF111C2 /* Pods-HealthGuardSG-ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		E9F498CBFA164F843E09A296 /* libPods-HealthGuardSG-INTULocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-INTULocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC33A9C1FE2E1EDC7CC1FE38 /* libPods-HealthGuardSG-XLForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-XLForm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC94AECE6B49BB1712F369C0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ECD0A8F2D5950D9CF5E7871D /* XLFormRightDetailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightDetailCell.m; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.m; sourceTree = "<group>"; };
+		ED69C754DE54C3AF7C616505 /* XLFormCheckCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormCheckCell.m; path = XLForm/XL/Cell/XLFormCheckCell.m; sourceTree = "<group>"; };
+		EFC250A67E3254BE7A18BC37 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		F1934753A6DE1A454EEDCF51 /* XLFormPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormPickerCell.h; path = XLForm/XL/Cell/XLFormPickerCell.h; sourceTree = "<group>"; };
+		F2BC3B0748A2B64BB6958A9E /* XLFormValidationStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidationStatus.h; path = XLForm/XL/Validation/XLFormValidationStatus.h; sourceTree = "<group>"; };
+		F2E2077D64A0295B7F1C4B79 /* XLFormDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDescriptor.m; path = XLForm/XL/Descriptors/XLFormDescriptor.m; sourceTree = "<group>"; };
+		F37C907B5DE1FE355C3325FB /* XLFormSectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSectionDescriptor.h; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.h; sourceTree = "<group>"; };
+		F4B8F9E3C1A8F12757E13759 /* GGTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGTabBar.h; path = GGTabBar/GGTabBar.h; sourceTree = "<group>"; };
+		F4F5090BDA68AF558A161BD3 /* XLFormRowNavigationAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowNavigationAccessoryView.h; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.h; sourceTree = "<group>"; };
+		F54FC20813A1ABD2971D1BB1 /* NSObject+RMArchivable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RMArchivable.h"; path = "RMMapper/NSObject+RMArchivable.h"; sourceTree = "<group>"; };
+		F56C2FF35067EE61A95AF1CA /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		F642998C383FA93D178C8D35 /* Pods-HealthGuardSG-RMMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-RMMapper-dummy.m"; sourceTree = "<group>"; };
+		FA1C4670216CBCA8351206AF /* libPods-HealthGuardSG-SMCalloutView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-SMCalloutView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3CB6841A8958058ED9882D /* Pods-HealthGuardSG-XLForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthGuardSG-XLForm-dummy.m"; sourceTree = "<group>"; };
+		FA89935FA196C06D123048B8 /* XLFormButtonCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormButtonCell.h; path = XLForm/XL/Cell/XLFormButtonCell.h; sourceTree = "<group>"; };
+		FA9AA2C9DDAEFCFAB83E9854 /* Pods-HealthGuardSG-RMMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-RMMapper.xcconfig"; sourceTree = "<group>"; };
+		FAAA67B639F588AE612DD0E5 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		FB22511996DF548EE8BAE922 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		FD22DF9E5878B9959E130A8C /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZBlurEffectAdapter.m; path = MZFormSheetPresentationController/MZBlurEffectAdapter.m; sourceTree = "<group>"; };
+		FD4A8C39C3C6B559EC5272C5 /* Pods-HealthGuardSG-MGSwipeTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-MGSwipeTabBarController.xcconfig"; sourceTree = "<group>"; };
+		FDB25FDD7D06D3A1871EB493 /* Pods-HealthGuardSG-Colours-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthGuardSG-Colours-Private.xcconfig"; sourceTree = "<group>"; };
+		FED3F6BB0F43D57E21D36640 /* libPods-HealthGuardSG-JGMethodSwizzler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthGuardSG-JGMethodSwizzler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF580A0ABE19988FAB08341C /* NSUserDefaults+RMSaveCustomObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+RMSaveCustomObject.h"; path = "RMMapper/NSUserDefaults+RMSaveCustomObject.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05D66930952BEB1E1F9B58F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8FCD47B237E12B947C10F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240858830FEA3B0580AADF31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4E43A73ED4C96A78B7DBBD /* Foundation.framework in Frameworks */,
+				31C08ADE71A6FD6861651797 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3464CE246A9AD445142F2E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4A0F04866F09F0DDB43F51 /* Foundation.framework in Frameworks */,
+				861D50A55CE76DD47FEAA606 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D54A0F05B142355C773786D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC4AE9B62F52BA571EAD11F /* Foundation.framework in Frameworks */,
+				47DF561230FB02615D3473C6 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E0EE8397C307820DA25BDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6893DF05B74EC5C4E216A3B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604CDDED3BC353D28F4C27AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA181DB616EBC928FF1CC25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72CEDEEC8185EE7A1291CF6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F758E949F80FB42F8D5A8C4 /* CoreGraphics.framework in Frameworks */,
+				80D120A91AB53490BFFD683E /* Foundation.framework in Frameworks */,
+				C9E09A49907FE70C73F60F66 /* MobileCoreServices.framework in Frameworks */,
+				1AA8C09815C506BEE8E5DA81 /* Security.framework in Frameworks */,
+				7D54AE2615C253F435F562A5 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78627DD7F1967D3CFDD16B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECC6BBB5ADBDD0FD8FC0102 /* CoreGraphics.framework in Frameworks */,
+				DA6D996E9EE8BBF4C5CBCBEE /* Foundation.framework in Frameworks */,
+				57D6FFDCB42D81203125CB7B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91268BC236CE86B6A0FD9688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E543A2284D16007EB13112B9 /* CoreGraphics.framework in Frameworks */,
+				6870CB6F5BA5C55B268FD7A3 /* Foundation.framework in Frameworks */,
+				57FFCC128E9AEE979214650A /* QuartzCore.framework in Frameworks */,
+				7437EA540EBD4467C019B23F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE2EC409452C1659FFB4C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1D4A517FA3CC321AF96F5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA8EB2FF2822D1A2FD41104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0645BBDE9E038CB46AF855B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63FBC8273DB6DBE3BF77461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B729E6D5016DEAF425BF18B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96AE1824A9EB90255DFB954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9DBE342335F59DB812285A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C84510189DBC1747A15C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1610C60D1F2857D434837375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D3BCA559BFC84382BC6B44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64CED594009A307B9D2479BD /* Pods-HealthGuardSG-GGTabBar.xcconfig */,
+				09FBE4F57FC4693EA3847FAB /* Pods-HealthGuardSG-GGTabBar-Private.xcconfig */,
+				50BEB6D1A233801BCB827517 /* Pods-HealthGuardSG-GGTabBar-dummy.m */,
+				980701ED9209652D0427AC28 /* Pods-HealthGuardSG-GGTabBar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-GGTabBar";
+			sourceTree = "<group>";
+		};
+		0C6434127F7B4EB1CCEF066E /* INTULocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				E7AF9F9F39463DC1D4040402 /* INTULocationManager.h */,
+				483772EF27C8B79DFA17409A /* INTULocationManager.m */,
+				87C5E1D632831F4049F79130 /* INTULocationManager+Internal.h */,
+				56D2BB5070D6DAF30813F666 /* INTULocationRequest.h */,
+				E2C02C4CCFFE2B736B3E7517 /* INTULocationRequest.m */,
+				161AA23551B76F0B30C4CF98 /* INTULocationRequestDefines.h */,
+				645511EE264BC2FCE9F2D711 /* Support Files */,
+			);
+			path = INTULocationManager;
+			sourceTree = "<group>";
+		};
+		120AAA22F841F1498B4E197D /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A5C48AEE81219693DB56B3D5 /* Default */,
+				3576D4E7AC8F004389ABFE3E /* Support Files */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		1ED0A32A289CFB0A431B587E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AA2C9DDAEFCFAB83E9854 /* Pods-HealthGuardSG-RMMapper.xcconfig */,
+				E2FA5251C1DA55858D751710 /* Pods-HealthGuardSG-RMMapper-Private.xcconfig */,
+				F642998C383FA93D178C8D35 /* Pods-HealthGuardSG-RMMapper-dummy.m */,
+				625DF53B71C0CDB51CCC2A62 /* Pods-HealthGuardSG-RMMapper-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-RMMapper";
+			sourceTree = "<group>";
+		};
+		2390BAFBD97CE699A243D4DC /* JGMethodSwizzler */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE5B4E61F26607E1A249FE /* JGMethodSwizzler.h */,
+				27D7F8D232A57A6241BB431E /* JGMethodSwizzler.m */,
+				49B9F01974428EC9475E2D36 /* Support Files */,
+			);
+			path = JGMethodSwizzler;
+			sourceTree = "<group>";
+		};
+		266DBA26360019C98B37F4E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD4A8C39C3C6B559EC5272C5 /* Pods-HealthGuardSG-MGSwipeTabBarController.xcconfig */,
+				95B5AF3CF8098A50C3951C57 /* Pods-HealthGuardSG-MGSwipeTabBarController-Private.xcconfig */,
+				0862016F8B9672ECB21FEA92 /* Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m */,
+				4B5B21778D6B08984A0B8D20 /* Pods-HealthGuardSG-MGSwipeTabBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-MGSwipeTabBarController";
+			sourceTree = "<group>";
+		};
+		34286FFEF2CF72903266AA5E /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				B718E93A53882C63092D7F0C /* HMSegmentedControl.h */,
+				353DC1206D7DB220FFC5A59B /* HMSegmentedControl.m */,
+				B6F8819A1FC4BE8B06D4366E /* Support Files */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		34D2C3E4D56CFEE39D4A9A32 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF900DB262D4077627C88784 /* AFNetworkActivityIndicatorManager.h */,
+				67EEFE91C4E190EC0AB8D3A5 /* AFNetworkActivityIndicatorManager.m */,
+				BEBD3684D6B3BE2A49CE3B0D /* UIActivityIndicatorView+AFNetworking.h */,
+				7D847CA17FB9268A333D5A55 /* UIActivityIndicatorView+AFNetworking.m */,
+				B75D070B433DDAA3FA8291E3 /* UIAlertView+AFNetworking.h */,
+				B5FD2FC9840DF56A12375A8E /* UIAlertView+AFNetworking.m */,
+				7635FB942825DCFCDF3B838A /* UIButton+AFNetworking.h */,
+				F56C2FF35067EE61A95AF1CA /* UIButton+AFNetworking.m */,
+				AB11686482A349EF6B670E3E /* UIImageView+AFNetworking.h */,
+				504AEF3DC862E15411535E23 /* UIImageView+AFNetworking.m */,
+				9929BA023058888CB98AEF72 /* UIKit+AFNetworking.h */,
+				49330A7E47904F5C68654ADA /* UIProgressView+AFNetworking.h */,
+				42771DE7BF449C35666024B6 /* UIProgressView+AFNetworking.m */,
+				2933B04B6099A416C760FCB0 /* UIRefreshControl+AFNetworking.h */,
+				B6AB72297D7137B314E93FC0 /* UIRefreshControl+AFNetworking.m */,
+				C3B2A9A3074F54C9E2912597 /* UIWebView+AFNetworking.h */,
+				8887BDB2CBBEB957AB017697 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		35381FC894C4974A08520604 /* GGTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8F9E3C1A8F12757E13759 /* GGTabBar.h */,
+				ACFAB1D5636BFBD11BD30E69 /* GGTabBar.m */,
+				756887E2BEC11BE84A91885B /* GGTabBar-Private.h */,
+				C2EBB8CDB6858EEE7348F27D /* GGTabBarAppearanceKeys.h */,
+				C71EA50EDDDE09C6777469A6 /* GGTabBarAppearanceKeys.m */,
+				5DB5E4B5854E8E71F655B264 /* GGTabBarController.h */,
+				766FDAF5D00D4579CF37925B /* GGTabBarController.m */,
+				07D3BCA559BFC84382BC6B44 /* Support Files */,
+			);
+			path = GGTabBar;
+			sourceTree = "<group>";
+		};
+		3576D4E7AC8F004389ABFE3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41938D0733CD9217FC38E2EF /* Pods-HealthGuardSG-ChameleonFramework.xcconfig */,
+				2FCEC703ACBC82F0419F40E9 /* Pods-HealthGuardSG-ChameleonFramework-Private.xcconfig */,
+				E9EECB62CF2161346AF111C2 /* Pods-HealthGuardSG-ChameleonFramework-dummy.m */,
+				CAD7E4E55BDEB7A9AC470472 /* Pods-HealthGuardSG-ChameleonFramework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		365D6A1E8E8204A893453A4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3127CD230602C6B0FA026CD2 /* XLForm.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3F226225E962191B4507583B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E19D4DAB8781190D2185FD1 /* Pods-HealthGuardSG-SMCalloutView.xcconfig */,
+				9700EE1BC4EAD9E4D403F093 /* Pods-HealthGuardSG-SMCalloutView-Private.xcconfig */,
+				B84A115738C88D1A5E546B74 /* Pods-HealthGuardSG-SMCalloutView-dummy.m */,
+				C7AFD56F284A1ECBA274A4A5 /* Pods-HealthGuardSG-SMCalloutView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-SMCalloutView";
+			sourceTree = "<group>";
+		};
+		49B9F01974428EC9475E2D36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DF854ECF867978717297EF5 /* Pods-HealthGuardSG-JGMethodSwizzler.xcconfig */,
+				2140C9B9BBEAF40D1CE9027C /* Pods-HealthGuardSG-JGMethodSwizzler-Private.xcconfig */,
+				A9F4A9DF0D1DDB1E67F1E239 /* Pods-HealthGuardSG-JGMethodSwizzler-dummy.m */,
+				0ED202DCDF1F70920B353CD3 /* Pods-HealthGuardSG-JGMethodSwizzler-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-JGMethodSwizzler";
+			sourceTree = "<group>";
+		};
+		52B5EFD62566B3E1F731F4FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2465DB14C566F240195D7 /* Pods-HealthGuardSG-Colours.xcconfig */,
+				FDB25FDD7D06D3A1871EB493 /* Pods-HealthGuardSG-Colours-Private.xcconfig */,
+				203FF0C44AB9A4A149F50FCD /* Pods-HealthGuardSG-Colours-dummy.m */,
+				D96B6BA681316A2D853A076D /* Pods-HealthGuardSG-Colours-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-Colours";
+			sourceTree = "<group>";
+		};
+		645511EE264BC2FCE9F2D711 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DD81ACFF48B18D9D228DDCE /* Pods-HealthGuardSG-INTULocationManager.xcconfig */,
+				4F430F54530DC5763987FE4C /* Pods-HealthGuardSG-INTULocationManager-Private.xcconfig */,
+				08C959AEAC0572406D4917D0 /* Pods-HealthGuardSG-INTULocationManager-dummy.m */,
+				0CD66EB81F328C09696BD389 /* Pods-HealthGuardSG-INTULocationManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-INTULocationManager";
+			sourceTree = "<group>";
+		};
+		701CFFC591ACF5DDBA7AF4E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8461E9ECAA14F6E3A87D23A5 /* Pods-HealthGuardSG-XLForm.xcconfig */,
+				12C8A0C26CEA81319C8C4423 /* Pods-HealthGuardSG-XLForm-Private.xcconfig */,
+				FA3CB6841A8958058ED9882D /* Pods-HealthGuardSG-XLForm-dummy.m */,
+				B28A6C9A19BA487E4DBBDA5B /* Pods-HealthGuardSG-XLForm-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-XLForm";
+			sourceTree = "<group>";
+		};
+		79C58778266DC2055C9E965A /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				42147FE50C5058DFDED4F39B /* AFHTTPSessionManager.h */,
+				4412D91AE416D2281A06C248 /* AFHTTPSessionManager.m */,
+				4A08D6F06E48D521D8CA1766 /* AFURLSessionManager.h */,
+				2F055CA9D81D7CF971467B26 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		79EB212168073478CC12D3B3 /* MZAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				7912BC3E14EF9FF5266E2F16 /* MZAppearance.h */,
+				E43AE96E9C595ADB042CED14 /* MZAppearance.m */,
+				C4336707C3A1A3459CF869B4 /* NSInvocation+Copy.h */,
+				8E68BB3DB3AD4B8BBC500997 /* NSInvocation+Copy.m */,
+				D56D75B2472DBB2A85F63EB9 /* Support Files */,
+			);
+			path = MZAppearance;
+			sourceTree = "<group>";
+		};
+		7C888CDA538D7467C96EA514 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				C0FF0E5CE454AA7784E4A904 /* AFSecurityPolicy.h */,
+				423EB6DF75168D546A2F22DD /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		82839EECD9B5E9E5E51A5A7D /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				8FD5C992437AB758A4F82253 /* Colours.h */,
+				E8B8F7182414C2B225C55B69 /* Colours.m */,
+				52B5EFD62566B3E1F731F4FA /* Support Files */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		83BAC582A0DE8422FB2D7168 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C13F0297E6A00E24283496B5 /* Pods-HealthGuardSG */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		944D3AEED4D4EBAEDC2EF5CD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F3D97B70FD16EEC2C0011 /* CoreGraphics.framework */,
+				2B04F9C77532BC2C4E9DCCC1 /* Foundation.framework */,
+				64994128103CE6A9FA42136F /* MobileCoreServices.framework */,
+				E764C9D5B484B9972EE7514E /* QuartzCore.framework */,
+				4244D4502456F311FB467D43 /* Security.framework */,
+				5D0030AA1F31A59C1D0EC418 /* SystemConfiguration.framework */,
+				DD33204652A7646BD41B727F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9485B4EBFDC250B0FE1E41FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2065B3907A38411E23FE480B /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		992CCABECF63E4380BA6C550 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				08330E1994CA6948DE69DABB /* AFNetworking.h */,
+				F265F044D20AA3BD7D792C1F /* NSURLConnection */,
+				79C58778266DC2055C9E965A /* NSURLSession */,
+				FF8493D1D3A9175B4631800A /* Reachability */,
+				7C888CDA538D7467C96EA514 /* Security */,
+				9C2F6F70E4C8EC3A252F37B1 /* Serialization */,
+				B9C3957307FE8D781C5D821A /* Support Files */,
+				34D2C3E4D56CFEE39D4A9A32 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		9979C26888753348174AC364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16BCDD67FC6227DE536E8EDA /* libPods-HealthGuardSG.a */,
+				77401CB957FDCB8DD0C9599F /* libPods-HealthGuardSG-AFNetworking.a */,
+				30271268A9FC6502D17FC64A /* libPods-HealthGuardSG-ChameleonFramework.a */,
+				DE2B8DA3E11EF776E6E2C98A /* libPods-HealthGuardSG-Colours.a */,
+				225C0B9379B5F1204F337F78 /* libPods-HealthGuardSG-GGTabBar.a */,
+				0555CBA1CCD451458EA5B632 /* libPods-HealthGuardSG-HMSegmentedControl.a */,
+				E9F498CBFA164F843E09A296 /* libPods-HealthGuardSG-INTULocationManager.a */,
+				FED3F6BB0F43D57E21D36640 /* libPods-HealthGuardSG-JGMethodSwizzler.a */,
+				B413A008C72CCE3CF9BB51CF /* libPods-HealthGuardSG-MGSwipeTabBarController.a */,
+				028A7E52C84B4AB509470941 /* libPods-HealthGuardSG-MZAppearance.a */,
+				3FBE9C186EECE652AA8BB250 /* libPods-HealthGuardSG-MZFormSheetPresentationController.a */,
+				D39E410678E1303840FD0601 /* libPods-HealthGuardSG-RMMapper.a */,
+				FA1C4670216CBCA8351206AF /* libPods-HealthGuardSG-SMCalloutView.a */,
+				EC33A9C1FE2E1EDC7CC1FE38 /* libPods-HealthGuardSG-XLForm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C2F6F70E4C8EC3A252F37B1 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				27CB3C59C272CC336AA1B0DE /* AFURLRequestSerialization.h */,
+				08F12BB9BFA346B793792952 /* AFURLRequestSerialization.m */,
+				088E546EC98239EFB2E7ECAF /* AFURLResponseSerialization.h */,
+				64485379702E6E3A09E93D37 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		9F0834484D893F71B547D217 /* MGSwipeTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				88CF9A18424E58CBDF199598 /* MGSwipeTabBarController.h */,
+				20D4E5DBB81CD5A086016839 /* MGSwipeTabBarController.m */,
+				3E913F8DE2B7E75FD8DED9A2 /* UIViewController+MGSwipeTabBarController.h */,
+				CAB26B17B7184D2D03BBDB14 /* UIViewController+MGSwipeTabBarController.m */,
+				266DBA26360019C98B37F4E3 /* Support Files */,
+			);
+			path = MGSwipeTabBarController;
+			sourceTree = "<group>";
+		};
+		9F19A892E431D784C09D0DB0 /* XLForm */ = {
+			isa = PBXGroup;
+			children = (
+				993E6864EB336502A4C6DCA3 /* NSArray+XLFormAdditions.h */,
+				15168A6F88777BDFA998A07A /* NSArray+XLFormAdditions.m */,
+				A62366C02017250D4CBB8CF3 /* NSExpression+XLFormAdditions.h */,
+				AFDF3E4223D384F9185491F9 /* NSExpression+XLFormAdditions.m */,
+				3C54C2F4CB703A818044153A /* NSObject+XLFormAdditions.h */,
+				1DAD1025DDD9AA39429C77F9 /* NSObject+XLFormAdditions.m */,
+				5899F1E048CB19F90746E50C /* NSPredicate+XLFormAdditions.h */,
+				AB3303E98785D94F2DE57A83 /* NSPredicate+XLFormAdditions.m */,
+				3A151909333FCAC7A672EE80 /* NSString+XLFormAdditions.h */,
+				63901E45C93F9DB7D2F3EBFF /* NSString+XLFormAdditions.m */,
+				28BA904FAC1BC43CA1FB377A /* UIView+XLFormAdditions.h */,
+				E348093549028BCC75CD07AF /* UIView+XLFormAdditions.m */,
+				CCFEE33C43F36BBFA0AEA2FB /* XLForm.h */,
+				8A0DDE336CF26D349D8B1711 /* XLForm.m */,
+				48BAA6F738E233B31DBEFEF1 /* XLFormBaseCell.h */,
+				8256EF2CE4841990B9DB7C66 /* XLFormBaseCell.m */,
+				FA89935FA196C06D123048B8 /* XLFormButtonCell.h */,
+				E031394902B9F08C26AA51EE /* XLFormButtonCell.m */,
+				A136EB55D3BA9AF0F6F787AB /* XLFormCheckCell.h */,
+				ED69C754DE54C3AF7C616505 /* XLFormCheckCell.m */,
+				9E8B39FA38BD0E81C82A6750 /* XLFormDateCell.h */,
+				194ED03D8D7788FC4A20D551 /* XLFormDateCell.m */,
+				59051CB0466E1A22278226D1 /* XLFormDatePickerCell.h */,
+				CB1F3AAEAA16EC09C83EF6B4 /* XLFormDatePickerCell.m */,
+				8573BB2C7422509F8F4D519F /* XLFormDescriptor.h */,
+				F2E2077D64A0295B7F1C4B79 /* XLFormDescriptor.m */,
+				753D54B8A03EA3C617F6F598 /* XLFormDescriptorCell.h */,
+				6DC31814A52B80AA5E516BCB /* XLFormDescriptorDelegate.h */,
+				242106CAE6EFFAB48E4D11D1 /* XLFormInlineRowDescriptorCell.h */,
+				537ACABA56FC1DCF2709F5BB /* XLFormInlineSelectorCell.h */,
+				10DA658BC16264D584B11115 /* XLFormInlineSelectorCell.m */,
+				92EBACA774C1333AB387E4FF /* XLFormLeftRightSelectorCell.h */,
+				4CE7A1B2EF31F43DA2B83FE5 /* XLFormLeftRightSelectorCell.m */,
+				6AC1722B21E4AAADA4CAA675 /* XLFormOptionsObject.h */,
+				90ECDFD164505C889A5DEDC4 /* XLFormOptionsObject.m */,
+				D5F3230AD7746783C32AB9A4 /* XLFormOptionsViewController.h */,
+				77CC93598D195F09A058C4C6 /* XLFormOptionsViewController.m */,
+				F1934753A6DE1A454EEDCF51 /* XLFormPickerCell.h */,
+				080C379686A8502BB0A231E2 /* XLFormPickerCell.m */,
+				27A0F31B5CD2EB0A0ED30B23 /* XLFormRegexValidator.h */,
+				34E3D207B7F7CCFC301311A4 /* XLFormRegexValidator.m */,
+				AF62323D960D3FAFF66CAD63 /* XLFormRightDetailCell.h */,
+				ECD0A8F2D5950D9CF5E7871D /* XLFormRightDetailCell.m */,
+				82698600E476EE762F729816 /* XLFormRightImageButton.h */,
+				351A374390F9CE37E52501A6 /* XLFormRightImageButton.m */,
+				036A430D772A86C763F3C16B /* XLFormRowDescriptor.h */,
+				2497D7BB8736B2421FB86907 /* XLFormRowDescriptor.m */,
+				6F473D0DBB1B34F2B4C6EA2D /* XLFormRowDescriptorViewController.h */,
+				F4F5090BDA68AF558A161BD3 /* XLFormRowNavigationAccessoryView.h */,
+				46ACAE621B6B1EC1937A4F67 /* XLFormRowNavigationAccessoryView.m */,
+				F37C907B5DE1FE355C3325FB /* XLFormSectionDescriptor.h */,
+				3049ED70C6FBE901D1C0C01F /* XLFormSectionDescriptor.m */,
+				1D4923B61883A88106DC013A /* XLFormSegmentedCell.h */,
+				79B2475E9FC5EFAC29724838 /* XLFormSegmentedCell.m */,
+				A06FE80C45AE30C321D4EBEB /* XLFormSelectorCell.h */,
+				DB7CDE1BD3880B6A734D4E56 /* XLFormSelectorCell.m */,
+				E7E1FF976CB5239E7F4FB713 /* XLFormSliderCell.h */,
+				A6469351F7DA6578EE6B3C8A /* XLFormSliderCell.m */,
+				37D57A3F696AACDDA491A19B /* XLFormStepCounterCell.h */,
+				C825486F5B35A624CCC41543 /* XLFormStepCounterCell.m */,
+				88B40D47BEB1C57B64C519FA /* XLFormSwitchCell.h */,
+				5C3FE3C3BD542DE1CAEF65C1 /* XLFormSwitchCell.m */,
+				1B571A9AEC049F7E21207887 /* XLFormTextFieldCell.h */,
+				3FB7DC9A71DF122ABC3F3081 /* XLFormTextFieldCell.m */,
+				E4309E07C8881CBA954C7DE6 /* XLFormTextView.h */,
+				D929DD15395148232653684B /* XLFormTextView.m */,
+				DACEA49A08D4EE93228857BC /* XLFormTextViewCell.h */,
+				B12C035CB50491AF53AF8334 /* XLFormTextViewCell.m */,
+				F2BC3B0748A2B64BB6958A9E /* XLFormValidationStatus.h */,
+				34ABACE24BAF3EFFA62081E8 /* XLFormValidationStatus.m */,
+				82F99C2DC8217309505E936E /* XLFormValidator.h */,
+				37837D8ACEC08CB318315654 /* XLFormValidator.m */,
+				D3E9822B92523780DB9DB9B1 /* XLFormValidatorProtocol.h */,
+				DC5DAD470F78CD2A6B9FC541 /* XLFormViewController.h */,
+				B35C2489953EDE555E791594 /* XLFormViewController.m */,
+				365D6A1E8E8204A893453A4E /* Resources */,
+				701CFFC591ACF5DDBA7AF4E4 /* Support Files */,
+			);
+			path = XLForm;
+			sourceTree = "<group>";
+		};
+		A4137990F9B5B23A862759EF = {
+			isa = PBXGroup;
+			children = (
+				EC94AECE6B49BB1712F369C0 /* Podfile */,
+				E92C46A5D4DDA56313B58AEE /* Frameworks */,
+				B8C3B49A2E9D1521417956DF /* Pods */,
+				9979C26888753348174AC364 /* Products */,
+				83BAC582A0DE8422FB2D7168 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C48AEE81219693DB56B3D5 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				BF85C8FD67246188A11DBBBE /* Chameleon.h */,
+				EFC250A67E3254BE7A18BC37 /* ChameleonMacros.h */,
+				D71603713FC0DFC4BE230B50 /* ChameleonStatusBar.h */,
+				A31A1944F3714E9C2AA84A26 /* ChameleonStatusBar.m */,
+				B9C47C573B24033F28D5AFA9 /* NSArray+Chameleon.h */,
+				0E0DDDF4E228C3E1769B7DCD /* NSArray+Chameleon.m */,
+				1B6A0C9C4FB7A9F7F28C105C /* UIColor+CIELAB.h */,
+				76F975F207B0526ADE1EC746 /* UIColor+CIELAB.m */,
+				92B4B11212D9B0E92C5CADC9 /* UIColor+Chameleon.h */,
+				E83C4E956544B4705C141C20 /* UIColor+Chameleon.m */,
+				1A2FC781BDD5DAC52ABC5222 /* UIViewController+Chameleon.h */,
+				90EF9ADFCCD27AB09C97DCB6 /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		AD364018A96B04CE66F09B02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				794F8F7269D46582E98BF9E5 /* Pods-HealthGuardSG-MZFormSheetPresentationController.xcconfig */,
+				853113CB42FAF206D6A93D6E /* Pods-HealthGuardSG-MZFormSheetPresentationController-Private.xcconfig */,
+				64526FE7D15296B43C61877A /* Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m */,
+				D224CA56FD7B396AFFDB3D84 /* Pods-HealthGuardSG-MZFormSheetPresentationController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-MZFormSheetPresentationController";
+			sourceTree = "<group>";
+		};
+		B6F8819A1FC4BE8B06D4366E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E5AC46D98FE4F02DEC06725 /* Pods-HealthGuardSG-HMSegmentedControl.xcconfig */,
+				885FFE871891839DFF4B6F27 /* Pods-HealthGuardSG-HMSegmentedControl-Private.xcconfig */,
+				71B04CB114FAF6A9F0C73132 /* Pods-HealthGuardSG-HMSegmentedControl-dummy.m */,
+				BA44654C87190760C301D88D /* Pods-HealthGuardSG-HMSegmentedControl-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-HMSegmentedControl";
+			sourceTree = "<group>";
+		};
+		B8C3B49A2E9D1521417956DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				992CCABECF63E4380BA6C550 /* AFNetworking */,
+				120AAA22F841F1498B4E197D /* ChameleonFramework */,
+				82839EECD9B5E9E5E51A5A7D /* Colours */,
+				35381FC894C4974A08520604 /* GGTabBar */,
+				CB08C83F19A166CBA737692E /* GoogleMaps */,
+				34286FFEF2CF72903266AA5E /* HMSegmentedControl */,
+				0C6434127F7B4EB1CCEF066E /* INTULocationManager */,
+				2390BAFBD97CE699A243D4DC /* JGMethodSwizzler */,
+				9F0834484D893F71B547D217 /* MGSwipeTabBarController */,
+				79EB212168073478CC12D3B3 /* MZAppearance */,
+				D1DDA433ED1E4D6A1298BEBF /* MZFormSheetPresentationController */,
+				C9DF34C46933150841638301 /* RMMapper */,
+				D97E34E15C99CDAD78A17462 /* SMCalloutView */,
+				9F19A892E431D784C09D0DB0 /* XLForm */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9C3957307FE8D781C5D821A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9052A2E8095F6D23D93C634 /* Pods-HealthGuardSG-AFNetworking.xcconfig */,
+				1553EF34695C5F59A9C4F99E /* Pods-HealthGuardSG-AFNetworking-Private.xcconfig */,
+				3A8D8F32DE8A5431FFF1AC86 /* Pods-HealthGuardSG-AFNetworking-dummy.m */,
+				053369F25FDCEC16292E0D33 /* Pods-HealthGuardSG-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-AFNetworking";
+			sourceTree = "<group>";
+		};
+		C011293CAC1C6CBC9B19AD13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				330519BC3232039022165AFC /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C13F0297E6A00E24283496B5 /* Pods-HealthGuardSG */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3062295377DC5D3C155BC /* Pods-HealthGuardSG-acknowledgements.markdown */,
+				BD7D0FEC115B0B54E4EB7D45 /* Pods-HealthGuardSG-acknowledgements.plist */,
+				9E01D423B3FEA20172EE4ADA /* Pods-HealthGuardSG-dummy.m */,
+				903905317C2E34850EE23464 /* Pods-HealthGuardSG-environment.h */,
+				445081A3B1AC18BABF63C985 /* Pods-HealthGuardSG-resources.sh */,
+				2F67E6BE95E74F8F7DC32F90 /* Pods-HealthGuardSG.debug.xcconfig */,
+				41EB619ACD5323908429F5E4 /* Pods-HealthGuardSG.release.xcconfig */,
+			);
+			name = "Pods-HealthGuardSG";
+			path = "Target Support Files/Pods-HealthGuardSG";
+			sourceTree = "<group>";
+		};
+		C9DF34C46933150841638301 /* RMMapper */ = {
+			isa = PBXGroup;
+			children = (
+				F54FC20813A1ABD2971D1BB1 /* NSObject+RMArchivable.h */,
+				541DEAE76C0F7FBED672CD7E /* NSObject+RMArchivable.m */,
+				B85F2903D40015F39594A791 /* NSObject+RMCopyable.h */,
+				6B9625BDDCCA8F9B4A81A2D1 /* NSObject+RMCopyable.m */,
+				FF580A0ABE19988FAB08341C /* NSUserDefaults+RMSaveCustomObject.h */,
+				661058CA2BD424F891ADCF1D /* NSUserDefaults+RMSaveCustomObject.m */,
+				CED20B2D9E3B29BEF37F85B1 /* RMMapper.h */,
+				D99C409736A06BC4CBD5A655 /* RMMapper.m */,
+				1ED0A32A289CFB0A431B587E /* Support Files */,
+			);
+			path = RMMapper;
+			sourceTree = "<group>";
+		};
+		CB08C83F19A166CBA737692E /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				9485B4EBFDC250B0FE1E41FD /* Frameworks */,
+				C011293CAC1C6CBC9B19AD13 /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		D1DDA433ED1E4D6A1298BEBF /* MZFormSheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				209A49E64CE97727BF64B029 /* MZBlurEffectAdapter.h */,
+				FD22DF9E5878B9959E130A8C /* MZBlurEffectAdapter.m */,
+				43ECE00E4476B2D42D55C516 /* MZFormSheetPresentationController.h */,
+				AA07BEA446C1683F12DD34C8 /* MZFormSheetPresentationController.m */,
+				4AAD152234D51A646AC0AC30 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */,
+				9D292C91DEEBCA75F3FDF34A /* MZFormSheetPresentationControllerAnimator.h */,
+				0D8E8DC96119B8D4F6DD07E1 /* MZFormSheetPresentationControllerAnimator.m */,
+				6D1A009C5E5F3CEE08EF1A5C /* MZFormSheetPresentationControllerSegue.h */,
+				1AAE963A8D055FEAADC8EBFF /* MZFormSheetPresentationControllerSegue.m */,
+				6378EA9E6E6C8E00D2AFED5D /* MZTransition.h */,
+				CFB86ECFB30388EEC0AA0A8B /* MZTransition.m */,
+				FAAA67B639F588AE612DD0E5 /* UIViewController+TargetViewController.h */,
+				25237BA91FE1D1CCA6428D3D /* UIViewController+TargetViewController.m */,
+				AD364018A96B04CE66F09B02 /* Support Files */,
+			);
+			path = MZFormSheetPresentationController;
+			sourceTree = "<group>";
+		};
+		D56D75B2472DBB2A85F63EB9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63A731F12979BD458705775F /* Pods-HealthGuardSG-MZAppearance.xcconfig */,
+				4511D2DDB2D23F2E15A6812C /* Pods-HealthGuardSG-MZAppearance-Private.xcconfig */,
+				C9026D74E947C438136A9E91 /* Pods-HealthGuardSG-MZAppearance-dummy.m */,
+				AE7F66067942EE705B0B54FE /* Pods-HealthGuardSG-MZAppearance-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-HealthGuardSG-MZAppearance";
+			sourceTree = "<group>";
+		};
+		D97E34E15C99CDAD78A17462 /* SMCalloutView */ = {
+			isa = PBXGroup;
+			children = (
+				14C172CD286CFA17EA91B9AC /* SMCalloutView.h */,
+				61F4609372181C3E83E63026 /* SMCalloutView.m */,
+				E672A596908253976F7BDEA1 /* SMClassicCalloutView.h */,
+				081BA679B053ED5F901EFA62 /* SMClassicCalloutView.m */,
+				3F226225E962191B4507583B /* Support Files */,
+			);
+			path = SMCalloutView;
+			sourceTree = "<group>";
+		};
+		E92C46A5D4DDA56313B58AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				944D3AEED4D4EBAEDC2EF5CD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F265F044D20AA3BD7D792C1F /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				E47551C5C901CE08122EA300 /* AFHTTPRequestOperation.h */,
+				99773BB028763DED2BE79437 /* AFHTTPRequestOperation.m */,
+				FB22511996DF548EE8BAE922 /* AFHTTPRequestOperationManager.h */,
+				B8AE03C6BAF4F74B18DBB8BE /* AFHTTPRequestOperationManager.m */,
+				0784CB820E231AB8240202ED /* AFURLConnectionOperation.h */,
+				11C769997F8CFF8612C47F8E /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		FF8493D1D3A9175B4631800A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				953659998558C4DBD660387F /* AFNetworkReachabilityManager.h */,
+				2DCEC87574CECC733A529838 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DACE0BFEA6BBC8A89DEF503 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD4DA0E4E983C168D5FC01 /* SMCalloutView.h in Headers */,
+				5D2E2C88811437D239159D4A /* SMClassicCalloutView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A0EAB79A760BA2B10FD88B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC3BEC48B426E8D0F57931 /* NSObject+RMArchivable.h in Headers */,
+				D312DD73CED1A0DC657DD4AB /* NSObject+RMCopyable.h in Headers */,
+				B92C850C156C3EB068700880 /* NSUserDefaults+RMSaveCustomObject.h in Headers */,
+				35CCDDABD6583EB186A8F74E /* RMMapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C4414D02A445405E21FF97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049AE6574F7A620DB3AC2ACF /* INTULocationManager+Internal.h in Headers */,
+				89AB85921F9270668AF1B6E1 /* INTULocationManager.h in Headers */,
+				F8789C5DEA1CDEA69F91CA98 /* INTULocationRequest.h in Headers */,
+				A8C36B2CCC826FBB70E439CB /* INTULocationRequestDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E6BEAC57F1DE24BD63E89A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61504AD308BC03F94CC23576 /* HMSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6390EACA4A7723BF0A1D4EBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0567428D08A07A2E9375C858 /* Colours.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBC96AB74E7D75C767A550F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31FAFC7F89F0018E5B45BBD /* JGMethodSwizzler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E95518E9C7AA826DE53E4DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C995F3E4E1E35403387DD0 /* NSArray+XLFormAdditions.h in Headers */,
+				EBB85062223819D3D4FB09FB /* NSExpression+XLFormAdditions.h in Headers */,
+				3DA53E6796F44BA83EB99FA3 /* NSObject+XLFormAdditions.h in Headers */,
+				C6816D60749698F519DE76A9 /* NSPredicate+XLFormAdditions.h in Headers */,
+				DFF8BF820F4BCB42F726C89A /* NSString+XLFormAdditions.h in Headers */,
+				DBA75459FC79950786FDD22E /* UIView+XLFormAdditions.h in Headers */,
+				F4D8A1C2A5D477DCE9DFCF71 /* XLForm.h in Headers */,
+				0CBB71AF807DF85A2156755E /* XLFormBaseCell.h in Headers */,
+				4615CEF10B17D11831C03048 /* XLFormButtonCell.h in Headers */,
+				719E2D2BA5B9B23A7E0EB9E4 /* XLFormCheckCell.h in Headers */,
+				E91C610A1367EBDC765C399B /* XLFormDateCell.h in Headers */,
+				8387B640D437B6649BCE7DBE /* XLFormDatePickerCell.h in Headers */,
+				DBADEE48071DAA90F2252F0B /* XLFormDescriptor.h in Headers */,
+				04BEFC8B52152C3B7D3C4CC2 /* XLFormDescriptorCell.h in Headers */,
+				B2F21F6D4BCA3C898911C45B /* XLFormDescriptorDelegate.h in Headers */,
+				56EE04A5EB1615384E2DDFFD /* XLFormInlineRowDescriptorCell.h in Headers */,
+				E7C0FD8329AC3C23C1CDCEA3 /* XLFormInlineSelectorCell.h in Headers */,
+				B20FA0219B9CCAFBD08FA21A /* XLFormLeftRightSelectorCell.h in Headers */,
+				63EDEEF8F4724895842FDCEF /* XLFormOptionsObject.h in Headers */,
+				A4023CAC75599E5AEBED7479 /* XLFormOptionsViewController.h in Headers */,
+				E5DA8B70690CA85147CA5768 /* XLFormPickerCell.h in Headers */,
+				C1D06C54FE77F2C0C66DE2C3 /* XLFormRegexValidator.h in Headers */,
+				801B5C0147F753C4E242F5DE /* XLFormRightDetailCell.h in Headers */,
+				D49D8475A900FBD7CA69931B /* XLFormRightImageButton.h in Headers */,
+				8A0D692B0B74DEE5533BE326 /* XLFormRowDescriptor.h in Headers */,
+				509A25ECC35EBDC8C8B19E58 /* XLFormRowDescriptorViewController.h in Headers */,
+				A0E1A469CE9945B607A5EEDE /* XLFormRowNavigationAccessoryView.h in Headers */,
+				038FF29EB19CA4D45812F8A2 /* XLFormSectionDescriptor.h in Headers */,
+				32E6C605DB1DF660AB4D8439 /* XLFormSegmentedCell.h in Headers */,
+				B33F29B2DDB2998760D32C05 /* XLFormSelectorCell.h in Headers */,
+				6539458079A49F4FC9D5BF6D /* XLFormSliderCell.h in Headers */,
+				A7321E4DFC1D9E8068925DE5 /* XLFormStepCounterCell.h in Headers */,
+				B20380F002DC0F94C9240090 /* XLFormSwitchCell.h in Headers */,
+				007C1AB4DDA123B1FBEBBD20 /* XLFormTextFieldCell.h in Headers */,
+				9AEEF7E7B8E8E955A14C4552 /* XLFormTextView.h in Headers */,
+				08E8A1166DD5BD3E30E94316 /* XLFormTextViewCell.h in Headers */,
+				C1EDFCB9D42BA6E2F6109DD4 /* XLFormValidationStatus.h in Headers */,
+				DA073EB9CD5721590F68F6B2 /* XLFormValidator.h in Headers */,
+				2D4AE2CEDF5F1B027C114FFD /* XLFormValidatorProtocol.h in Headers */,
+				E1D7C62E5EB364528D0898C2 /* XLFormViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7163E9E402F2C5036F143954 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779FA5475A4ECE7FD2739614 /* Chameleon.h in Headers */,
+				E0ADB8B154F696B2C2A8DD58 /* ChameleonMacros.h in Headers */,
+				9284E0A239D2DA4FD89B91F4 /* ChameleonStatusBar.h in Headers */,
+				E7168CA8A11581E7C241F7D6 /* NSArray+Chameleon.h in Headers */,
+				9CEE278BE885AAD8AAFA3D6F /* UIColor+CIELAB.h in Headers */,
+				4885FF7530B1EC4E50314212 /* UIColor+Chameleon.h in Headers */,
+				6EBD84AF88BAC265A25533F1 /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A0374E7E88C2C267549AFDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34720E154E418BA802FD1FC /* GGTabBar-Private.h in Headers */,
+				9F1B03997923FC6AFECEC785 /* GGTabBar.h in Headers */,
+				83886666378054F6F6E007E7 /* GGTabBarAppearanceKeys.h in Headers */,
+				C8CDAA3AA51BF4927AAF7D26 /* GGTabBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B557F831F5CC150AE6B10370 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFFE1495B3A4EBA29A96D71 /* MZAppearance.h in Headers */,
+				A1E82C2179DA8BF9CEF660DE /* NSInvocation+Copy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3A71B1F9211F04D1B8B9B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0EE77581022FE6286C431E /* MZBlurEffectAdapter.h in Headers */,
+				868F2A1614A3EBDC3FB2B696 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */,
+				C9A53933CA55CE202A60E52C /* MZFormSheetPresentationController.h in Headers */,
+				18994516288E81BA64E24241 /* MZFormSheetPresentationControllerAnimator.h in Headers */,
+				E3AB45D773FA2C76EEEDADF4 /* MZFormSheetPresentationControllerSegue.h in Headers */,
+				54DF1E03B677D75F526DA96B /* MZTransition.h in Headers */,
+				249535498EFB43083E861D0D /* UIViewController+TargetViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1CC93545C35DAAA62145642 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC9AAD52036C99E57DB6BF0 /* AFHTTPRequestOperation.h in Headers */,
+				E10C3BA6469701E24CDDB177 /* AFHTTPRequestOperationManager.h in Headers */,
+				5BCC8D013E824B45FD0F8BAB /* AFHTTPSessionManager.h in Headers */,
+				C05A5D4B822934134207B899 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				52D703BE2AE1951E450FCF3D /* AFNetworkReachabilityManager.h in Headers */,
+				1D78DFE67BE007B3013F4B94 /* AFNetworking.h in Headers */,
+				99B958912080540DFE32F579 /* AFSecurityPolicy.h in Headers */,
+				CB677094D118BCCCBF93FB04 /* AFURLConnectionOperation.h in Headers */,
+				02670E8777BA41970B8A0DA6 /* AFURLRequestSerialization.h in Headers */,
+				27BD867F03E25D1A7BBC81DB /* AFURLResponseSerialization.h in Headers */,
+				79F573DE942787B2748A8089 /* AFURLSessionManager.h in Headers */,
+				5FDCA2B58BF7379647601878 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				42D8A1CA8B1A107EC12A32E3 /* UIAlertView+AFNetworking.h in Headers */,
+				1A7EB936AAD268F13131DCDA /* UIButton+AFNetworking.h in Headers */,
+				0F30344B1B82BE73AA334C1B /* UIImageView+AFNetworking.h in Headers */,
+				464271544B195823C189DADC /* UIKit+AFNetworking.h in Headers */,
+				ED25A36ED71CCB787C17BDA7 /* UIProgressView+AFNetworking.h in Headers */,
+				D2C5C2397DA363A50E4E5E65 /* UIRefreshControl+AFNetworking.h in Headers */,
+				A14839D41C0E3742AD9CD813 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F868ACACBBB3DE66D64B80B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C0A7FF030611472124FE33 /* MGSwipeTabBarController.h in Headers */,
+				5CAAC0A14A357FA3345B69D2 /* UIViewController+MGSwipeTabBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DCE4ACB9992D7FC0E0BBE42 /* Pods-HealthGuardSG-INTULocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F984E5FEBBF745F227B6AB08 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-INTULocationManager" */;
+			buildPhases = (
+				C9CB7A9C7156084D0E213F32 /* Sources */,
+				604CDDED3BC353D28F4C27AB /* Frameworks */,
+				41C4414D02A445405E21FF97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-INTULocationManager";
+			productName = "Pods-HealthGuardSG-INTULocationManager";
+			productReference = E9F498CBFA164F843E09A296 /* libPods-HealthGuardSG-INTULocationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24A05063AB10AEAA31F525E9 /* Pods-HealthGuardSG-HMSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E073D3AC80E92C086CB073 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-HMSegmentedControl" */;
+			buildPhases = (
+				8D0EB6E235060DBB7B86C712 /* Sources */,
+				3464CE246A9AD445142F2E78 /* Frameworks */,
+				5E6BEAC57F1DE24BD63E89A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-HMSegmentedControl";
+			productName = "Pods-HealthGuardSG-HMSegmentedControl";
+			productReference = 0555CBA1CCD451458EA5B632 /* libPods-HealthGuardSG-HMSegmentedControl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3F9E69EED71D8A550376BD95 /* Pods-HealthGuardSG-MGSwipeTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB070D153F90B0A8C0BFBE17 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MGSwipeTabBarController" */;
+			buildPhases = (
+				E31F83B7562E6866679841E6 /* Sources */,
+				E96AE1824A9EB90255DFB954 /* Frameworks */,
+				F868ACACBBB3DE66D64B80B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-MGSwipeTabBarController";
+			productName = "Pods-HealthGuardSG-MGSwipeTabBarController";
+			productReference = B413A008C72CCE3CF9BB51CF /* libPods-HealthGuardSG-MGSwipeTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4ACC23B4A346AFF64BC964A4 /* Pods-HealthGuardSG-XLForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CFBB63994A0F1870855730 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-XLForm" */;
+			buildPhases = (
+				239006424A18B4C167456EF7 /* Sources */,
+				78627DD7F1967D3CFDD16B03 /* Frameworks */,
+				6E95518E9C7AA826DE53E4DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-XLForm";
+			productName = "Pods-HealthGuardSG-XLForm";
+			productReference = EC33A9C1FE2E1EDC7CC1FE38 /* libPods-HealthGuardSG-XLForm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5B9CF606745E7E0746638403 /* Pods-HealthGuardSG-Colours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A4B4E2E1BAEA884AAA7976 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-Colours" */;
+			buildPhases = (
+				BDA65F6AC57EE4741A6A364A /* Sources */,
+				9EE2EC409452C1659FFB4C57 /* Frameworks */,
+				6390EACA4A7723BF0A1D4EBD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-Colours";
+			productName = "Pods-HealthGuardSG-Colours";
+			productReference = DE2B8DA3E11EF776E6E2C98A /* libPods-HealthGuardSG-Colours.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		99F0BD7322BBFB2B676BDAE8 /* Pods-HealthGuardSG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008C172681A718309F22522B /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG" */;
+			buildPhases = (
+				7B194AB137433E18133E6EAA /* Sources */,
+				DEA8EB2FF2822D1A2FD41104 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05612022438F6536F7556FB1 /* PBXTargetDependency */,
+				C4B166BBED8161DDC39F90CA /* PBXTargetDependency */,
+				6097E07B64971CE35CCE82E1 /* PBXTargetDependency */,
+				B968AC44D56122E4F07FDF4D /* PBXTargetDependency */,
+				9F17BF03B7D513A36E14BE74 /* PBXTargetDependency */,
+				933BE71EAAEF5D76032B08C3 /* PBXTargetDependency */,
+				752A3220789A7BFD452E7905 /* PBXTargetDependency */,
+				0AB0E0E8351656E5A6237B4E /* PBXTargetDependency */,
+				1751E20762296A2593DB3703 /* PBXTargetDependency */,
+				2825B0BE62431DAAD9ADED58 /* PBXTargetDependency */,
+				CC4CDB031C99614DA093BDF0 /* PBXTargetDependency */,
+				525750E15500DB8E15856911 /* PBXTargetDependency */,
+				1685BC06830299C0C2B2D50A /* PBXTargetDependency */,
+			);
+			name = "Pods-HealthGuardSG";
+			productName = "Pods-HealthGuardSG";
+			productReference = 16BCDD67FC6227DE536E8EDA /* libPods-HealthGuardSG.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9EC2F42CC6A84EA32EAB41FF /* Pods-HealthGuardSG-ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAAD2012FD1DA3A5226360D /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-ChameleonFramework" */;
+			buildPhases = (
+				F765AAC12F86EE6B092AF5FA /* Sources */,
+				91268BC236CE86B6A0FD9688 /* Frameworks */,
+				7163E9E402F2C5036F143954 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-ChameleonFramework";
+			productName = "Pods-HealthGuardSG-ChameleonFramework";
+			productReference = 30271268A9FC6502D17FC64A /* libPods-HealthGuardSG-ChameleonFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A53A83B75BC21F82502AB9CB /* Pods-HealthGuardSG-MZFormSheetPresentationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B27C1AB954D5DD8B80B2A7 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MZFormSheetPresentationController" */;
+			buildPhases = (
+				E8B8C90EB05399CE144D0A05 /* Sources */,
+				3D54A0F05B142355C773786D /* Frameworks */,
+				DB3A71B1F9211F04D1B8B9B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21276991594ECB0F85420F88 /* PBXTargetDependency */,
+				91B3B662AFFF763FC2CB8287 /* PBXTargetDependency */,
+			);
+			name = "Pods-HealthGuardSG-MZFormSheetPresentationController";
+			productName = "Pods-HealthGuardSG-MZFormSheetPresentationController";
+			productReference = 3FBE9C186EECE652AA8BB250 /* libPods-HealthGuardSG-MZFormSheetPresentationController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE9314CC57034090457DFF88 /* Pods-HealthGuardSG-GGTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C4725538396FFB8BC60DC8 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-GGTabBar" */;
+			buildPhases = (
+				FFECCB978025D5CBB6D45D9C /* Sources */,
+				E63FBC8273DB6DBE3BF77461 /* Frameworks */,
+				9A0374E7E88C2C267549AFDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-GGTabBar";
+			productName = "Pods-HealthGuardSG-GGTabBar";
+			productReference = 225C0B9379B5F1204F337F78 /* libPods-HealthGuardSG-GGTabBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B419D6C3BB8B3C4A12832B2D /* Pods-HealthGuardSG-JGMethodSwizzler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169F389B316F7810EC9D5C9B /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-JGMethodSwizzler" */;
+			buildPhases = (
+				9A158F0931445D8E1B9F54D1 /* Sources */,
+				F5C84510189DBC1747A15C19 /* Frameworks */,
+				6DBC96AB74E7D75C767A550F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-JGMethodSwizzler";
+			productName = "Pods-HealthGuardSG-JGMethodSwizzler";
+			productReference = FED3F6BB0F43D57E21D36640 /* libPods-HealthGuardSG-JGMethodSwizzler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F1981306D698C92162018D36 /* Pods-HealthGuardSG-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0003D2C1CC876ECDF8DEDCFE /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-AFNetworking" */;
+			buildPhases = (
+				F76066B7A3F1FE6656BB0CAD /* Sources */,
+				72CEDEEC8185EE7A1291CF6D /* Frameworks */,
+				E1CC93545C35DAAA62145642 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-AFNetworking";
+			productName = "Pods-HealthGuardSG-AFNetworking";
+			productReference = 77401CB957FDCB8DD0C9599F /* libPods-HealthGuardSG-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2E93CD7408F4A27DEBEE97D /* Pods-HealthGuardSG-RMMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39730A534B5B2D7D6E6F23C /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-RMMapper" */;
+			buildPhases = (
+				A8DC5615027E19011B2BE5D4 /* Sources */,
+				5E0EE8397C307820DA25BDCE /* Frameworks */,
+				3A0EAB79A760BA2B10FD88B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-RMMapper";
+			productName = "Pods-HealthGuardSG-RMMapper";
+			productReference = D39E410678E1303840FD0601 /* libPods-HealthGuardSG-RMMapper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F859808AB494B434EB6F8EA4 /* Pods-HealthGuardSG-SMCalloutView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17787AB99C26C10A544EFE8D /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-SMCalloutView" */;
+			buildPhases = (
+				CDB91BF9225BCCC697C3F47B /* Sources */,
+				05D66930952BEB1E1F9B58F6 /* Frameworks */,
+				1DACE0BFEA6BBC8A89DEF503 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-SMCalloutView";
+			productName = "Pods-HealthGuardSG-SMCalloutView";
+			productReference = FA1C4670216CBCA8351206AF /* libPods-HealthGuardSG-SMCalloutView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FD0DE3A56EBBF811E326017E /* Pods-HealthGuardSG-MZAppearance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD4FF4C837B5F1D4B09FB4E3 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MZAppearance" */;
+			buildPhases = (
+				E98542BB103CAC67266CBDD2 /* Sources */,
+				240858830FEA3B0580AADF31 /* Frameworks */,
+				B557F831F5CC150AE6B10370 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HealthGuardSG-MZAppearance";
+			productName = "Pods-HealthGuardSG-MZAppearance";
+			productReference = 028A7E52C84B4AB509470941 /* libPods-HealthGuardSG-MZAppearance.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C9A8538244D4427C6945A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 34F42569B1764F80E5F633FD /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4137990F9B5B23A862759EF;
+			productRefGroup = 9979C26888753348174AC364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99F0BD7322BBFB2B676BDAE8 /* Pods-HealthGuardSG */,
+				F1981306D698C92162018D36 /* Pods-HealthGuardSG-AFNetworking */,
+				9EC2F42CC6A84EA32EAB41FF /* Pods-HealthGuardSG-ChameleonFramework */,
+				5B9CF606745E7E0746638403 /* Pods-HealthGuardSG-Colours */,
+				AE9314CC57034090457DFF88 /* Pods-HealthGuardSG-GGTabBar */,
+				24A05063AB10AEAA31F525E9 /* Pods-HealthGuardSG-HMSegmentedControl */,
+				0DCE4ACB9992D7FC0E0BBE42 /* Pods-HealthGuardSG-INTULocationManager */,
+				B419D6C3BB8B3C4A12832B2D /* Pods-HealthGuardSG-JGMethodSwizzler */,
+				3F9E69EED71D8A550376BD95 /* Pods-HealthGuardSG-MGSwipeTabBarController */,
+				FD0DE3A56EBBF811E326017E /* Pods-HealthGuardSG-MZAppearance */,
+				A53A83B75BC21F82502AB9CB /* Pods-HealthGuardSG-MZFormSheetPresentationController */,
+				F2E93CD7408F4A27DEBEE97D /* Pods-HealthGuardSG-RMMapper */,
+				F859808AB494B434EB6F8EA4 /* Pods-HealthGuardSG-SMCalloutView */,
+				4ACC23B4A346AFF64BC964A4 /* Pods-HealthGuardSG-XLForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239006424A18B4C167456EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B025386476DBDEAFEB9504B /* NSArray+XLFormAdditions.m in Sources */,
+				A6E4EA22D3840D52130D4417 /* NSExpression+XLFormAdditions.m in Sources */,
+				90DE913BEA95E5CE2A62AD7C /* NSObject+XLFormAdditions.m in Sources */,
+				0DCB7D4D4A7CEFCED3674512 /* NSPredicate+XLFormAdditions.m in Sources */,
+				E70C9621123686436C4CFF28 /* NSString+XLFormAdditions.m in Sources */,
+				C5BF510ED959E85CD911AB60 /* Pods-HealthGuardSG-XLForm-dummy.m in Sources */,
+				672081275BE64306577FCB1A /* UIView+XLFormAdditions.m in Sources */,
+				61157D2A15F9D921E3AEE7D5 /* XLForm.m in Sources */,
+				DF5082F048E79BEF43D82FF8 /* XLFormBaseCell.m in Sources */,
+				C2C6E562767683DA1830E268 /* XLFormButtonCell.m in Sources */,
+				93D3345D2419386782275FB9 /* XLFormCheckCell.m in Sources */,
+				984739242B6C4FB644E26C12 /* XLFormDateCell.m in Sources */,
+				AA9727DEA167BA9A1EB7B874 /* XLFormDatePickerCell.m in Sources */,
+				855BDEACF6176C4D164D3082 /* XLFormDescriptor.m in Sources */,
+				39EA8B1B6D0B779BADB97B88 /* XLFormInlineSelectorCell.m in Sources */,
+				A6DE6FB711F83B45B49BBF76 /* XLFormLeftRightSelectorCell.m in Sources */,
+				7E62B40AF4177212DEB86CB5 /* XLFormOptionsObject.m in Sources */,
+				7447990C30F00E1382575954 /* XLFormOptionsViewController.m in Sources */,
+				1FA1A2267B1AD93527790DD3 /* XLFormPickerCell.m in Sources */,
+				1F3B4CE86B0358E0D0F24E12 /* XLFormRegexValidator.m in Sources */,
+				879AD0803C0AC7BFD2BF7EBA /* XLFormRightDetailCell.m in Sources */,
+				89DE944EB75852BDCA838BF0 /* XLFormRightImageButton.m in Sources */,
+				349C22271D861C3A45E28470 /* XLFormRowDescriptor.m in Sources */,
+				3EB57FCCDA975BD42F2B0876 /* XLFormRowNavigationAccessoryView.m in Sources */,
+				017686814D11A321C7B9BCDE /* XLFormSectionDescriptor.m in Sources */,
+				BCB0B120B0780DD888607351 /* XLFormSegmentedCell.m in Sources */,
+				B0566CF30C2E0F3C2D2873D2 /* XLFormSelectorCell.m in Sources */,
+				9A49BB2AAA26210AA40CA332 /* XLFormSliderCell.m in Sources */,
+				BF81F2486C7947DFF14519D9 /* XLFormStepCounterCell.m in Sources */,
+				F4864DBEF94F47DA0D53FF6F /* XLFormSwitchCell.m in Sources */,
+				8A057C79C14A93FB4181A75A /* XLFormTextFieldCell.m in Sources */,
+				D9FD2467E21F10ADC345D3DD /* XLFormTextView.m in Sources */,
+				EFC4F97B81620B31706D594C /* XLFormTextViewCell.m in Sources */,
+				B40DF799BABBF55D9FB6511C /* XLFormValidationStatus.m in Sources */,
+				7E895B0B1B8954A800E630D7 /* XLFormValidator.m in Sources */,
+				0711A349E798D96A69A92AF5 /* XLFormViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B194AB137433E18133E6EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BA9B6EE394C4A49163581B /* Pods-HealthGuardSG-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0EB6E235060DBB7B86C712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EB67C43344F989D7AD6F81 /* HMSegmentedControl.m in Sources */,
+				C9DDCCC0D11AA247170FEF3F /* Pods-HealthGuardSG-HMSegmentedControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A158F0931445D8E1B9F54D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF8AA8C955D49741921EAEE /* JGMethodSwizzler.m in Sources */,
+				DB8ED60C0584AE664DEC559E /* Pods-HealthGuardSG-JGMethodSwizzler-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8DC5615027E19011B2BE5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DB3C4077B06B773F8246F5 /* NSObject+RMArchivable.m in Sources */,
+				97B7A1CD970CF4C8CE57738B /* NSObject+RMCopyable.m in Sources */,
+				0FD00F791589CC73E2601C82 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
+				DE27A894F0918993890E6B45 /* Pods-HealthGuardSG-RMMapper-dummy.m in Sources */,
+				6F709D35AA63E17947F2E559 /* RMMapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA65F6AC57EE4741A6A364A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BF21E082B34940B17501DC /* Colours.m in Sources */,
+				0045BB89B9E0FE11D3313385 /* Pods-HealthGuardSG-Colours-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB7A9C7156084D0E213F32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F05677A7996D4B1250D175 /* INTULocationManager.m in Sources */,
+				4B39D1A419B3728C3C29D73B /* INTULocationRequest.m in Sources */,
+				958F238D78D548B61B05FB9C /* Pods-HealthGuardSG-INTULocationManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB91BF9225BCCC697C3F47B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2824E7BC710D3557B2C63322 /* Pods-HealthGuardSG-SMCalloutView-dummy.m in Sources */,
+				FB94AF76F142C07E1B987037 /* SMCalloutView.m in Sources */,
+				2AFA5692856BBABD74A8BAE9 /* SMClassicCalloutView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F83B7562E6866679841E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60830FF98A8EAD6F8F2DF575 /* MGSwipeTabBarController.m in Sources */,
+				6EDA51BE3DF480B2A406D219 /* Pods-HealthGuardSG-MGSwipeTabBarController-dummy.m in Sources */,
+				E4E346764F68609849EBD609 /* UIViewController+MGSwipeTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B8C90EB05399CE144D0A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F3C2E8F3B75CD7E29D6713 /* MZBlurEffectAdapter.m in Sources */,
+				BBA61A8141FEA873CED9E7FB /* MZFormSheetPresentationController.m in Sources */,
+				D93FA90481364A4BDF919949 /* MZFormSheetPresentationControllerAnimator.m in Sources */,
+				AAAD14DAD4F2D674B55FAB6F /* MZFormSheetPresentationControllerSegue.m in Sources */,
+				3ABF3BA1BB7D21D83C955331 /* MZTransition.m in Sources */,
+				9B804393F97D01A8DEEDD108 /* Pods-HealthGuardSG-MZFormSheetPresentationController-dummy.m in Sources */,
+				877FECAE2422A8AA792BA4C4 /* UIViewController+TargetViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98542BB103CAC67266CBDD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC737ADF19FE677626485EC /* MZAppearance.m in Sources */,
+				0ADD6599E42C263650B2EB5C /* NSInvocation+Copy.m in Sources */,
+				4E426591041F8C6219E76A9C /* Pods-HealthGuardSG-MZAppearance-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76066B7A3F1FE6656BB0CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FAE2A996B35CEAE22940CC /* AFHTTPRequestOperation.m in Sources */,
+				D754E40A1587F7F964930B19 /* AFHTTPRequestOperationManager.m in Sources */,
+				F8B8F8AC1D51C73B3E514050 /* AFHTTPSessionManager.m in Sources */,
+				94383AD1BD6462FDEA9BC182 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				6460D4BEE6132196E2EF66C6 /* AFNetworkReachabilityManager.m in Sources */,
+				E0E6C8960F6D1DD9A5D1BA08 /* AFSecurityPolicy.m in Sources */,
+				40E64DA88B7DB2A0757A0203 /* AFURLConnectionOperation.m in Sources */,
+				C5D60CFA1359702AA0F5186E /* AFURLRequestSerialization.m in Sources */,
+				1E49E13C1FED5F156E8F5A25 /* AFURLResponseSerialization.m in Sources */,
+				11021D20E9A677DFAC38A13F /* AFURLSessionManager.m in Sources */,
+				E4A887A9CB0288415047DD01 /* Pods-HealthGuardSG-AFNetworking-dummy.m in Sources */,
+				4A0064F52A23DEF91A3D0D32 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				AA47ECE2E442A2B346841FE3 /* UIAlertView+AFNetworking.m in Sources */,
+				71A68E55A2723EE21BE0732D /* UIButton+AFNetworking.m in Sources */,
+				612C3E690317E3CED1F9CD5A /* UIImageView+AFNetworking.m in Sources */,
+				75527054410BF4808CCAE7E8 /* UIProgressView+AFNetworking.m in Sources */,
+				A0E976A704C20ABE29C76AF2 /* UIRefreshControl+AFNetworking.m in Sources */,
+				D890840F91A76C9FD4FC0EA5 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F765AAC12F86EE6B092AF5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EADD19055535F8C1D966AA6 /* ChameleonStatusBar.m in Sources */,
+				0734A23C0A9BF715F95CEF21 /* NSArray+Chameleon.m in Sources */,
+				354FA81B49A85108E6DE75FF /* Pods-HealthGuardSG-ChameleonFramework-dummy.m in Sources */,
+				5AC0623B18C29EB5953EF641 /* UIColor+CIELAB.m in Sources */,
+				96012F9C95F15CF4E686BA0C /* UIColor+Chameleon.m in Sources */,
+				2EBBDF79375FCAA58BDF0660 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFECCB978025D5CBB6D45D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD4AB6E77BE569ED5265706 /* GGTabBar.m in Sources */,
+				48ED52F4B38E24FA34526881 /* GGTabBarAppearanceKeys.m in Sources */,
+				6C81D1B6F97E6954A860C682 /* GGTabBarController.m in Sources */,
+				FA75B87ABB47B2E0548B1FC7 /* Pods-HealthGuardSG-GGTabBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05612022438F6536F7556FB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-AFNetworking";
+			target = F1981306D698C92162018D36 /* Pods-HealthGuardSG-AFNetworking */;
+			targetProxy = E5937F83E9A1DC140DCB9E71 /* PBXContainerItemProxy */;
+		};
+		0AB0E0E8351656E5A6237B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-MGSwipeTabBarController";
+			target = 3F9E69EED71D8A550376BD95 /* Pods-HealthGuardSG-MGSwipeTabBarController */;
+			targetProxy = 3050D349C9B7A6ACC92DB464 /* PBXContainerItemProxy */;
+		};
+		1685BC06830299C0C2B2D50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-XLForm";
+			target = 4ACC23B4A346AFF64BC964A4 /* Pods-HealthGuardSG-XLForm */;
+			targetProxy = 997C7F9CB91B8E10F00F5839 /* PBXContainerItemProxy */;
+		};
+		1751E20762296A2593DB3703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-MZAppearance";
+			target = FD0DE3A56EBBF811E326017E /* Pods-HealthGuardSG-MZAppearance */;
+			targetProxy = DC9FA20F0110E7E717C930BA /* PBXContainerItemProxy */;
+		};
+		21276991594ECB0F85420F88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-JGMethodSwizzler";
+			target = B419D6C3BB8B3C4A12832B2D /* Pods-HealthGuardSG-JGMethodSwizzler */;
+			targetProxy = 70B6E6396A2E317DB00F6353 /* PBXContainerItemProxy */;
+		};
+		2825B0BE62431DAAD9ADED58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-MZFormSheetPresentationController";
+			target = A53A83B75BC21F82502AB9CB /* Pods-HealthGuardSG-MZFormSheetPresentationController */;
+			targetProxy = B0F609C824FC786181C6ACE5 /* PBXContainerItemProxy */;
+		};
+		525750E15500DB8E15856911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-SMCalloutView";
+			target = F859808AB494B434EB6F8EA4 /* Pods-HealthGuardSG-SMCalloutView */;
+			targetProxy = 28D2C54611D8D8E595CCFA09 /* PBXContainerItemProxy */;
+		};
+		6097E07B64971CE35CCE82E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-Colours";
+			target = 5B9CF606745E7E0746638403 /* Pods-HealthGuardSG-Colours */;
+			targetProxy = 803ECCA87C4209FC28B9BF61 /* PBXContainerItemProxy */;
+		};
+		752A3220789A7BFD452E7905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-JGMethodSwizzler";
+			target = B419D6C3BB8B3C4A12832B2D /* Pods-HealthGuardSG-JGMethodSwizzler */;
+			targetProxy = D62146D3CC5FAB12C713BD75 /* PBXContainerItemProxy */;
+		};
+		91B3B662AFFF763FC2CB8287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-MZAppearance";
+			target = FD0DE3A56EBBF811E326017E /* Pods-HealthGuardSG-MZAppearance */;
+			targetProxy = 4B09338314438E0B3D84373E /* PBXContainerItemProxy */;
+		};
+		933BE71EAAEF5D76032B08C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-INTULocationManager";
+			target = 0DCE4ACB9992D7FC0E0BBE42 /* Pods-HealthGuardSG-INTULocationManager */;
+			targetProxy = 0E0EC14DCADE16C0094D706F /* PBXContainerItemProxy */;
+		};
+		9F17BF03B7D513A36E14BE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-HMSegmentedControl";
+			target = 24A05063AB10AEAA31F525E9 /* Pods-HealthGuardSG-HMSegmentedControl */;
+			targetProxy = D2B83B62F6996DF8C0178A3D /* PBXContainerItemProxy */;
+		};
+		B968AC44D56122E4F07FDF4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-GGTabBar";
+			target = AE9314CC57034090457DFF88 /* Pods-HealthGuardSG-GGTabBar */;
+			targetProxy = 40C8A2495780CB102A9CDBF3 /* PBXContainerItemProxy */;
+		};
+		C4B166BBED8161DDC39F90CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-ChameleonFramework";
+			target = 9EC2F42CC6A84EA32EAB41FF /* Pods-HealthGuardSG-ChameleonFramework */;
+			targetProxy = AFD8BF431399DF407BA156BE /* PBXContainerItemProxy */;
+		};
+		CC4CDB031C99614DA093BDF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HealthGuardSG-RMMapper";
+			target = F2E93CD7408F4A27DEBEE97D /* Pods-HealthGuardSG-RMMapper */;
+			targetProxy = 9EC996B9A1EA6EF9C27455CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06E17DCC592BB70EBD170662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FA5251C1DA55858D751710 /* Pods-HealthGuardSG-RMMapper-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-RMMapper/Pods-HealthGuardSG-RMMapper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1ABA5FDBD8C2E2A1F6366B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9700EE1BC4EAD9E4D403F093 /* Pods-HealthGuardSG-SMCalloutView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-SMCalloutView/Pods-HealthGuardSG-SMCalloutView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22987AEC33D23035FCFD8CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885FFE871891839DFF4B6F27 /* Pods-HealthGuardSG-HMSegmentedControl-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-HMSegmentedControl/Pods-HealthGuardSG-HMSegmentedControl-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22FD1D399DE600E1CBDD239D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB25FDD7D06D3A1871EB493 /* Pods-HealthGuardSG-Colours-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-Colours/Pods-HealthGuardSG-Colours-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		289B933A51B10392DAC8FAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9700EE1BC4EAD9E4D403F093 /* Pods-HealthGuardSG-SMCalloutView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-SMCalloutView/Pods-HealthGuardSG-SMCalloutView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		477E3464486D4A1F1A05D74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		485B8DD070A31A4921E979D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FA5251C1DA55858D751710 /* Pods-HealthGuardSG-RMMapper-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-RMMapper/Pods-HealthGuardSG-RMMapper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68CB08C075F9A574FF30574B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1553EF34695C5F59A9C4F99E /* Pods-HealthGuardSG-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-AFNetworking/Pods-HealthGuardSG-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C06631B4915129B7FA4F382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCEC703ACBC82F0419F40E9 /* Pods-HealthGuardSG-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-ChameleonFramework/Pods-HealthGuardSG-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6D254A5E82735C24D12812EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2140C9B9BBEAF40D1CE9027C /* Pods-HealthGuardSG-JGMethodSwizzler-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-JGMethodSwizzler/Pods-HealthGuardSG-JGMethodSwizzler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6D38C05C9EED6F8F000ABC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09FBE4F57FC4693EA3847FAB /* Pods-HealthGuardSG-GGTabBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-GGTabBar/Pods-HealthGuardSG-GGTabBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6DA9D2F49FB8C524B7EF34DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4511D2DDB2D23F2E15A6812C /* Pods-HealthGuardSG-MZAppearance-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MZAppearance/Pods-HealthGuardSG-MZAppearance-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6F750DD325FB0F92F5F2C73C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4511D2DDB2D23F2E15A6812C /* Pods-HealthGuardSG-MZAppearance-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MZAppearance/Pods-HealthGuardSG-MZAppearance-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7783F88CAEADE1A89C215438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2140C9B9BBEAF40D1CE9027C /* Pods-HealthGuardSG-JGMethodSwizzler-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-JGMethodSwizzler/Pods-HealthGuardSG-JGMethodSwizzler-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9313027238643A29335DA33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09FBE4F57FC4693EA3847FAB /* Pods-HealthGuardSG-GGTabBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-GGTabBar/Pods-HealthGuardSG-GGTabBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9FF6E85064AA8C8EDF46CC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB25FDD7D06D3A1871EB493 /* Pods-HealthGuardSG-Colours-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-Colours/Pods-HealthGuardSG-Colours-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A258AA256784DE4822A0D726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCEC703ACBC82F0419F40E9 /* Pods-HealthGuardSG-ChameleonFramework-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-ChameleonFramework/Pods-HealthGuardSG-ChameleonFramework-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A74EA9E13B85D925C79E9874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853113CB42FAF206D6A93D6E /* Pods-HealthGuardSG-MZFormSheetPresentationController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MZFormSheetPresentationController/Pods-HealthGuardSG-MZFormSheetPresentationController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ADEC7C0E40A7D7E38E5D5C8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F430F54530DC5763987FE4C /* Pods-HealthGuardSG-INTULocationManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-INTULocationManager/Pods-HealthGuardSG-INTULocationManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B43453EE001D04CF765D60BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853113CB42FAF206D6A93D6E /* Pods-HealthGuardSG-MZFormSheetPresentationController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MZFormSheetPresentationController/Pods-HealthGuardSG-MZFormSheetPresentationController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BA60D6A8A849674AB0C1D4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B5AF3CF8098A50C3951C57 /* Pods-HealthGuardSG-MGSwipeTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MGSwipeTabBarController/Pods-HealthGuardSG-MGSwipeTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD4CCB615F3D442ED97C082D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C8A0C26CEA81319C8C4423 /* Pods-HealthGuardSG-XLForm-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-XLForm/Pods-HealthGuardSG-XLForm-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF81816E379A5EC46180EAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F67E6BE95E74F8F7DC32F90 /* Pods-HealthGuardSG.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DCAD2F310D0ED3774FEC10BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EB619ACD5323908429F5E4 /* Pods-HealthGuardSG.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E1CAAC5B2A3015B74C74A49F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1553EF34695C5F59A9C4F99E /* Pods-HealthGuardSG-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-AFNetworking/Pods-HealthGuardSG-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EFE6468479429876AC96E148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F430F54530DC5763987FE4C /* Pods-HealthGuardSG-INTULocationManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-INTULocationManager/Pods-HealthGuardSG-INTULocationManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F210E7063DB77FB974C3A9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B5AF3CF8098A50C3951C57 /* Pods-HealthGuardSG-MGSwipeTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-MGSwipeTabBarController/Pods-HealthGuardSG-MGSwipeTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F3684CE20C24D83E8CE52152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885FFE871891839DFF4B6F27 /* Pods-HealthGuardSG-HMSegmentedControl-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-HMSegmentedControl/Pods-HealthGuardSG-HMSegmentedControl-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F67DD877C7B926FEAFCCF665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FFEE44868E7EA37A8FFEA390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C8A0C26CEA81319C8C4423 /* Pods-HealthGuardSG-XLForm-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HealthGuardSG-XLForm/Pods-HealthGuardSG-XLForm-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0003D2C1CC876ECDF8DEDCFE /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CB08C075F9A574FF30574B /* Debug */,
+				E1CAAC5B2A3015B74C74A49F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008C172681A718309F22522B /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF81816E379A5EC46180EAD2 /* Debug */,
+				DCAD2F310D0ED3774FEC10BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169F389B316F7810EC9D5C9B /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-JGMethodSwizzler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7783F88CAEADE1A89C215438 /* Debug */,
+				6D254A5E82735C24D12812EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17787AB99C26C10A544EFE8D /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-SMCalloutView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				289B933A51B10392DAC8FAD3 /* Debug */,
+				1ABA5FDBD8C2E2A1F6366B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAAD2012FD1DA3A5226360D /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C06631B4915129B7FA4F382 /* Debug */,
+				A258AA256784DE4822A0D726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21A4B4E2E1BAEA884AAA7976 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-Colours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FD1D399DE600E1CBDD239D /* Debug */,
+				9FF6E85064AA8C8EDF46CC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F42569B1764F80E5F633FD /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67DD877C7B926FEAFCCF665 /* Debug */,
+				477E3464486D4A1F1A05D74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37CFBB63994A0F1870855730 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-XLForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4CCB615F3D442ED97C082D /* Debug */,
+				FFEE44868E7EA37A8FFEA390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65C4725538396FFB8BC60DC8 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-GGTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D38C05C9EED6F8F000ABC92 /* Debug */,
+				9313027238643A29335DA33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E073D3AC80E92C086CB073 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-HMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3684CE20C24D83E8CE52152 /* Debug */,
+				22987AEC33D23035FCFD8CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39730A534B5B2D7D6E6F23C /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-RMMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485B8DD070A31A4921E979D5 /* Debug */,
+				06E17DCC592BB70EBD170662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB070D153F90B0A8C0BFBE17 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MGSwipeTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA60D6A8A849674AB0C1D4A7 /* Debug */,
+				F210E7063DB77FB974C3A9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD4FF4C837B5F1D4B09FB4E3 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MZAppearance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F750DD325FB0F92F5F2C73C /* Debug */,
+				6DA9D2F49FB8C524B7EF34DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B27C1AB954D5DD8B80B2A7 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-MZFormSheetPresentationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74EA9E13B85D925C79E9874 /* Debug */,
+				B43453EE001D04CF765D60BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F984E5FEBBF745F227B6AB08 /* Build configuration list for PBXNativeTarget "Pods-HealthGuardSG-INTULocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEC7C0E40A7D7E38E5D5C8B /* Debug */,
+				EFE6468479429876AC96E148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C9A8538244D4427C6945A09 /* Project object */;
+}

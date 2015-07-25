@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeMenuCell.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UICollectionViewController<UICollectionViewDelegate>
 
 @end
-
