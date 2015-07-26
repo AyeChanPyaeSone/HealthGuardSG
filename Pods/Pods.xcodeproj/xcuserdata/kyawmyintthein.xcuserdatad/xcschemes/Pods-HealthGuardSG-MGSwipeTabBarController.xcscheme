@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "323A3C692FB2AD8A78927CAA"
+               BlueprintIdentifier = "3CD086C8138B8FC5E72C90CC"
                BuildableName = "libPods-HealthGuardSG-MGSwipeTabBarController.a"
                BlueprintName = "Pods-HealthGuardSG-MGSwipeTabBarController"
                ReferencedContainer = "container:Pods.xcodeproj">

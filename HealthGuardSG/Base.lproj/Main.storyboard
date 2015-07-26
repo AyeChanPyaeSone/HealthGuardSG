@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-5n-CQT">
-                                <rect key="frame" x="0.0" y="73" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="73" width="375" height="109"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Jb-XgJ">
                                         <rect key="frame" x="6" y="0.0" width="371" height="31"/>
@@ -130,12 +130,56 @@
                                             <action selector="sliderTapped:" destination="13X-iA-fK3" eventType="valueChanged" id="QlN-9L-cup"/>
                                         </connections>
                                     </slider>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hospital-building.png" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-uF-zcf">
+                                        <rect key="frame" x="8" y="36" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="medicine.png" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-6E-x8a">
+                                        <rect key="frame" x="89" y="36" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nursing_home_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-v0-VWI">
+                                        <rect key="frame" x="172" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laboratory.png" translatesAutoresizingMaskIntoConstraints="NO" id="J7S-lY-eGo">
+                                        <rect key="frame" x="251" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drugstore.png" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-Py-fVL">
+                                        <rect key="frame" x="327" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-7y-X04">
+                                        <rect key="frame" x="0.0" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedHospital:" destination="13X-iA-fK3" eventType="valueChanged" id="s13-dZ-23W"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQ4-L5-Qt6">
+                                        <rect key="frame" x="163" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedNursingHome:" destination="13X-iA-fK3" eventType="valueChanged" id="Plf-R1-WzO"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6w-ce-qzD">
+                                        <rect key="frame" x="242" y="70" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedLaboratory:" destination="13X-iA-fK3" eventType="valueChanged" id="D42-8r-gOW"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBm-aB-6Rp">
+                                        <rect key="frame" x="318" y="71" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedDrugStore:" destination="13X-iA-fK3" eventType="valueChanged" id="ghE-PT-Fam"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Tn-PC-8g1">
+                                        <rect key="frame" x="78" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedClinic:" destination="13X-iA-fK3" eventType="valueChanged" id="7Yg-yD-rAB"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rO8-r0-Ra2" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="127" width="375" height="540"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="183" width="375" height="484"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,6 +187,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="HCmapView" destination="rO8-r0-Ra2" id="nH9-VM-Aky"/>
+                        <outlet property="clinicSwitch" destination="4Tn-PC-8g1" id="dbc-HW-0Ua"/>
+                        <outlet property="drugstoreSwitch" destination="bBm-aB-6Rp" id="0ft-TY-udk"/>
+                        <outlet property="hospitalSwitch" destination="5pt-7y-X04" id="qAj-Mh-541"/>
+                        <outlet property="laboratorySwitch" destination="m6w-ce-qzD" id="54i-4O-IWU"/>
+                        <outlet property="nursingHomeSwitch" destination="DQ4-L5-Qt6" id="NSQ-JF-37L"/>
                         <outlet property="radiusSlider" destination="LVF-Jb-XgJ" id="VmN-IA-L1y"/>
                     </connections>
                 </viewController>
@@ -889,7 +938,12 @@
     <resources>
         <image name="Cancel Filled-50.png" width="50" height="50"/>
         <image name="bus.png" width="30" height="30"/>
+        <image name="drugstore.png" width="32" height="37"/>
+        <image name="hospital-building.png" width="32" height="37"/>
+        <image name="laboratory.png" width="32" height="37"/>
+        <image name="medicine.png" width="32" height="37"/>
         <image name="mood3.jpg" width="850" height="850"/>
+        <image name="nursing_home_icon.png" width="32" height="37"/>
         <image name="phone_call.png" width="32" height="32"/>
         <image name="reduce.png" width="710" height="280"/>
         <image name="subway.png" width="30" height="30"/>

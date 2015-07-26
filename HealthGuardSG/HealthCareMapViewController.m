@@ -83,7 +83,12 @@ static const CGFloat DefaultZoom = 11.0f;
 
 @property (strong, nonatomic) UIView *emptySCrollupView;
 
-
+@property (strong, nonatomic) IBOutlet UISwitch *hospitalSwitch;
+@property (strong, nonatomic) IBOutlet UISwitch *clinicSwitch;
+@property (strong, nonatomic) IBOutlet UISwitch *nursingHomeSwitch;
+@property (strong, nonatomic) IBOutlet UISwitch *laboratorySwitch;
+@property (strong, nonatomic) IBOutlet UISwitch *drugstoreSwitch;
+@property (strong, nonatomic) NSMutableArray *selectedTypes;
 @end
 
 
@@ -101,8 +106,16 @@ bool *didfilter;
 - (void)viewDidLoad {
     
     
+    
     [super viewDidLoad];
     
+    self.hospitalSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    self.clinicSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    self.nursingHomeSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    self.laboratorySwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    self.drugstoreSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+    _selectedTypes = [[NSMutableArray alloc] init];
+
     
     UIBarButtonItem *filterButton = [[UIBarButtonItem alloc] initWithTitle:nil style:UIBarButtonItemStyleBordered target:self action:@selector(openFilter)];
     filterButton.image= [UIImage imageNamed:@"Filter Filled-25.png"];
@@ -122,7 +135,7 @@ bool *didfilter;
     
     //    [self loadAllPlaces];
     
-    [self loadHealthCarePlaces];
+    [self loadHealthCarePlaces:[NSString stringWithFormat:@"%f",_radiusSlider.value]];
     
     // Do any additional setup after loading the view from its nib.
     
@@ -224,7 +237,7 @@ bool *didfilter;
     
     _HCcurrentLocation = [locations lastObject];
     
-    [self loadHealthCarePlaces];
+    [self loadHealthCarePlaces:[NSString stringWithFormat:@"%f",_radiusSlider.value]];
 }
 
 
@@ -256,11 +269,61 @@ bool *didfilter;
     
 }
 
+- (IBAction)tappedHospital:(id)sender {
+ [self loadHealthCareSericeByType];
+}
+
+- (IBAction)tappedClinic:(id)sender {
+[self loadHealthCareSericeByType];
+}
+
+- (IBAction)tappedNursingHome:(id)sender {
+   [self loadHealthCareSericeByType];
+
+}
 
 
+- (IBAction)tappedDrugStore:(id)sender {
+   [self loadHealthCareSericeByType];
+}
 
+- (IBAction)tappedLaboratory:(id)sender {
+    [self loadHealthCareSericeByType];
+}
 
+-(void)loadHealthCareSericeByType{
+    [_selectedTypes removeAllObjects];
+    
+    if (_hospitalSwitch.isOn) {
+        [_selectedTypes addObject:@"2"];
+    }
+    if (_clinicSwitch.isOn) {
+        [_selectedTypes addObject:@"4"];
+    }
+    if (_nursingHomeSwitch.isOn) {
+        [_selectedTypes addObject:@"1"];
+    }
+    if (_laboratorySwitch.isOn) {
+        [_selectedTypes addObject:@"3"];
+    }
+    if (_drugstoreSwitch.isOn) {
+        [_selectedTypes addObject:@"5"];
+    }
+    NSString *typeString = [_selectedTypes componentsJoinedByString:@","];
+    NSString *lat = [NSString stringWithFormat:@"%f",_HCcurrentLocation.coordinate.latitude];
+    NSString *lng = [NSString stringWithFormat:@"%f",_HCcurrentLocation.coordinate.longitude];
+    NSString *radius = [NSString stringWithFormat:@"%f",_radiusSlider.value];
+    [HCAPI filterMap:typeString lat:lat lng:lng radius:radius success:^(id obj) {
+        [_places removeAllObjects];
+        [_places addObjectsFromArray:obj];
+        [self loadmarkerstomapView:_places];
+        
+    } fail:^(NSError *error) {
+        NSLog(@"Error %@",error);
+    }];
+    
 
+}
 
 - (void)mapView:(GMSMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     
@@ -808,11 +871,11 @@ bool *didfilter;
 
 
 
--(void) loadHealthCarePlaces{
+-(void) loadHealthCarePlaces:(NSString*)radius{
     
     HCLocationPlaceParams *hci = [[HCLocationPlaceParams alloc] init];
     
-    hci.radius = @"5";
+    hci.radius = radius;
     
     hci.lat =[NSNumber numberWithDouble:_HCcurrentLocation.coordinate.latitude ];
     

@@ -132,9 +132,11 @@ static AFHTTPRequestOperationManager* requestManager;
     NSDictionary *parameters = @{@"type_id": typeids,@"lat": lat,@"lng": lng,@"radius": radius};
     [manager GET:HCfilterMap parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ((success)) {
+            NSArray* arr = [RMMapper arrayOfClass:[HCLocationPlace class] fromArrayOfDictionary:responseObject[@"health_care_services"]];
             NSLog(@"RESONE %@",responseObject);
-            success(responseObject);
-    }
+            success(arr);
+        }
+    
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if (fail) {
             

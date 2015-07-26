@@ -692,6 +692,7 @@
 				TargetAttributes = {
 					A3DE2F471B6348D10067AA4A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = NN2A5MQ4L6;
 					};
 					A3DE2F631B6348D10067AA4A = {
 						CreatedOnToolsVersion = 6.4;
@@ -1029,6 +1030,7 @@
 			baseConfigurationReference = 30CECD98282AD2C3142F67DD /* Pods-HealthGuardSG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HealthGuardSG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1040,6 +1042,7 @@
 			baseConfigurationReference = 1E86ADD53C19164C29FB3DA5 /* Pods-HealthGuardSG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HealthGuardSG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

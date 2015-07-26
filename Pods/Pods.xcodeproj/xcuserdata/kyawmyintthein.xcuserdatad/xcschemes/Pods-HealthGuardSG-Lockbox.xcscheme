@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A01271C067FFA8D4F287A0C"
+               BlueprintIdentifier = "33B171CD5D822531216979DA"
                BuildableName = "libPods-HealthGuardSG-Lockbox.a"
                BlueprintName = "Pods-HealthGuardSG-Lockbox"
                ReferencedContainer = "container:Pods.xcodeproj">
