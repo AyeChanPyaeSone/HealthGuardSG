@@ -39,9 +39,9 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     [flipButton init];
     
 
-    self.menuArray = @[@"Map", @"Emergency Call", @"promotion", @"Events", @"Articles", @"Profile"];
+    self.menuArray = @[@"Map", @"Emergency Call", @"Promotions", @"Events", @"Articles", @"Profile"];
     self.backgroundPhotoNameArray = @[@"menucell1", @"menucell2", @"menucell3", @"menucell4", @"menucell5", @"menucell1"];
-    self.photoNameArray = @[@"stethoscope_filled-50.png", @"ambulance_filled-50.png",@"pill_filled-50.png", @"Google Blog Search Filled-50.png",@"New Filled-50.png",@"checked_user_filled-50.png"];
+    self.photoNameArray = @[@"Map Marker-50.png", @"ambulance_filled-50.png",@"Sell-50.png", @"Google Blog Search Filled-50.png",@"New Filled-50.png",@"checked_user_filled-50.png"];
 
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];

@@ -40,11 +40,11 @@
        
     }
     
-//    [[UINavigationBar appearance] setTitleTextAttributes: @{
-//                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
-//                                                            NSFontAttributeName: [UIFont fontWithName:@"Aileron-Bold" size:15.0f]
-//                                                            }];
-   
+     [[UILabel appearance] setFont:[UIFont fontWithName:@"Aileron" size:14.0]];
+     [[UITextView appearance] setFont:[UIFont fontWithName:@"Aileron" size:12.0]];
+     [[UITextField appearance] setFont:[UIFont fontWithName:@"Aileron" size:14.0]];
+    
+    
     return YES;
 }
 
@@ -154,7 +154,7 @@
 
 - (OnboardingViewController *)generateOnBoardVC {
     
-    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"" body:@"Health Guard SG" image:nil buttonText:@"" action:nil];
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"Health Guard SG" body:@"             Health Services,                 The Smart Ways" image:nil buttonText:@"" action:nil];
     
     
     OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"" body:@"" image:nil buttonText:@"Let's Get Started" action:^{
