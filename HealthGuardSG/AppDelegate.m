@@ -41,7 +41,7 @@
     }
     
      [[UILabel appearance] setFont:[UIFont fontWithName:@"Aileron" size:14.0]];
-     [[UITextView appearance] setFont:[UIFont fontWithName:@"Aileron" size:12.0]];
+//     [[UITextView appearance] setFont:[UIFont fontWithName:@"Aileron" size:24.0]];
      [[UITextField appearance] setFont:[UIFont fontWithName:@"Aileron" size:14.0]];
     
     

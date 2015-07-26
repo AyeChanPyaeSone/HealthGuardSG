@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _titleArray = @[@"Public Health Lecture : Research Findings on Prolonged Use of Facemasks ", @"Public Health Lecture :MOH’s Role in Shaping Medical Education, Training and Assessments"];
-    _contentArray = @[@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.", @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
+    _contentArray = @[@"Red Cross Home for the Disabled is a residential home for those with multiple disabilities, and operates a Day Activity Centre providing day care services.FoodAid is a programme where Red Cross provide monthly rations of nutritious food to the disadvantaged in Singapore.", @"TransportAid is a service which helps the elderly and disabled from low-income homes get to and from their healthcare service facilities, such as medical treatments, rehabilitation and day activity centres."];
     _startDateArray =@[@"22 / 2/ 2015", @"22 / 2/ 2015", @"22 / 2/ 2015"];
 
     _endDateArray = @[@"22 / 2/ 2015", @"22 / 2/ 2015", @"22 / 2/ 2015"];
@@ -83,12 +83,15 @@
         cell = [[PromoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.title.text = _titleArray[indexPath.row];
-    cell.contentText.text = _contentArray[indexPath.row];
     cell.startDate.text = _startDateArray[indexPath.row];
     cell.location.text = _locationArray[indexPath.row];
     cell.date.text = _dateArray[indexPath.row];
     cell.endDate.text = _endDateArray[indexPath.row];
-    
+//    cell.contentText.editable = YES;
+//    cell.contentText.selectable = YES;
+//    cell.contentText.font = [UIFont fontWithName:@"Aileron" size:28];
+    cell.contentText.text = _contentArray[indexPath.row];
+//    cell.contentText.editable = NO;
     cell.title.lineBreakMode = UILineBreakModeWordWrap;
     cell.title.numberOfLines = 0;
     [cell.title sizeToFit];
