@@ -31,13 +31,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Health Events";
-    _sectionOneArray = @[@"Don't Forget to Remember Me"];
-    _sectionTwoArray = @[@"Public Health Lecture : Research Findings on Prolonged Use of Facemasks ", @"Public Health Lecture :MOH’s Role in Shaping Medical Education, Training and Assessments"];
-    _sectionThreeArray = @[@"National Healthy Lifestyle Campaign", @"Understanding people living with HIV can help save lives"];
     
-     _sectionOneDetailArray = @[@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.", @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
-    _sectionTwoDetailArray = @[@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.", @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
-    _sectionThreeDetailArray = @[@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.", @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."];
+    _sectionOneArray = @[@"Free Chest Screening for Senior Citizens in West Area"];
+    
+    _sectionTwoArray = @[@"Ocean Health Warehouse SALE"];
+    
+    _sectionThreeArray = @[@"Singapore Red Cross Sunday Sales 26 Jul 2015"];
+    
+    _sectionOneDetailArray = @[@"A group of volunteer doctors are gathering at Jurong Green Community Club on the second weekend of August to run a free chest screening service for senior citizens for whole 2 days."];
+    _sectionTwoDetailArray = @[@"Ocean Health will be having a Warehouse SALE with discounts of up to 70% off from 29 July to 31 July 2015."];
+    _sectionThreeDetailArray = @[@"Red Cross Home for the Disabled is a residential home for those with multiple disabilities, and operates a Day Activity Centre providing day care services. FoodAid is a programme where Red Cross provide monthly rations of nutritious food to the disadvantaged in Singapore."];
 
     _sectionOneStartDateArray = @[@"22 / 2/ 2015", @"22 / 2/ 2015", @"22 / 2/ 2015"];
     
@@ -154,6 +157,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120; // your dynamic height...
+    return 150; // your dynamic height...
 }
 @end

@@ -39,6 +39,11 @@
         [self.window makeKeyAndVisible];
        
     }
+    
+//    [[UINavigationBar appearance] setTitleTextAttributes: @{
+//                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
+//                                                            NSFontAttributeName: [UIFont fontWithName:@"Aileron-Bold" size:15.0f]
+//                                                            }];
    
     return YES;
 }
