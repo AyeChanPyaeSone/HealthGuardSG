@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-5n-CQT">
-                                <rect key="frame" x="0.0" y="73" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="73" width="375" height="109"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Jb-XgJ">
                                         <rect key="frame" x="6" y="0.0" width="371" height="31"/>
@@ -130,12 +130,56 @@
                                             <action selector="sliderTapped:" destination="13X-iA-fK3" eventType="valueChanged" id="QlN-9L-cup"/>
                                         </connections>
                                     </slider>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hospital-building.png" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-uF-zcf">
+                                        <rect key="frame" x="8" y="36" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="medicine.png" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-6E-x8a">
+                                        <rect key="frame" x="89" y="36" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nursing_home_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-v0-VWI">
+                                        <rect key="frame" x="172" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laboratory.png" translatesAutoresizingMaskIntoConstraints="NO" id="J7S-lY-eGo">
+                                        <rect key="frame" x="251" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drugstore.png" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-Py-fVL">
+                                        <rect key="frame" x="327" y="38" width="30" height="30"/>
+                                    </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-7y-X04">
+                                        <rect key="frame" x="0.0" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedHospital:" destination="13X-iA-fK3" eventType="valueChanged" id="s13-dZ-23W"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQ4-L5-Qt6">
+                                        <rect key="frame" x="163" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedNursingHome:" destination="13X-iA-fK3" eventType="valueChanged" id="Plf-R1-WzO"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6w-ce-qzD">
+                                        <rect key="frame" x="242" y="70" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedLaboratory:" destination="13X-iA-fK3" eventType="valueChanged" id="D42-8r-gOW"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBm-aB-6Rp">
+                                        <rect key="frame" x="318" y="71" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedDrugStore:" destination="13X-iA-fK3" eventType="valueChanged" id="ghE-PT-Fam"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Tn-PC-8g1">
+                                        <rect key="frame" x="78" y="69" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tappedClinic:" destination="13X-iA-fK3" eventType="valueChanged" id="7Yg-yD-rAB"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rO8-r0-Ra2" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="127" width="375" height="540"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="183" width="375" height="484"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,6 +187,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="HCmapView" destination="rO8-r0-Ra2" id="nH9-VM-Aky"/>
+                        <outlet property="clinicSwitch" destination="4Tn-PC-8g1" id="dbc-HW-0Ua"/>
+                        <outlet property="drugstoreSwitch" destination="bBm-aB-6Rp" id="0ft-TY-udk"/>
+                        <outlet property="hospitalSwitch" destination="5pt-7y-X04" id="qAj-Mh-541"/>
+                        <outlet property="laboratorySwitch" destination="m6w-ce-qzD" id="54i-4O-IWU"/>
+                        <outlet property="nursingHomeSwitch" destination="DQ4-L5-Qt6" id="NSQ-JF-37L"/>
                         <outlet property="radiusSlider" destination="LVF-Jb-XgJ" id="VmN-IA-L1y"/>
                     </connections>
                 </viewController>
@@ -239,35 +288,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wallpaper.png" translatesAutoresizingMaskIntoConstraints="NO" id="YI8-oY-biZ">
                                 <rect key="frame" x="0.0" y="-10" width="325" height="578"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3c-Qb-9wp">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3c-Qb-9wp">
                                 <rect key="frame" x="35" y="181" width="250" height="207"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wv-2S-RAI">
-                                        <rect key="frame" x="0.0" y="77" width="250" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wv-2S-RAI">
+                                        <rect key="frame" x="0.0" y="66" width="250" height="40"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="7Ae-KV-f83"/>
-                                            <constraint firstAttribute="height" constant="30" id="Jma-D6-2Er"/>
+                                            <constraint firstAttribute="height" constant="40" id="z7w-hl-lWu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-QR-SS0">
-                                        <rect key="frame" x="0.0" y="32" width="250" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-QR-SS0">
+                                        <rect key="frame" x="0.0" y="25" width="250" height="40"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="PYq-eW-3eZ"/>
+                                            <constraint firstAttribute="height" constant="40" id="kH9-vw-Qls"/>
                                             <constraint firstAttribute="width" constant="250" id="zPL-bv-gdF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-oa-aFf">
-                                        <rect key="frame" x="68" y="131" width="115" height="30"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-oa-aFf">
+                                        <rect key="frame" x="0.0" y="114" width="250" height="40"/>
+                                        <color key="backgroundColor" red="0.070588235289999995" green="0.58431372550000005" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="117" id="jkc-BH-Bti"/>
+                                            <constraint firstAttribute="width" constant="250" id="jkc-BH-Bti"/>
                                         </constraints>
-                                        <state key="normal" title="Log In">
-                                            <color key="titleColor" red="0.53333333329999999" green="0.76862745099999996" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Join">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -276,26 +328,14 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="qw6-oa-aFf" secondAttribute="centerY" constant="-45.5" id="EA6-GL-eLP"/>
-                                    <constraint firstItem="NU1-QR-SS0" firstAttribute="leading" secondItem="2wv-2S-RAI" secondAttribute="leading" id="QVp-Sd-20n"/>
-                                    <constraint firstItem="2wv-2S-RAI" firstAttribute="top" secondItem="K3c-Qb-9wp" secondAttribute="top" constant="77" id="QhP-GR-1fx"/>
-                                    <constraint firstItem="NU1-QR-SS0" firstAttribute="top" secondItem="K3c-Qb-9wp" secondAttribute="top" constant="32" id="Ufi-ov-6N0"/>
-                                    <constraint firstAttribute="centerY" secondItem="2wv-2S-RAI" secondAttribute="centerY" constant="11.5" id="Za0-Jp-iNC"/>
-                                    <constraint firstAttribute="height" constant="207" id="iXC-Iw-KDM"/>
-                                    <constraint firstAttribute="centerY" secondItem="NU1-QR-SS0" secondAttribute="centerY" constant="56.5" id="nwn-zo-EGh"/>
-                                    <constraint firstItem="qw6-oa-aFf" firstAttribute="leading" secondItem="K3c-Qb-9wp" secondAttribute="leading" constant="67" id="pdk-jJ-lI9"/>
-                                    <constraint firstAttribute="width" constant="250" id="yV3-xJ-Stp"/>
-                                    <constraint firstItem="NU1-QR-SS0" firstAttribute="centerX" secondItem="K3c-Qb-9wp" secondAttribute="centerX" id="zad-Yo-C3R"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="K3c-Qb-9wp" secondAttribute="centerY" id="KAO-eI-FMF"/>
                             <constraint firstAttribute="centerX" secondItem="K3c-Qb-9wp" secondAttribute="centerX" id="Odu-IN-Efm"/>
-                            <constraint firstItem="YI8-oY-biZ" firstAttribute="height" secondItem="5Mn-Wu-ulC" secondAttribute="height" id="oGW-gH-wbT"/>
-                            <constraint firstItem="YI8-oY-biZ" firstAttribute="width" secondItem="5Mn-Wu-ulC" secondAttribute="width" id="q4e-nI-XrH"/>
+                            <constraint firstItem="YI8-oY-biZ" firstAttribute="height" secondItem="5Mn-Wu-ulC" secondAttribute="height" constant="10" id="oGW-gH-wbT"/>
+                            <constraint firstItem="YI8-oY-biZ" firstAttribute="width" secondItem="5Mn-Wu-ulC" secondAttribute="width" constant="5" id="q4e-nI-XrH"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -889,7 +929,12 @@
     <resources>
         <image name="Cancel Filled-50.png" width="50" height="50"/>
         <image name="bus.png" width="30" height="30"/>
+        <image name="drugstore.png" width="32" height="37"/>
+        <image name="hospital-building.png" width="32" height="37"/>
+        <image name="laboratory.png" width="32" height="37"/>
+        <image name="medicine.png" width="32" height="37"/>
         <image name="mood3.jpg" width="850" height="850"/>
+        <image name="nursing_home_icon.png" width="32" height="37"/>
         <image name="phone_call.png" width="32" height="32"/>
         <image name="reduce.png" width="710" height="280"/>
         <image name="subway.png" width="30" height="30"/>

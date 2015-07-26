@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAA0635DA5ADBF6805945766"
+               BlueprintIdentifier = "FEC269964A8DC0F8DA9443EC"
                BuildableName = "libPods-HealthGuardSG-INTULocationManager.a"
                BlueprintName = "Pods-HealthGuardSG-INTULocationManager"
                ReferencedContainer = "container:Pods.xcodeproj">

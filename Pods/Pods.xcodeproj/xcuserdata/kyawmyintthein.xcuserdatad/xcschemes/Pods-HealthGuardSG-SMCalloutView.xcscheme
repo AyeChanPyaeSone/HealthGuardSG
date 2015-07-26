@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B9EC6C244ED5C110C2C23EA3"
+               BlueprintIdentifier = "51AF69BCFB88ED380AF0FDA5"
                BuildableName = "libPods-HealthGuardSG-SMCalloutView.a"
                BlueprintName = "Pods-HealthGuardSG-SMCalloutView"
                ReferencedContainer = "container:Pods.xcodeproj">
