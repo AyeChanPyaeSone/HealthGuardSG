@@ -37,9 +37,9 @@
     [HCAPI Userregister:self.email.text name:self.name.text success:^(id obj) {
         NSLog(@"Success %@",obj);
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: healthCareemergencyVC];
-        [self presentViewController:navController animated:nil completion:nil];
+//        ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
+//        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: healthCareemergencyVC];
+//        [self presentViewController:navController animated:nil completion:nil];
     } fail:^(NSError *error) {
         NSLog(@"Error %@",error);
     }];
