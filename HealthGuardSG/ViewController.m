@@ -40,7 +40,7 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     
 
     self.menuArray = @[@"Map", @"Emergency Call", @"promotion", @"Events", @"Articles", @"Profile"];
-    self.backgroundPhotoNameArray = @[@"mood1.jpg", @"mood2.jpg", @"mood3.jpg", @"mood4.jpg", @"mood5.jpg", @"mood6.jpg", @"mood7.jpg", @"mood8.jpg"];
+    self.backgroundPhotoNameArray = @[@"menucell1", @"menucell2", @"menucell3", @"menucell4", @"menucell5", @"menucell1"];
     self.photoNameArray = @[@"stethoscope_filled-50.png", @"ambulance_filled-50.png",@"pill_filled-50.png", @"Google Blog Search Filled-50.png",@"New Filled-50.png",@"checked_user_filled-50.png"];
 
     
@@ -89,7 +89,7 @@ static NSString * const reuseIdentifier = @"HomeMenuCell";
     CGFloat screenHeight = screenSize.size.height;
     
     CGFloat width = (screenWidth - 30 )/2;
-    CGFloat height = (screenHeight-100)/3;
+    CGFloat height = (screenHeight-120)/3;
     
     return CGSizeMake(width, height);
 }

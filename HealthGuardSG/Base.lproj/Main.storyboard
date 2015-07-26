@@ -56,30 +56,35 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ugV-rJ-7rr" id="7cX-4u-ToR">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-yw-9Ix">
-                                            <rect key="frame" x="95" y="33" width="163" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-P4-YtB">
-                                            <rect key="frame" x="225" y="28" width="30" height="32"/>
-                                            <state key="normal" backgroundImage="phone_call.png">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fOg-jk-1hj">
                                             <rect key="frame" x="8" y="6" width="73" height="72"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="73" id="R8i-SO-58f"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrT-P4-YtB">
+                                            <rect key="frame" x="276" y="28" width="30" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="5Yx-y4-lYi"/>
+                                                <constraint firstAttribute="height" constant="32" id="uJk-ge-xWF"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="phone_call.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-yw-9Ix">
+                                            <rect key="frame" x="101" y="39" width="152" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="fOg-jk-1hj" firstAttribute="top" secondItem="7cX-4u-ToR" secondAttribute="topMargin" constant="-2" id="2lY-Ld-ath"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fOg-jk-1hj" secondAttribute="bottom" constant="0.5" id="Cj1-hh-ijz"/>
                                         <constraint firstItem="qrT-P4-YtB" firstAttribute="trailing" secondItem="7cX-4u-ToR" secondAttribute="trailingMargin" id="Dbc-S5-S2s"/>
                                         <constraint firstItem="qrT-P4-YtB" firstAttribute="top" secondItem="7cX-4u-ToR" secondAttribute="topMargin" constant="20" id="WhN-u0-chj"/>
+                                        <constraint firstItem="qrT-P4-YtB" firstAttribute="leading" secondItem="VXd-yw-9Ix" secondAttribute="trailing" constant="23" id="mOa-Y1-gUs"/>
                                         <constraint firstItem="VXd-yw-9Ix" firstAttribute="leading" secondItem="fOg-jk-1hj" secondAttribute="trailing" constant="14" id="sQv-SM-BeP"/>
                                         <constraint firstItem="fOg-jk-1hj" firstAttribute="leading" secondItem="7cX-4u-ToR" secondAttribute="leadingMargin" id="xGe-nI-Nks"/>
                                         <constraint firstItem="VXd-yw-9Ix" firstAttribute="top" secondItem="7cX-4u-ToR" secondAttribute="topMargin" constant="25" id="xvA-9R-ofI"/>
@@ -101,7 +106,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzH-2N-Nyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648" y="197"/>
+            <point key="canvasLocation" x="1720" y="151"/>
         </scene>
         <!--Health Care Map View Controller-->
         <scene sceneID="GT2-Gc-oj1">
@@ -122,7 +127,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="it7-5n-CQT">
                                 <rect key="frame" x="0.0" y="73" width="320" height="38"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Jb-XgJ">
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-Jb-XgJ">
                                         <rect key="frame" x="6" y="0.0" width="308" height="31"/>
                                         <color key="minimumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>

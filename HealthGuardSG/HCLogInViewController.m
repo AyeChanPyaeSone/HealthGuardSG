@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.name.delegate = self;
     self.email.delegate = self;
+
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -37,7 +38,8 @@
         NSLog(@"Success %@",obj);
         UIStoryboard *mainSb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         ViewController *healthCareemergencyVC = [mainSb instantiateViewControllerWithIdentifier:@"ViewController"];
-        [self.navigationController pushViewController:healthCareemergencyVC animated:YES];
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: healthCareemergencyVC];
+        [self presentViewController:navController animated:nil completion:nil];
     } fail:^(NSError *error) {
         NSLog(@"Error %@",error);
     }];

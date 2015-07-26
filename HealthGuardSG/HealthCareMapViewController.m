@@ -224,6 +224,7 @@ bool *didfilter;
     
     _HCcurrentLocation = [locations lastObject];
     
+    [self loadHealthCarePlaces];
 }
 
 
